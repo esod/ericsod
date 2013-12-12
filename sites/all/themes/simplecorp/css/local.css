@@ -1,0 +1,12 @@
+/*  CSS Overrides */
+
+.firm {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  font-variant: normal;
+  white-space: normal;
+  color: #898989;
+  margin: 2em 0 0 0;
+  font-family: 'Dosis',Arial,Verdana,serif;
+}
