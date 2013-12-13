@@ -565,3 +565,14 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  * Remove the leading hash signs to disable.
  */
 # $conf['allow_authorize_operations'] = FALSE;
+
+// Remove WWW.
+if (isset($_SERVER['PANTHEON_ENVIRONMENT']) && 
+  $_SERVER['PANTHEON_ENVIRONMENT'] === 'live') {
+  if ($_SERVER['HTTP_HOST'] == 'www.ericsod.com' || 
+      $_SERVER['HTTP_HOST'] == 'live-ericsod.gotpantheon.com/') {
+    header('HTTP/1.0 301 Moved Permanently'); 
+    header('Location: http://ericsod.com'. $_SERVER['REQUEST_URI']); 
+    exit();
+  }
+}
