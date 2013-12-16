@@ -8,5 +8,5 @@
  * Enables the module.
  */
 function bottom_content_update_7000() {
-  module_enable(array('bottom_content'), FALSE);
+  module_install();
 }

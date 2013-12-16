@@ -8,5 +8,5 @@
  * Enables the module.
  */
 function full_portfolio_update_7000() {
-  module_enable(array('full_portfolio'), FALSE);
+  module_install();
 }
