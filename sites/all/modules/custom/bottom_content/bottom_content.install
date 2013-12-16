@@ -1,0 +1,12 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the bottom_content module.
+ */
+
+/**
+ * Enables the module.
+ */
+function bottom_content_update_7000() {
+  module_enable(array('bottom_content'), FALSE);
+}

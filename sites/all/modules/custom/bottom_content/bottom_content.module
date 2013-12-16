@@ -54,7 +54,8 @@ function bottom_content() {
             <div class="link-holder">
               <div class="portfolio-item-holder">
                 <div class="portfolio-item-hover-content">
-                  <a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/portfolio-pronq.jpg" alt="pronq by HP" title="pronq by HP" data-rel="prettyPhoto" class="zoom">View Image</a>
+                  <a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/portfolio-pronq.jpg" alt="pronq by HP" title="pronq by HP" data-rel="prettyPhoto" class="zoom">
+                    <img src="" alt="pronq by HP" /></a>
                   <img src="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/pt-pronq-image.jpg" alt="pronq by HP" width="220"  class="portfolio-img" />
                   <div class="hover-options"></div>
                 </div>
@@ -74,7 +75,8 @@ function bottom_content() {
             <div class="link-holder">
               <div class="portfolio-item-holder">
                 <div class="portfolio-item-hover-content">
-                  <a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/portfolio-candd-msp.jpg" alt="Car And Driver Model Super Page" title="Car And Driver Model Super Page" data-rel="prettyPhoto" class="zoom">View Image</a>
+                  <a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/portfolio-candd-msp.jpg" alt="Car And Driver Model Super Page" title="Car And Driver Model Super Page" data-rel="prettyPhoto" class="zoom">
+                    <img src="" alt="Car And Driver Model Super Page" /></a>
                   <img src="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/pt-candd-msp-image.jpg" alt="Car And Driver Model Super Page" title="Car And Driver Model Super Page" width="220" class="portfolio-img" />
                   <div class="hover-options"></div>
                 </div>
@@ -94,7 +96,8 @@ function bottom_content() {
             <div class="link-holder">
               <div class="portfolio-item-holder">
                 <div class="portfolio-item-hover-content">
-                  <a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/portfolio-candd-contenthub.jpg" alt="Car And Driver Content Hub" title="Car And Driver Content Hub" data-rel="prettyPhoto" class="zoom">View Image</a>
+                  <a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/portfolio-candd-contenthub.jpg" alt="Car And Driver Content Hub" title="Car And Driver Content Hub" data-rel="prettyPhoto" class="zoom">
+                    <img src="" alt="Car And Driver Content Hub" /></a>
                   <img src="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/pt-candd-contenthub-image.jpg" alt="Car And Driver Content Hub" title="Car And Driver Content Hub" width="220" class="portfolio-img" />
                   <div class="hover-options"></div>
                 </div>
@@ -115,7 +118,8 @@ function bottom_content() {
             <div class="link-holder">
               <div class="portfolio-item-holder">
                 <div class="portfolio-item-hover-content">
-                  <a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/portfolio-candd-menu-nav.jpg" title="Car And Driver Menu Navigation" alt="Car And Driver Menu Navigation" data-rel="prettyPhoto" class="zoom">View Image</a>
+                  <a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/portfolio-candd-menu-nav.jpg" title="Car And Driver Menu Navigation" alt="Car And Driver Menu Navigation" data-rel="prettyPhoto" class="zoom">
+                    <img src="" alt="Car And Driver Menu Navigation" /></a>
                   <img src="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/pt-candd-menu-nav-image.jpg" title="Car And Driver Menu Navigation" alt="Car And Driver Menu Navigation" width="220" class="portfolio-img" />
                   <div class="hover-options"></div>
                 </div>
@@ -135,7 +139,8 @@ function bottom_content() {
             <div class="link-holder">
               <div class="portfolio-item-holder">
                 <div class="portfolio-item-hover-content">
-                  <a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/portfolio-wm-resource-network.jpg" title="Wealth Management Resource Network" alt="Wealth Management Resource Network" data-rel="prettyPhoto" class="zoom">View Image</a>
+                  <a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/portfolio-wm-resource-network.jpg" title="Wealth Management Resource Network" alt="Wealth Management Resource Network" data-rel="prettyPhoto" class="zoom">
+                    <img src="" alt="Wealth Management Resource Network" /></a>
                   <img src="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/pt-wm-resource-network.jpg" title="Wealth Management Resource Network" alt="Wealth Management Resource Network" width="220" class="portfolio-img" />
                   <div class="hover-options"></div>
                 </div>
@@ -155,7 +160,8 @@ function bottom_content() {
             <div class="link-holder">
               <div class="portfolio-item-holder">
                 <div class="portfolio-item-hover-content">
-                  <a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/portfolio-iweek-1000.jpg" title="Information Week 1000, 500, and 50" alt="Information Week 1000, 500, and 50" data-rel="prettyPhoto" class="zoom">View Image</a>
+                  <a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/portfolio-iweek-1000.jpg" title="Information Week 1000, 500, and 50" alt="Information Week 1000, 500, and 50" data-rel="prettyPhoto" class="zoom">
+                    <img src="" alt="Information Week 1000, 500, and 50" /></a>
                   <img src="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/pt-iweek-1000.jpg" title="Industry Week 100, 500, and 50 Rankings" alt="Industry Week 100, 500, and 50 Rankings" width="220" class="portfolio-img" />
                   <div class="hover-options"></div>
                 </div>
@@ -175,7 +181,8 @@ function bottom_content() {
             <div class="link-holder">
               <div class="portfolio-item-holder">
                 <div class="portfolio-item-hover-content">
-                  <a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/portfolio-galavante.jpg" alt="The Galavante Group" title="The Galavante Group" data-rel="prettyPhoto" class="zoom">View Image</a>
+                  <a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/portfolio-galavante.jpg" alt="The Galavante Group" title="The Galavante Group" data-rel="prettyPhoto" class="zoom">
+                    <img src="" alt="The Galavante Group" /></a>
                   <img src="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/pt-galavante.jpg" alt="The Galavante Group" title="The Galavante Group" width="220" class="portfolio-img" />
                   <div class="hover-options"></div>
                 </div>
@@ -195,7 +202,8 @@ function bottom_content() {
             <div class="link-holder">
               <div class="portfolio-item-holder">
                 <div class="portfolio-item-hover-content">
-                  <a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/portfolio-ypm-cover.jpg" alt="Yoga Practice Manual" title="Yoga Practice Manual" data-rel="prettyPhoto" class="zoom">View Image</a>
+                  <a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/portfolio-ypm-cover.jpg" alt="Yoga Practice Manual" title="Yoga Practice Manual" data-rel="prettyPhoto" class="zoom">
+                    <img src="" alt="Yoga Practice Manual" /></a>
                   <img src="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/pt-ypm.jpg" alt="Yoga Practice Manual" title="Yoga Practice Manual" width="220" class="portfolio-img" />
                   <div class="hover-options"></div>
                 </div>
