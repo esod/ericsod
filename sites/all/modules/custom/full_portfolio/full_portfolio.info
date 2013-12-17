@@ -1,0 +1,6 @@
+name = Full Portfolio
+description = A content block for the full portfolio.
+core = 7.x
+package = Custom Modules
+files[] = full_portfolio.module
+version = 7.x-1.0

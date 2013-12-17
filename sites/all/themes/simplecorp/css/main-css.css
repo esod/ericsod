@@ -975,6 +975,8 @@ ul#portfolio-items-one-third li  img { width: 100%; height: auto; padding: 0; ma
 
 .filterable { display: inline; float: right; margin-bottom: 20px;  margin-right: 20px; list-style: none; }
 
+.filterable.full-portfolio { margin-top: 0; }
+
 .filterable li { float: left; margin-left: 25px; list-style: none;  }
 
 .filterable li a { display: block;  color: #FFF; font: bold 11px arial; text-decoration: none;  text-align: center; width: 100%; height: auto; padding: 5px 5px; margin: 5px; background: #615951;
@@ -989,6 +991,8 @@ ul#portfolio-items-one-third li  img { width: 100%; height: auto; padding: 0; ma
 /* ---------------------------------------------------------------------- */
 
 #content h1 { margin-bottom: 30px; }
+
+.page-node-13 #content h1 { margin-bottom: 0; }
 
 .hentry { padding: 0 0 30px 0; margin: 0 0 30px 0; }
 

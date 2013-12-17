@@ -1,0 +1,6 @@
+name = Bottom Content
+description = A content block for the bottom of the home page.
+core = 7.x
+package = Custom Modules
+files[] = bottom_content.module
+version = 7.x-1.0
