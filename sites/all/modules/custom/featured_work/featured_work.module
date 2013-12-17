@@ -56,8 +56,7 @@ function featured_work() {
     'caption_title' => array('pronq by HP Website Project','Car And Driver Model Super Page Website Project', 'Car And Driver Content Hub Website Project', 'Car And Driver Menu Navigation Website Project', 'Wealth Management Resource Network Website Project', 'Industry Week 100, 500, and 50 Rankings Website Project', 'The Galavante Group Website Project', 'Yoga Practice Manual'),
     'project_type' => array('Web', 'Web', 'Web', 'Web', 'Web', 'Web', 'Web', 'Print'),
 
-  ));
-  
+  )); 
 }
 
 // Register the tpl for the above block(s)
@@ -70,16 +69,14 @@ function featured_work_theme() {
     'featured_work' => $base + array(
       'template' => 'featured-work-block',
       'variables' => array(
-          'keys' => NULL,
-          'portfolio_image' => NULL,
-          'alt_title' => NULL,
-          'thumbnail_image' => NULL,
-          'which_node' => NULL,
-          'caption_title' => NULL,
-          'project_type' => NULL,
-        ),
+        'keys' => NULL,
+        'portfolio_image' => NULL,
+        'alt_title' => NULL,
+        'thumbnail_image' => NULL,
+        'which_node' => NULL,
+        'caption_title' => NULL,
+        'project_type' => NULL,
+      ),
     ),
   );
-
-
 }

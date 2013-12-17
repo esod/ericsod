@@ -44,256 +44,42 @@ function full_portfolio_block_view($delta = '') {
  * @return string
  */
 function full_portfolio() {
-  return '
-    <!-- portofolio toolbar -->
-      <ul class="filterable full-portfolio" id="filterable">
-        <li class="active"><a href="#" data-value="all" data-type="all" class="all">All</a></li>
-        <li><a href="#" class="web" data-type="web">Web</a></li>
-        <li><a href="#" class="illustration" data-type="illustration">Print</a></li>
-      </ul>
-    <!--EOF: portofolio toolbar -->
 
-    <!-- portofolio container -->
-    <div class="portfolio-container">
+  // Send full_portfolio data objects to full-portfolio-block.tpl.php which is registered below
+  return theme('full_portfolio', array(
+    'keys' => array('u1','u2','u3','u4','u5','u6','u7','u8','u9','u10'),
+    'class_and_data_type' => array('web', 'web', 'web', 'web', 'web', 'web', 'web', 'illustration', 'illustration', 'illustration'),    
+    'data_id' => array('id-211', 'id-128', 'id-209', 'id-215', 'id-39', 'id-213', 'id-281', 'id-280', 'id-282', 'id-283'),
+    'portfolio_image' => array('portfolio-pronq.jpg','portfolio-candd-msp.jpg', 'portfolio-candd-contenthub.jpg', 'portfolio-candd-menu-nav.jpg', 'portfolio-wm-resource-network.jpg', 'portfolio-iweek-1000.jpg', 'portfolio-galavante.jpg', 'portfolio-ypm-cover.jpg', 'portfolio-fb2007.jpg', 'portfolio-mainscreen.jpg'),
+    'title_alt' => array('pronq by HP','Car And Driver Model Super Page', 'Car And Driver Content Hub', 'Car And Driver Menu Navigation', 'Wealth Management Resource Network', 'Information Week 1000, 500, and 50', 'The Galavante Group', 'Yoga Practice Manual', 'Merrill Lynch Factbook', 'Mainscreen Print Procurement Database System'),
+    'thumbnail_image' => array('pt-pronq-image.jpg','pt-candd-msp-image.jpg', 'pt-candd-contenthub-image.jpg', 'pt-candd-menu-nav-image.jpg', 'pt-wm-resource-network.jpg', 'pt-iweek-1000.jpg', 'pt-galavante.jpg', 'pt-ypm.jpg', 'pt-fb2007.jpg', 'pt-mainscreen.jpg'),
+    'which_node' => array('pronq-hp','car-and-driver-model-super-page', 'car-and-driver-content-hub', 'car-and-drivers-menu-navigation', 'wealth-management-resource-network', 'industry-week-100-500-and-50-rankings', 'galavante-group', 'yoga-practice-manual', 'merrill-lynch-factbook', 'mainscreen-filemaker-pro'),
+    'caption_title' => array('pronq by HP Website Project','Car And Driver Model Super Page Website Project', 'Car And Driver Content Hub Website Project', 'Car And Driver Menu Navigation Website Project', 'Wealth Management Resource Network Website Project', 'Industry Week 100, 500, and 50 Rankings Website Project', 'The Galavante Group Website Project', 'Yoga Practice Manual', 'Merrill Lynch Factbook', 'Merrill Lynch Mainscreen Print Procurement database solution'),
+    'project_type' => array('Web', 'Web', 'Web', 'Web', 'Web', 'Web', 'Web', 'Print', 'Print', 'Print'),
 
-    <!-- portofolio items -->
-      <ul id="portfolio-items-one-fourth"  class="portfolio-items clearfix">
+  )); 
+}
 
-        <!-- portofolio item -->
-        <li class="item web" data-id="id-211" data-type="web">
-          <div class="portfolio-item ">
-            <div class="item-content">
-              <div class="link-holder">
-                <div class="portfolio-item-holder">
-                  <div class="portfolio-item-hover-content">
-                    <a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/portfolio-pronq.jpg" title="pronq by HP" data-rel="prettyPhoto" class="zoom">
-                      <img src="" alt="pronq by HP" /></a>
-                    <img src="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/pt-pronq-image.jpg" class="portfolio-img" width="220" alt="This is the title" />
-                    <div class="hover-options"></div>
-                  </div>
-                </div>
-                <div class="description">
-                  <p><a href="' . base_path() . 'node/14" title="pronq by HP Website Project"> pronq by HP Website Project</a></p>
-                  <span>Web</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <!--EOF: portofolio item -->
-
-        <!-- portofolio item -->
-        <li class="item web" data-id="id-128" data-type="web">
-          <div class="portfolio-item ">
-            <div class="item-content">
-              <div class="link-holder">
-                <div class="portfolio-item-holder">
-                  <div class="portfolio-item-hover-content">
-                    <a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/portfolio-candd-msp.jpg" title="Car And Driver Model Super Page" data-rel="prettyPhoto" class="zoom">
-                      <img src="" alt="Car And Driver Model Super Page" /></a>
-                    <img src="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/pt-candd-msp-image.jpg" alt=""  class="portfolio-img" width="220" />
-                    <div class="hover-options"></div>
-                  </div>
-                </div>
-                <div class="description">
-                  <p><a href="' . base_path() . 'node/15" title="Car And Driver Model Super Page Website Project"> Car And Driver Model Super Page Website Project</a></p>
-                  <span>Web</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <!--EOF: portofolio item -->
-
-        <!-- portofolio item -->
-        <li class="item web" data-id="id-209" data-type="web">
-          <div class="portfolio-item ">
-            <div class="item-content">
-              <div class="link-holder">
-                <div class="portfolio-item-holder">
-                  <div class="portfolio-item-hover-content">
-                    <a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/portfolio-candd-contenthub.jpg" title="Car And Driver Content Hub" data-rel="prettyPhoto" class="zoom">
-                      <img src="" alt="Car And Driver Content Hub" /></a>
-                    <img src="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/pt-candd-contenthub-image.jpg" alt=""  class="portfolio-img" width="220" />
-                    <div class="hover-options"></div>
-                  </div>
-                </div>
-                <div class="description">
-                  <p><a href="' . base_path() . 'node/16" title="Car And Driver Content Hub Website Project"> Car And Driver Content Hub Website Project</a></p>
-                  <span>Web</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <!--EOF: portofolio item -->
-
-        <!-- portofolio item -->
-        <li class="item web" data-id="id-215" data-type="web">
-          <div class="portfolio-item ">
-            <div class="item-content">
-              <div class="link-holder">
-                <div class="portfolio-item-holder">
-                  <div class="portfolio-item-hover-content">
-                    <a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/portfolio-candd-menu-nav.jpg" title="Car And Driver Menu Navigation" data-rel="prettyPhoto" class="zoom">
-                      <img src="" alt="Car And Driver Menu Navigation" /></a>
-                    <img src="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/pt-candd-menu-nav-image.jpg" alt=""  class="portfolio-img" width="220" />
-                    <div class="hover-options"></div>
-                  </div>
-                </div>
-                <div class="description">
-                  <p><a href="' . base_path() . 'node/15" title="Car And Driver Menu Navigation Website Project"> Car And Driver Menu Navigation Website Project</a></p>
-                  <span>Web</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <!--EOF: portofolio item -->
-
-        <!-- portofolio item -->
-        <li class="item web" data-id="id-39" data-type="web">
-          <div class="portfolio-item ">
-            <div class="item-content">
-              <div class="link-holder">
-                <div class="portfolio-item-holder">
-                  <div class="portfolio-item-hover-content">
-                    <a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/portfolio-wm-resource-network.jpg" title="Wealth Management Resource Network Website Project" data-rel="prettyPhoto" class="zoom">
-                      <img src="" alt="Wealth Management Resource Network" /></a>
-                    <img src="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/pt-wm-resource-network.jpg" alt=""  class="portfolio-img" width="220" />
-                    <div class="hover-options"></div>
-                  </div>
-                </div>
-                <div class="description">
-                  <p><a href="' . base_path() . 'node/17" title="Wealth Management Resource Network Website Project">Wealth Management Resource Network Website Project</a></p>
-                  <span>Web</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <!--EOF: portofolio item -->
-
-        <!-- portofolio item -->
-        <li class="item web" data-id="id-213" data-type="web">
-          <div class="portfolio-item ">
-            <div class="item-content">
-              <div class="link-holder">
-                <div class="portfolio-item-holder">
-                  <div class="portfolio-item-hover-content">
-                    <a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/portfolio-iweek-1000.jpg" title="Information Week 1000, 500, and 50" data-rel="prettyPhoto" class="zoom">
-                      <img src="" alt="Information Week 1000, 500, and 50" /></a>
-                    <img src="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/pt-iweek-1000.jpg" alt=""  class="portfolio-img" width="220" />
-                    <div class="hover-options"></div>
-                  </div>
-                </div>
-                <div class="description">
-                  <p><a href="' . base_path() . 'node/18" title="Information Week 1000, 500, and 50 Website Project">Information Week 1000, 500, and 50 Website Project</a></p>
-                  <span>Web</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <!--EOF: portofolio item -->
-
-        <!-- portofolio item -->
-        <li class="item web" data-id="id-281" data-type="web">
-          <div class="portfolio-item ">
-            <div class="item-content">
-              <div class="link-holder">
-                <div class="portfolio-item-holder">
-                  <div class="portfolio-item-hover-content">
-                    <a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/portfolio-galavante.jpg" title="Galavante Website" data-rel="prettyPhoto" class="zoom">
-                      <img src="" alt="Galavante Website" /></a>
-                    <img src="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/pt-galavante.jpg" alt=""  class="portfolio-img" width="220" />
-                    <div class="hover-options"></div>
-                  </div>
-                </div>
-                <div class="description">
-                  <p><a href="' . base_path() . 'node/14" title="Galavante Website Project">Galavante Website Project</a></p>
-                  <span>Web</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <!--EOF: portofolio item -->
-
-        <!-- portofolio item -->
-        <li class="item illustration" data-id="id-280" data-type="illustration">
-          <div class="portfolio-item ">
-            <div class="item-content">
-              <div class="link-holder">
-                <div class="portfolio-item-holder">
-                  <div class="portfolio-item-hover-content">
-                    <a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/portfolio-ypm-cover.jpg" title="Yoga Practice Manual" data-rel="prettyPhoto" class="zoom">
-                      <img src="" alt="Yoga Practice Manual" /></a>
-                    <img src="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/pt-ypm.jpg" alt=""  class="portfolio-img" width="220" />
-                    <div class="hover-options"></div>
-                  </div>
-                </div>
-                <div class="description">
-                  <p><a href="' . base_path() . 'node/17" title="Yoga Practice Manual">Yoga Practice Manual</a></p>
-                  <span>Print</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <!--EOF: portofolio item -->
-
-        <!-- portofolio item -->
-        <li class="item illustration" data-id="id-282" data-type="illustration">
-          <div class="portfolio-item ">
-            <div class="item-content">
-              <div class="link-holder">
-                <div class="portfolio-item-holder">
-                  <div class="portfolio-item-hover-content">
-                    <a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/portfolio-fb2007.jpg" title="Merrill Lynch Factbook"  alt="Merrill Lynch Factbook" data-rel="prettyPhoto" class="zoom">
-                      <img src="" alt="Merrill Lynch Factbook" /></a>
-                    <img src="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/pt-fb2007.jpg" title="Merrill Lynch Factbook" alt="Merrill Lynch Factbook"  class="portfolio-img" width="220" />
-                    <div class="hover-options"></div>
-                  </div>
-                </div>
-                <div class="description">
-                  <p><a href="' . base_path() . 'node/24" title="Merrill Lynch Factbook">Merrill Lynch Factbook</a></p>
-                  <span>Print</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <!--EOF: portofolio item -->
-        
-
-        <!-- portofolio item -->
-        <li class="item illustration" data-id="id-283" data-type="illustration">
-          <div class="portfolio-item ">
-            <div class="item-content">
-              <div class="link-holder">
-                <div class="portfolio-item-holder">
-                  <div class="portfolio-item-hover-content">
-                    <a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/portfolio-mainscreen.jpg" title="Mainscreen Print Procurement Database System"  alt="Merrill Lynch Mainscreen Print Procurement database solution" data-rel="prettyPhoto" class="zoom">
-                      <img src="" alt="Merrill Lynch Mainscreen Print Procurement Database System" /></a>
-                    <img src="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/pt-mainscreen.jpg" title="Merrill Lynch Mainscreen Print Procurement database"  class="portfolio-img" width="220" />
-                    <div class="hover-options"></div>
-                  </div>
-                </div>
-                <div class="description">
-                  <p><a href="' . base_path() . 'node/25" title="Merrill Lynch Factbook">Merrill Lynch Mainscreen Print Procurement database solution</a></p>
-                  <span>Print</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <!--EOF: portofolio item -->
-        
-      </ul>
-      <!--EOF: portofolio items -->
-
-    </div>
-    <!--EOF: portofolio container -->'
-  ;
+// Register the tpl for the above block(s)
+function full_portfolio_theme() {
+  $module_path = drupal_get_path('module', 'full_portfolio');
+  $base = array(
+    'path' => "$module_path/theme",
+  );
+  return array(
+    'full_portfolio' => $base + array(
+      'template' => 'full-portfolio-block',
+      'variables' => array(
+        'keys' => NULL,
+        'class_and_data_type' => NULL,
+        'data_id' => NULL,
+        'portfolio_image' => NULL,
+        'alt_title' => NULL,
+        'thumbnail_image' => NULL,
+        'which_node' => NULL,
+        'caption_title' => NULL,
+        'project_type' => NULL,
+      ),
+    ),
+  );
 }
