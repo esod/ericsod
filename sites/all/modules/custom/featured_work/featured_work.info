@@ -1,0 +1,6 @@
+name = Featured Work
+description = A content block of Featured Work.
+core = 7.x
+package = Custom Modules
+files[] = featured_work.module
+version = 7.x-1.0

@@ -1,0 +1,20 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the bottom_content module.
+ */
+
+/**
+ * Enables the module.
+ */
+//function featured_work_update_7000() {
+//  module_enable(array('featured_work'), FALSE);
+//}
+function featured_work_update_7000() {
+
+    $modules = array('featured_work'); // Array of module names
+    $enable_dependencies = TRUE; // Whether or not to enable dependant modules
+
+    module_enable($modules, $enable_dependencies);
+
+}

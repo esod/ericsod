@@ -1,0 +1,85 @@
+<?php
+
+/**
+ * @file
+ * A content block of Featured Work.
+ */
+
+/**
+ * Implements hook_block_info().
+ */
+function featured_work_block_info() {
+  $blocks = array();
+  
+  $blocks['featured_work'] = array(
+    'info' => t('Custom Modules / Featured Work'),
+  );
+  
+  return $blocks;
+}
+
+/**
+ * Implementation of hook_block_view().
+ */
+function featured_work_block_view($delta = '') {
+  // Create an empty block.
+  $block = array(
+    'subject' => '',
+    'content' => '',
+  );
+
+  switch ($delta) {
+    
+    case 'featured_work':
+      $block['subject'] = t('');
+      $block['content'] = featured_work();
+      break;
+  }
+  
+  return $block;
+}
+
+/**
+ * custom html block
+ * @return string
+ */
+function featured_work() {
+
+  // Send featured_work data objects to featured-work-block.tpl.php which is registered below
+  return theme('featured_work', array(
+    'keys' => array('u1','u2','u3','u4','u5','u6','u7','u8'),
+    'portfolio_image' => array('portfolio-pronq.jpg','portfolio-candd-msp.jpg', 'portfolio-candd-contenthub.jpg', 'portfolio-candd-menu-nav.jpg', 'portfolio-wm-resource-network.jpg', 'portfolio-iweek-1000.jpg', 'portfolio-galavante.jpg', 'portfolio-ypm-cover.jpg'),
+    'alt_title' => array('pronq by HP','Car And Driver Model Super Page', 'Car And Driver Content Hub', 'Car And Driver Menu Navigation', 'Wealth Management Resource Network', 'Information Week 1000, 500, and 50', 'The Galavante Group', 'Yoga Practice Manual'),
+    'thumbnail_image' => array('pt-pronq-image.jpg','pt-candd-msp-image.jpg', 'pt-candd-contenthub-image.jpg', 'pt-candd-menu-nav-image.jpg', 'pt-wm-resource-network.jpg', 'pt-iweek-1000.jpg', 'pt-galavante.jpg', 'pt-ypm.jpg'),
+    //'which_node' => array('node/14','node/15', 'node/21', 'node/17', 'node/18', 'node/22', 'node/23', 'node/16'),
+    'which_node' => array('pronq-hp','car-and-driver-model-super-page', 'car-and-driver-content-hub', 'car-and-drivers-menu-navigation', 'wealth-management-resource-network', 'industry-week-100-500-and-50-rankings', 'galavante-group', 'yoga-practice-manual'),
+    'caption_title' => array('pronq by HP Website Project','Car And Driver Model Super Page Website Project', 'Car And Driver Content Hub Website Project', 'Car And Driver Menu Navigation Website Project', 'Wealth Management Resource Network Website Project', 'Industry Week 100, 500, and 50 Rankings Website Project', 'The Galavante Group Website Project', 'Yoga Practice Manual'),
+    'project_type' => array('Web', 'Web', 'Web', 'Web', 'Web', 'Web', 'Web', 'Print'),
+
+  ));
+  
+}
+
+// Register the tpl for the above block(s)
+function featured_work_theme() {
+  $module_path = drupal_get_path('module', 'featured_work');
+  $base = array(
+    'path' => "$module_path/theme",
+  );
+  return array(
+    'featured_work' => $base + array(
+      'template' => 'featured-work-block',
+      'variables' => array(
+          'keys' => NULL,
+          'portfolio_image' => NULL,
+          'alt_title' => NULL,
+          'thumbnail_image' => NULL,
+          'which_node' => NULL,
+          'caption_title' => NULL,
+          'project_type' => NULL,
+        ),
+    ),
+  );
+
+
+}
