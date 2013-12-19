@@ -10,3 +10,9 @@
   margin: 2em 0 0 0;
   font-family: 'Dosis',Arial,Verdana,serif;
 }
+.custom-logo {
+  background-image: url("../images/logo.png");
+  padding-bottom: 50px;
+  display: block;
+  background-repeat: no-repeat;
+}

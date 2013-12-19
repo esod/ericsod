@@ -222,6 +222,12 @@ pre, code {
 /* ---------------------------------------------------------------------- */
 
 
+.custom-logo {
+  background-image: url("../../../images/color-schemes/light-yellow/logo.png");
+  padding-bottom: 50px;
+  display: block;
+  background-repeat: no-repeat;
+}
 .flex-control-nav li a {
     background-image: url("../../../images/color-schemes/light-yellow/bg_control_nav.png");
 }

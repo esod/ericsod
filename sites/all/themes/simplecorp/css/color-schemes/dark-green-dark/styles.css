@@ -320,6 +320,12 @@ ul.primary li a:hover {
 /* ---------------------------------------------------------------------- */
 
 
+.custom-logo {
+  background-image: url("../../../images/color-schemes/dark-green-dark/logo.png");
+  padding-bottom: 50px;
+  display: block;
+  background-repeat: no-repeat;
+}
 .flex-control-nav li a {
     background-image: url("../../../images/color-schemes/dark-green-dark/bg_control_nav.png");
 }

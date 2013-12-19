@@ -21,10 +21,11 @@
             <div id="header" class="clearfix">
                 
                 <!-- #header-left -->
-                <div id="header-left" class="one-third"> 
+                <div id="header-left" class="one-third">
                     
                     <?php if ($logo): ?>
-                    <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"> <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+										<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="custom-logo" alt="<?php print t('Home'); ?>" /> </a>
+
                     <?php endif; ?>
 
                     <?php if ($site_name || $site_slogan): ?>
