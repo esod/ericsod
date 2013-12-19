@@ -1,0 +1,6 @@
+name = Inner Page Images
+description = Inner page images for Blog and Blog Entries.
+core = 7.x
+package = Custom Modules
+files[] = inner_page_images.module
+version = 7.x-1.0

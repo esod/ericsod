@@ -60,7 +60,9 @@ function full_portfolio() {
   )); 
 }
 
-// Register the tpl for the above block(s)
+/**
+ * Implements hook_theme().
+ */
 function full_portfolio_theme() {
   $module_path = drupal_get_path('module', 'full_portfolio');
   $base = array(

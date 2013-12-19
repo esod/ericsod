@@ -1,0 +1,85 @@
+<?php
+
+/**
+ * @file
+ * Inner page images for Blog and Blog Entries.
+ */
+
+/**
+ * Implements hook_block_info().
+ */
+function inner_page_images_block_info() {
+  $blocks = array();
+  
+  $blocks['inner_page_image_blog'] = array(
+    'info' => t('Custom Modules / Inner Page Image (Blog)'),
+  );
+  
+  $blocks['inner_page_image_blog_entries'] = array(
+    'info' => t('Custom Modules / Inner Page Image (Blog Entries)'),
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implementation of hook_block_view().
+ */
+function inner_page_images_block_view($delta = '') {
+  // Create an empty block.
+  $block = array(
+    'subject' => '',
+    'content' => '',
+  );
+
+  switch ($delta) {
+    
+    case 'inner_page_image_blog':
+      $block['subject'] = t('');
+      $block['content'] = inner_page_image_blog();
+      break;
+      
+    case 'inner_page_image_blog_entries':
+      $block['subject'] = t('');
+      $block['content'] = inner_page_image_blog_entries();
+      break;
+  }
+  
+  return $block;
+}
+
+/**
+ * custom html block
+ * @return string
+ */
+function inner_page_image_blog() {
+  return theme('inner_page_image_blog', array()); 
+}
+
+/**
+ * custom html block
+ * @return string
+ */
+function inner_page_image_blog_entries() {
+  return theme('inner_page_image_blog_entries', array()); 
+}
+
+/**
+ * Implements hook_theme().
+ */
+function inner_page_images_theme() {
+  $module_path = drupal_get_path('module', 'inner_page_images');
+  $base = array(
+    'path' => "$module_path/theme",
+  );
+  return array(
+    'inner_page_image_blog' => $base + array(
+      'template' => 'inner-page-image-blog-block',
+    ),
+    'inner_page_image_blog_entries'  => $base + array(
+      'template' => 'inner-page-image-blog-entries-block',
+    ),
+  );
+
+
+}

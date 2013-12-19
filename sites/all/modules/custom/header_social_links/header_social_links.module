@@ -12,7 +12,7 @@ function header_social_links_block_info() {
   $blocks = array();
   
   $blocks['header_social_links'] = array(
-    'info' => t('Custom Modules / Header Social LInks'),
+    'info' => t('Custom Modules / Header Social Links'),
   );
   
   return $blocks;
