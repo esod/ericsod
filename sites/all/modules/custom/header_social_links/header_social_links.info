@@ -1,0 +1,6 @@
+name = Header Social Links
+description = A content block for the Header Social links.
+core = 7.x
+package = Custom Modules
+files[] = header_social_links.module
+version = 7.x-1.0
