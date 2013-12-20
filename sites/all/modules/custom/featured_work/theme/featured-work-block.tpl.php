@@ -25,26 +25,26 @@
       $caption_title = $value['caption_title'];
       $project_type = $value['project_type'];
   
-      $output = '<!-- PROJECT ITEM STARTS -->';
-      $output .= '<li>';
-      $output .= '<div class="item-content">';
-      $output .= '<div class="link-holder">';
-      $output .= '<div class="portfolio-item-holder">';
+      $output = '<!-- PROJECT ITEM STARTS -->'."\n";
+      $output .= '<li>'."\n";
+      $output .= '<div class="item-content">'."\n";
+      $output .= '<div class="link-holder">'."\n";
+      $output .= '<div class="portfolio-item-holder">'."\n";
       $output .= '<div class="portfolio-item-hover-content">';
-      $output .= '<a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/'.$portfolio_image.'" alt="'.$alt_title.'" title="'.$alt_title.'" data-rel="prettyPhoto" class="zoom">';
-      $output .= '<img src="" alt="'.$alt_title.'" /></a>';
-      $output .= '<img src="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/'.$thumbnail_image.'" alt="'.$alt_title.'" width="220"  class="portfolio-img" />';
-      $output .= '<div class="hover-options"></div>';
+      $output .= '<a href="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/'.$portfolio_image.'" alt="'.$alt_title.'" title="'.$alt_title.'" data-rel="prettyPhoto" class="zoom">'."\n";
+      $output .= '<img src="" alt="'.$alt_title.'" /></a>'."\n";
+      $output .= '<img src="' . base_path() . drupal_get_path('theme', 'simplecorp') . '/images/sampleimages/'.$thumbnail_image.'" alt="'.$alt_title.'" width="220"  class="portfolio-img" />'."\n";
+      $output .= '<div class="hover-options"></div>'."\n";
+      $output .= '</div>'."\n";
       $output .= '</div>';
-      $output .= '</div>';
-      $output .= '<div class="description">';
-      $output .= '<p><a href="' . base_path() . $which_node . '" title="title"> ' . $caption_title . '</a></p>';
-      $output .= '<span>'.$project_type.'</span>';
-      $output .= '</div>';
-      $output .= '</div>';
-      $output .= '</div>';
-      $output .= '</li>';
-      $output .= '<!-- PROJECT ITEM ENDS -->';
+      $output .= '<div class="description">'."\n";
+      $output .= '<p><a href="' . base_path() . $which_node . '" title="title"> ' . $caption_title . '</a></p>'."\n";
+      $output .= '<span>'.$project_type.'</span>'."\n";
+      $output .= '</div>'."\n";
+      $output .= '</div>'."\n";
+      $output .= '</div>'."\n";
+      $output .= '</li>'."\n";
+      $output .= '<!-- PROJECT ITEM ENDS -->'."\n";
       
       print $output;
     }

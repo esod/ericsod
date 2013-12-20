@@ -127,68 +127,6 @@
                 <div class="container clearfix"><?php print render($page['highlighted']); ?></div>
                 <?php endif; ?>
 
-                <?php if (theme_get_setting('highlighted_display','simplecorp')): ?>
-                        
-					<?php if ($is_front): ?>  
-    
-                    <div class="container clearfix">
-                          
-                        <!--featured-item -->
-                        <div class="one-half">
-                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/featured-img-01.png" class="img-align-left" alt="" />
-                            <h3>Awesome Features</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                            <div class="readmore">
-                                <a href="#">Read More</a>
-                            </div>
-                        </div>
-                        <!--EOF: featured-item -->
-    
-                        <!--featured-item -->
-                        <div class="one-half last">
-                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/featured-img-02.png" class="img-align-left" alt="" />
-                            <h3>Browser Compatibility</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                            <div class="readmore">
-                                <a href="#">Read More</a>
-                            </div>
-                        </div>
-                        <!--EOF: featured-item -->              
-    
-                    </div> 
-                  
-                    <div class="container clearfix">
-    
-                        <!--featured-item -->
-                        <div class="one-half">
-                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/featured-img-03.png" class="img-align-left" alt="" />
-                            <h3>Works on Mobile Devices</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                            <div class="readmore">
-                                <a href="#">Read More</a>
-                            </div>
-                        </div>
-                        <!--EOF: featured-item -->              
-    
-                        <!--featured-item -->
-                        <div class="one-half last">
-                            <img src="<?php print base_path() . drupal_get_path('theme', 'simplecorp') ;?>/images/sampleimages/featured-img-04.png" class="img-align-left" alt="" />
-                            <h3>Full Documentation</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                            <div class="readmore">
-                                <a href="#">Read More</a>
-                            </div>
-                        </div>
-                        <!--EOF: featured-item -->   
-                    
-                    <div class="horizontal-line"> </div>
-    
-                    </div>
-                       
-                    <?php endif; ?>
-
-                <?php endif; ?>  
-
             </div>
             <!-- EOF: #featured -->
             

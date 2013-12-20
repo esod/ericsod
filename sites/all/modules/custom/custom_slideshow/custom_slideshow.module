@@ -44,10 +44,18 @@ function custom_slideshow_block_view($delta = '') {
  * @return string
  */
 function custom_slideshow() {
-  return theme('custom_slideshow', array()); 
+
+  // Send custom_slideshow data objects to custom-slideshow-block.tpl.php which is registered below
+  return theme('custom_slideshow', array(
+    'keys' => array('u1','u2','u3'),
+    'slideshow_image' => array('img1.jpg', 'img2.jpg', 'img3.jpg'),
+    'alt_title' => array('img1','img2', 'img3'),
+    'which_node' => array('node/7','node/6', 'node/5'),
+    //'which_node' => array('pronq-hp','car-and-driver-model-super-page', 'car-and-driver-content-hub', 'car-and-drivers-menu-navigation', 'wealth-management-resource-network', 'industry-week-100-500-and-50-rankings', 'galavante-group', 'yoga-practice-manual'),
+    'caption' => array('foo', 'bar', 'baz'),
+
+  )); 
 }
-
-
 /**
  * Implements hook_theme().
  */
@@ -59,6 +67,13 @@ function custom_slideshow_theme() {
   return array(
     'custom_slideshow' => $base + array(
       'template' => 'custom-slideshow-block',
+      'variables' => array(
+        'keys' => NULL,
+        'slideshow_image' => NULL,
+        'alt_title' => NULL,
+        'which_node' => NULL,
+        'caption' => NULL,
+      ),
     ),
   );
 }
