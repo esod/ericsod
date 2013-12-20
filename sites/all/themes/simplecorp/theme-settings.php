@@ -107,13 +107,6 @@ function simplecorp_form_system_theme_settings_alter(&$form, &$form_state) {
         '#collapsed' => TRUE,
     );
 
-    $form['mtt_settings']['tabs']['plugins']['header_tooltip']['social_icons_display'] = array(
-        '#type' => 'checkbox',
-        '#title' => t('Show Social Icons'),
-        '#description'   => t('Use the checkbox to enable or disable the Social Icons inside the header [<em>simplecorp/page.tpl.php</em>].'),
-        '#default_value' => theme_get_setting('social_icons_display','simplecorp'),
-    );
-
     $form['mtt_settings']['tabs']['plugins']['header_tooltip']['header_tooltip_js'] = array(
         '#type' => 'checkbox',
         '#title' => t('Include javascript library for the Social Icons Tooltips'),
@@ -140,13 +133,6 @@ function simplecorp_form_system_theme_settings_alter(&$form, &$form_state) {
         '#title' => t('Front-page Slideshow'),
         '#collapsible' => TRUE,
         '#collapsed' => TRUE,
-    );
-
-    $form['mtt_settings']['tabs']['plugins']['slideshow']['slideshow_display'] = array(
-        '#type' => 'checkbox',
-        '#title' => t('Show Slideshow'),
-        '#description'   => t('Use the checkbox to enable or disable the front-page Slideshow [<em>simplecorp/page.tpl.php</em>].'),
-        '#default_value' => theme_get_setting('slideshow_display','simplecorp'),
     );
 
     $form['mtt_settings']['tabs']['plugins']['slideshow']['slideshow_js'] = array(
@@ -197,32 +183,11 @@ function simplecorp_form_system_theme_settings_alter(&$form, &$form_state) {
         '#default_value' => theme_get_setting('slideshow_touch','simplecorp'),
     );
 
-    $form['mtt_settings']['tabs']['plugins']['highlighted'] = array(
-        '#type' => 'fieldset',
-        '#title' => t('Front-page Featured Content'),
-        '#collapsible' => TRUE,
-        '#collapsed' => TRUE,
-    );
-
-    $form['mtt_settings']['tabs']['plugins']['highlighted']['highlighted_display'] = array(
-        '#type' => 'checkbox',
-        '#title' => t('Show Featured content'),
-        '#description'   => t('Use the checkbox to enable or disable the front-page Featured content [<em>simplecorp/page.tpl.php</em>].'),
-        '#default_value' => theme_get_setting('highlighted_display','simplecorp'),
-    );
-
     $form['mtt_settings']['tabs']['plugins']['carousel'] = array(
         '#type' => 'fieldset',
         '#title' => t('Front-page Carousel'),
         '#collapsible' => TRUE,
         '#collapsed' => TRUE,
-    );
-
-    $form['mtt_settings']['tabs']['plugins']['carousel']['carousel_display'] = array(
-        '#type' => 'checkbox',
-        '#title' => t('Show Carousel'),
-        '#description'   => t('Use the checkbox to enable or disable the front-page Carousel [<em>page.tpl.php</em>].'),
-        '#default_value' => theme_get_setting('carousel_display','simplecorp'),
     );
 
     $form['mtt_settings']['tabs']['plugins']['carousel']['carousel_js'] = array(
