@@ -4,6 +4,8 @@ description = A flexible responsive theme with many regions supported by <a href
 version = VERSION
 core = 7.x
 
+; STYLESHEETS
+;----------------------------------------------------
 stylesheets[all][] = css/main-css.css
 stylesheets[all and (min-width: 768px) and (max-width: 959px)][] = css/768.css
 stylesheets[all and (min-width: 480px) and (max-width: 767px)][] = css/480.css
@@ -12,7 +14,8 @@ stylesheets[all][] = css/normalize.css
 stylesheets[all][] = css/plugins/flexslider.css
 stylesheets[all][] = css/local.css
 
-
+; REGIONS
+;----------------------------------------------------
 regions[header] = Header
 regions[navigation] = Navigation
 regions[top_content] = Top Content
@@ -31,7 +34,8 @@ regions[help] = Help
 regions[page_top] = Page top
 regions[page_bottom] = Page bottom
 
-
+; SETTINGS
+;----------------------------------------------------
 settings[breadcrumb_display]= 1
 settings[breadcrumb_separator]= '/'
 settings[main_menu_custom_js]= 1

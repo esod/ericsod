@@ -78,6 +78,14 @@
 
         <div id="content" class="clearfix">
 
+            <?php if ($messages):?>
+            <!--messages -->
+            <div class="container clearfix">
+            <?php print $messages; ?>
+            </div>
+            <!--EOF: messages -->        
+            <?php endif; ?>
+
             <?php if ($page['top_content']): ?>
             <!-- #top-content -->
             <div id="top-content" class="container clearfix">
@@ -110,14 +118,6 @@
             <?php print $breadcrumb; ?>
             </div>
             <!-- EOF: #breadcrumb -->
-            <?php endif; ?>
-
-            <?php if ($messages):?>
-            <!--messages -->
-            <div class="container clearfix">
-            <?php print $messages; ?>
-            </div>
-            <!--EOF: messages -->        
             <?php endif; ?>
 
             <!--#featured -->

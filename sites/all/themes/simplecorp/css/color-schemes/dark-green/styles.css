@@ -53,6 +53,10 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: #34B489; 
 }
 
+#footer-bottom ul.menu li a.active {
+    color: #34B489;
+}
+
 .colored,
 .flex-caption h3, 
 .intro-page h2 strong, 

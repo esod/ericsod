@@ -1,0 +1,6 @@
+name = Miscellaneous blocks
+description = Miscellaneous, mostly image blocks, that are better placed in a module.
+core = 7.x
+package = Custom Modules
+files[] = miscellaneous_blocks.module
+version = 7.x-1.0

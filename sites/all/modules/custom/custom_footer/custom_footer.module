@@ -1,0 +1,127 @@
+<?php
+
+/**
+ * @file
+ * Custom Footer Blocks
+ */
+
+/**
+ * Implements hook_block_info().
+ */
+function custom_footer_block_info() {
+  $blocks = array();
+  
+  $blocks['footer_first'] = array(
+    'info' => t('Custom Modules / Footer First'),
+  );
+  
+  $blocks['footer_second'] = array(
+    'info' => t('Custom Modules / Footer Second'),
+  );
+
+  $blocks['footer_third'] = array(
+    'info' => t('Custom Modules / Footer Third'),
+  );
+
+  $blocks['footer_fourth'] = array(
+    'info' => t('Custom Modules / Footer Fourth'),
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implementation of hook_block_view().
+ */
+function custom_footer_block_view($delta = '') {
+  // Create an empty block.
+  $block = array(
+    'subject' => '',
+    'content' => '',
+  );
+
+  switch ($delta) {
+    
+    case 'footer_first':
+      $block['subject'] = t('');
+      $block['content'] = footer_first();
+      break;
+      
+    case 'footer_second':
+      $block['subject'] = t('');
+      $block['content'] = footer_second();
+      break;
+
+    case 'footer_third':
+      $block['subject'] = t('');
+      $block['content'] = footer_third();
+      break;
+
+    case 'footer_fourth':
+      $block['subject'] = t('');
+      $block['content'] = footer_fourth();
+      break;
+  }
+  
+  return $block;
+}
+
+/**
+ * custom html block
+ * @return string
+ */
+function footer_first() {
+  return theme('footer_first', array()); 
+}
+
+/**
+ * custom html block
+ * @return string
+ */
+function footer_second() {
+  return theme('footer_second', array()); 
+}
+
+/**
+ * custom html block
+ * @return string
+ */
+
+function footer_third() {
+  return theme('footer_third', array());
+}
+
+/**
+ * custom html block
+ * @return string
+ */
+
+function footer_fourth() {
+  return theme('footer_fourth', array());
+}
+
+/**
+ * Implements hook_theme().
+ */
+function custom_footer_theme() {
+  $module_path = drupal_get_path('module', 'custom_footer');
+  $base = array(
+    'path' => "$module_path/theme",
+  );
+  return array(
+    'footer_first' => $base + array(
+      'template' => 'footer_first_block',
+    ),
+    'footer_second' => $base + array(
+      'template' => 'footer_second_block',
+    ),
+    'footer_third' => $base + array(
+      'template' => 'footer_third_block',
+    ),
+    'footer_fourth' => $base + array(
+      'template' => 'footer_fourth_block',
+    ),
+  );
+
+
+}
