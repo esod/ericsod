@@ -1,0 +1,65 @@
+<?php
+
+/**
+ * @file
+ * A custom client-side slideshow.
+ */
+
+/**
+ * Implements hook_block_info().
+ */
+function custom_slideshow_block_info() {
+  $blocks = array();
+  
+  $blocks['custom_slideshow'] = array(
+    'info' => t('Custom Modules / Custom Slideshow'),
+  );
+  
+  return $blocks;
+}
+
+/**
+ * Implementation of hook_block_view().
+ */
+function custom_slideshow_block_view($delta = '') {
+  // Create an empty block.
+  $block = array(
+    'subject' => '',
+    'content' => '',
+  );
+
+  switch ($delta) {
+    
+    case 'custom_slideshow':
+      $block['subject'] = t('');
+      $block['content'] = custom_slideshow();
+      break;
+    }
+  
+  return $block;
+}
+
+/**
+ * custom html block
+ * @return string
+ */
+function custom_slideshow() {
+  return theme('custom_slideshow', array()); 
+}
+
+
+/**
+ * Implements hook_theme().
+ */
+function custom_slideshow_theme() {
+  $module_path = drupal_get_path('module', 'custom_slideshow');
+  $base = array(
+    'path' => "$module_path/theme",
+  );
+  return array(
+    'custom_slideshow' => $base + array(
+      'template' => 'custom-slideshow-block',
+    ),
+  );
+
+}

@@ -310,29 +310,29 @@ jQuery(document).ready(function() { jQuery(".backtotop").click(function(){ jQuer
 /**
  * Add Javascript for jTweetsAnywhere plugin
  */
-if (theme_get_setting('jtweetanywhere_js','simplecorp')):
-
-	drupal_add_js(drupal_get_path('theme', 'simplecorp') .'/js/plugins/jquery.jtweetsanywhere-1.3.1.js');
-	drupal_add_css(drupal_get_path('theme', 'simplecorp') . '/css/plugins/jquery.jtweetsanywhere-1.3.1.css');
-
-	//Initialize slideshow using theme settings
-	$jtweetanywhere_id=theme_get_setting('jtweetanywhere_id','simplecorp');
-
-	drupal_add_js('
-		jQuery(document).ready(function($) {
-		    $("#jTweets").jTweetsAnywhere({
-		        username: "'.$jtweetanywhere_id.'",
-		        count: 2,
-		        showTweetFeed: {
-		            showInReplyTo: false,
-		            paging: {
-		                mode: "none"
-		            }
-		        }
-		    });
-		});',	array('type' => 'inline', 'scope' => 'footer', 'weight' => 16)
-	);
-endif;	
+//if (theme_get_setting('jtweetanywhere_js','simplecorp')):
+//
+//	drupal_add_js(drupal_get_path('theme', 'simplecorp') .'/js/plugins/jquery.jtweetsanywhere-1.3.1.js');
+//	drupal_add_css(drupal_get_path('theme', 'simplecorp') . '/css/plugins/jquery.jtweetsanywhere-1.3.1.css');
+//
+//	//Initialize slideshow using theme settings
+//	$jtweetanywhere_id=theme_get_setting('jtweetanywhere_id','simplecorp');
+//
+//	drupal_add_js('
+//		jQuery(document).ready(function($) {
+//		    $("#jTweets").jTweetsAnywhere({
+//		        username: "'.$jtweetanywhere_id.'",
+//		        count: 2,
+//		        showTweetFeed: {
+//		            showInReplyTo: false,
+//		            paging: {
+//		                mode: "none"
+//		            }
+//		        }
+//		    });
+//		});',	array('type' => 'inline', 'scope' => 'footer', 'weight' => 16)
+//	);
+//endif;	
 
 
 /**

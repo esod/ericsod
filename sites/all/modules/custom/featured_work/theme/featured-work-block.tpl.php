@@ -1,4 +1,4 @@
-<h3>Featured Work</h3>
+<h3>My Recent Work</h3>
   <ul id="projects-carousel" class="loading">
 
   <?php

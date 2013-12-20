@@ -1,0 +1,6 @@
+name = Custom slideshow
+description = A custom client-side slideshow.
+core = 7.x
+package = Custom Modules
+files[] = custom_slideshow.module
+version = 7.x-1.0
