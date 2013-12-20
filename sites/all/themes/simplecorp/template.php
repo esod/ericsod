@@ -1,51 +1,6 @@
 <?php 
 	
 /**
- * Add javascript files for jquery slideshow.
- */
-if (theme_get_setting('slideshow_js','simplecorp')):
-
-	drupal_add_js(drupal_get_path('theme', 'simplecorp') . '/js/plugins/jquery.flexslider-min.js');
-
-	//Initialize slideshow using theme settings
-	$effect=theme_get_setting('slideshow_effect','simplecorp');
-	$effect_time=theme_get_setting('slideshow_effect_time','simplecorp')*1000;
-	$slideshow_controls=theme_get_setting('slideshow_controls','simplecorp');
-	$slideshow_random=theme_get_setting('slideshow_random','simplecorp');
-	$slideshow_pause=theme_get_setting('slideshow_pause','simplecorp');
-	$slideshow_touch=theme_get_setting('slideshow_touch','simplecorp');
-
-	drupal_add_js('
-		jQuery(document).ready(function($) {
-
-		    $(window).load(function() {
-
-		        $(".flexslider").fadeIn("slow");
-
-		        $(".flexslider").flexslider({
-		            useCSS: false,
-		            animation: "'.$effect.'",
-		            controlNav: '.$slideshow_controls.',
-		            directionNav: '.$slideshow_controls.',
-		            animationLoop: true,
-		            touch: '.$slideshow_touch.',
-		            pauseOnHover: '.$slideshow_pause.',
-		            nextText: "&rsaquo;",
-		            prevText: "&lsaquo;",
-		            keyboard: true,
-		            slideshowSpeed: '.$effect_time.',
-		            randomize: '.$slideshow_random.',
-		            start: function(slider) {
-		                slider.removeClass("loading");
-		            }
-		        });
-		    });
-		});',array('type' => 'inline', 'scope' => 'footer', 'weight' => 5)
-	);
-
-endif;
-
-/**
  * Add javascript files for jquery carousel.
  */
 if (theme_get_setting('carousel_js','simplecorp')):
