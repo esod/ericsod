@@ -665,6 +665,8 @@ ul#projects-carousel li .item-content p { margin: 0; padding: 0; font-weight: 80
 
 ul#projects-carousel li .item-content p a { margin: 0; padding: 0; font-weight: 800; color: #FFF; }
 
+ul#projects-carousel li .item-content p a:hover { color: #333; }
+
 ul#projects-carousel li .item-content span { font-style: italic; color: #FFF; }
 
 ul#projects-carousel li  img { width: 100%; height: auto; padding: 0; margin: 0; }
@@ -932,6 +934,8 @@ ul#portfolio-items-one-fourth li .item-content:hover { background: #9dcedf; }
 ul#portfolio-items-one-fourth li .item-content p { margin: 0; padding: 0; font-weight: 800; color: #FFF; }
 
 ul#portfolio-items-one-fourth li .item-content p a { margin: 0; padding: 0; font-weight: 800; color: #FFF; }
+
+ul#portfolio-items-one-fourth li .item-content p a:hover { color: #333; }
 
 ul#portfolio-items-one-fourth li  .item-content span { font-style: italic; color: #FFF; }
 

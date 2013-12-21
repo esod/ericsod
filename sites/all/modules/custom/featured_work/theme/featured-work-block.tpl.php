@@ -38,7 +38,7 @@
       $output .= '</div>'."\n";
       $output .= '</div>';
       $output .= '<div class="description">'."\n";
-      $output .= '<p><a href="' . base_path() . $which_node . '" title="title"> ' . $caption_title . '</a></p>'."\n";
+      $output .= '<p><a href="' . base_path() . $which_node . '" title="'.$alt_title.'"> ' . $caption_title . '</a></p>'."\n";
       $output .= '<span>'.$project_type.'</span>'."\n";
       $output .= '</div>'."\n";
       $output .= '</div>'."\n";
