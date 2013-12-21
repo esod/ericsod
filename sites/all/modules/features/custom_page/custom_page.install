@@ -1,0 +1,12 @@
+<?php
+/**
+ * @file
+ * Update hooks for custom_page related functions.
+ */
+
+/**
+ * Disables the PHP filter module.
+ */
+function custom_page_update_7000() {
+  module_disable(array('php'), FALSE);
+}
