@@ -101,7 +101,8 @@ function custom_slideshow() {
   // Send custom_slideshow data objects to custom-slideshow-block.tpl.php which is registered below
   return theme('custom_slideshow', array(
     'keys' => array('u1','u2','u3'),
-    'slideshow_image' => array('img1.jpg', 'img2.jpg', 'img3.jpg'),
+    // The original slideshow_images are 940 x 350 px
+    'slideshow_image' => array('portfolio-pronq.jpg','portfolio-candd-msp.jpg', 'portfolio-candd-contenthub.jpg'),
     'alt_title' => array('img1','img2', 'img3'),
     'which_node' => array('node/7','node/6', 'node/5'),
     //'which_node' => array('pronq-hp','car-and-driver-model-super-page', 'car-and-driver-content-hub', 'car-and-drivers-menu-navigation', 'wealth-management-resource-network', 'industry-week-100-500-and-50-rankings', 'galavante-group', 'yoga-practice-manual'),
