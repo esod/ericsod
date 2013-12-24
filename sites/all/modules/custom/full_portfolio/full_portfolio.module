@@ -6,6 +6,20 @@
  */
 
 /**
+ * Implements hook_init().
+ */
+function full_portfolio_init() {
+ 
+ /**
+ * Add Javascript for quicksand plugin
+ */
+  if (theme_get_setting('quicksand_js','simplecorp')):
+    drupal_add_js(drupal_get_path('theme', 'simplecorp') .'/js/plugins/jquery.quicksand.js');
+    drupal_add_js(drupal_get_path('theme', 'simplecorp') .'/js/plugins/quicksand_initialize.js');
+  endif;
+}
+
+/**
  * Implements hook_block_info().
  */
 function full_portfolio_block_info() {

@@ -1,5 +1,5 @@
 name = Custom slideshow
-description = A custom client-side slideshow.
+description = A custom client-side slideshow built for developers.
 core = 7.x
 package = Custom Modules
 files[] = custom_slideshow.module
