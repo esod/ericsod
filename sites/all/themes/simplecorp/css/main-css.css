@@ -1186,7 +1186,9 @@ span.new { position: absolute;  top: 35%; right: 1%; }
 
 input#edit-keys, .page-user input.form-text, .no-sidebars #comment-form input.form-text, .no-sidebars .contact-form input.form-text { width: 50%; }
 
-.contact-form input.form-text { width: 70%; } 
+.contact-form input.form-text { width: 70%; }
+
+.entitytype-personal_contact_form-form input.form-text { width: 70%; }
 
 input#edit-keys { margin-right: 10px; } 
 

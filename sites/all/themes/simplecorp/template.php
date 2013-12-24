@@ -1,84 +1,6 @@
 <?php 
 	
 /**
- * Add javascript files for jquery carousel.
- */
-if (theme_get_setting('carousel_js','simplecorp')):
-
-	drupal_add_js(drupal_get_path('theme', 'simplecorp') . '/js/plugins/jquery.jcarousel.min.js');
-	drupal_add_js(drupal_get_path('theme', 'simplecorp') . '/js/jquery.easing-1.3.min.js');
-
-	//Initialize slideshow using theme settings
-	$carousel_effect_time=theme_get_setting('carousel_effect_time','simplecorp')*1000;
-	$carousel_effect=theme_get_setting('carousel_effect','simplecorp');
-
-	drupal_add_js('
-		jQuery(document).ready(function($) {
-
-		    var currentWindowWidth = jQuery(window).width();
-		    jQuery(window).resize(function() {
-		        currentWindowWidth = jQuery(window).width();
-		    });
-
-		    $(window).load(function() {
-
-		        $("ul#projects-carousel").fadeIn("fast");
-
-		        if (jQuery(".portfolio-item-hover-content").length && jQuery()) {
-		            function hover_effect() {
-		                jQuery(".portfolio-item-hover-content").hover(function() {
-		                    jQuery(this).find("div,a").stop(0, 0).removeAttr("style");
-		                    jQuery(this).find(".hover-options").animate({
-		                        opacity: 0.9
-		                    }, "fast");
-		                    jQuery(this).find("a").animate({
-		                        "top": "60%"
-		                    });
-		                }, function() {
-		                    jQuery(this).find(".hover-options").stop(0, 0).animate({
-		                        opacity: 0
-		                    }, "fast");
-		                    jQuery(this).find("a").stop(0, 0).animate({
-		                        "top": "150%"
-		                    }, "slow");
-		                    jQuery(this).find("a.zoom").stop(0, 0).animate({
-		                        "top": "150%"
-		                    }, "slow");
-		                });
-		            }
-		            hover_effect();
-		        }
-				
-		        (function() {
-		            var jQuerycarousel = jQuery("#projects-carousel");
-		            if (jQuerycarousel.length) {
-		                var scrollCount;
-		                if (jQuery(window).width() < 480) {
-		                    scrollCount = 1;
-		                } else if (jQuery(window).width() < 768) {
-		                    scrollCount = 1;
-		                } else if (jQuery(window).width() < 960) {
-		                    scrollCount = 3;
-		                } else {
-		                    scrollCount = 4;
-		                }
-		                jQuerycarousel.jcarousel({
-		                    animation: '.$carousel_effect_time.',
-		                    easing: "'.$carousel_effect.'",
-		                    scroll: scrollCount,
-		                    initCallback: function() {
-		                        jQuerycarousel.removeClass("loading")
-		                    },
-		                });
-		            }
-		        })();
-		    });
-		});',	array('type' => 'inline', 'scope' => 'footer', 'weight' => 7)
-	);	
-
-endif;
-
-/**
  * Add custom javascript for main menu
  */
 if (theme_get_setting('main_menu_custom_js','simplecorp')):
@@ -160,35 +82,6 @@ if (theme_get_setting('main_menu_custom_js','simplecorp')):
 	);
 endif;
 
-
-/**
- * Add jquery.tipsy.js file for header social icons
- */
-if (theme_get_setting('header_tooltip_js','simplecorp')):
-
-	drupal_add_js(drupal_get_path('theme', 'simplecorp') . '/js/plugins/jquery.tipsy.js');
-	drupal_add_js('
-		jQuery(document).ready(function($) {
-		    if (jQuery().tipsy) {
-		        jQuery("#social-01").tipsy({ gravity: "n" });
-		        jQuery("#social-02").tipsy({ gravity: "n" });
-		        jQuery("#social-03").tipsy({ gravity: "n" });
-		        jQuery("#social-04").tipsy({ gravity: "n" });
-		        jQuery("#social-05").tipsy({ gravity: "n" });
-		        jQuery("#social-06").tipsy({ gravity: "n" });
-		        jQuery("#social-07").tipsy({ gravity: "n" });
-		        jQuery("#social-07").tipsy({ gravity: "n" });
-		        jQuery("#social-08").tipsy({ gravity: "n" });
-		        jQuery("#social-09").tipsy({ gravity: "n" });
-		        jQuery("#social-10").tipsy({ gravity: "n" });
-		        jQuery("#social-11").tipsy({ gravity: "n" });
-		        jQuery("#team-01").tipsy({ gravity: "s" });
-		    }
-		});', array('type' => 'inline', 'scope' => 'footer', 'weight' => 9)
-	);
-endif;			
-
-
 /**
  * Add jquery.prettyPhoto.js and prettyPhoto.css files for portfolio items
  */
@@ -243,15 +136,6 @@ jQuery(document).ready(function($) {
 });', array('type' => 'inline', 'scope' => 'footer', 'weight' => 10)
 );
 }
-
-/**
- * Add Javascript for quicksand plugin
- */
-if (theme_get_setting('quicksand_js','simplecorp')):
-drupal_add_js(drupal_get_path('theme', 'simplecorp') .'/js/plugins/jquery.quicksand.js');
-drupal_add_js(drupal_get_path('theme', 'simplecorp') .'/js/plugins/quicksand_initialize.js');
-endif;	
-
 
 /**
  * Add javascript for back to top action
