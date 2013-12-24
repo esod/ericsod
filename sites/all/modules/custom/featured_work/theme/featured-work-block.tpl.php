@@ -1,4 +1,4 @@
-<h3>My Recent Work</h3>
+<h3>Recent Work</h3>
   <ul id="projects-carousel" class="loading">
 
   <?php
@@ -52,4 +52,4 @@
 
   </ul>
     <!-- // optional "view full portfolio" button on homepage featured projects -->
-    <a href="<?php print base_path() . 'full-portfolio'; ?>" class="colored" title="portofolio">View full portofolio</a>
+    <a href="<?php print base_path() . 'my-portfolio'; ?>" class="colored" title="portofolio">View my portofolio</a>
