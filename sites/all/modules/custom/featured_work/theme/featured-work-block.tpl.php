@@ -52,4 +52,4 @@
 
   </ul>
     <!-- // optional "view full portfolio" button on homepage featured projects -->
-    <a href="<?php print base_path() . 'my-portfolio'; ?>" class="colored" title="portofolio">View my portofolio</a>
+    <a href="<?php print base_path() . 'portfolio'; ?>" class="colored" title="portofolio">View my portofolio</a>
