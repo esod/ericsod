@@ -1,5 +1,12 @@
+/*
+ * @file
+ * Flexslider settings.
+ *
+ * See @link http://www.woothemes.com/flexslider/ for more settings
+ */
+
 (function ($) {
-  Drupal.behaviors.custom_slideshow_data = {
+  Drupal.behaviors.customSlideshow = {
     attach: function() {
   
       var effect = Drupal.settings.custom_slideshow_array.effect;

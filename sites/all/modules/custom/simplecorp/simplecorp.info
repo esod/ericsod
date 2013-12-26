@@ -1,0 +1,6 @@
+name = Simple Corp
+description = A module to hold odds and ends for simplecorp.
+core = 7.x
+package = Custom Modules
+files[] = simplecorp.module
+version = 7.x-1.0

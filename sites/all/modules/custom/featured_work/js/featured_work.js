@@ -1,5 +1,12 @@
+/*
+ * @file
+ * jQuerycarousel settings.
+ *
+ * See @link http://sorgalla.com/jcarousel/ for more settings
+ */
+
 (function ($) {
-  Drupal.behaviors.featured_work_data = {
+  Drupal.behaviors.featuredWork = {
     attach: function() {
   
       var carousel_effect_time = Drupal.settings.featured_work_array.carousel_effect_time;

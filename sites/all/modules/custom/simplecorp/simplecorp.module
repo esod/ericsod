@@ -1,0 +1,96 @@
+<?php
+
+/**
+* Implements hook_init().
+*/
+function simplecorp_init() {
+  
+  /**
+   * Add custom javascript for main menu.
+   */
+  if (theme_get_setting('main_menu_custom_js','simplecorp')) {
+    drupal_add_js(drupal_get_path('module', 'simplecorp') . '/js/main_menu_custom.js');
+  }
+
+  /**
+   * Add jquery.prettyPhoto.js and prettyPhoto.css files for portfolio items
+   */
+  if (theme_get_setting('prettyphoto_js','simplecorp')) {
+	
+  	drupal_add_js(drupal_get_path('theme', 'simplecorp') . '/js/plugins/jquery.prettyPhoto.js');
+  	drupal_add_css(drupal_get_path('theme', 'simplecorp') . '/css/plugins/prettyPhoto.css');
+	
+    //Initialize prettyPhoto with the theme settings
+    $prettyphoto_theme = theme_get_setting('prettyphoto_theme','simplecorp');
+    $prettyphoto_social_tools = theme_get_setting('prettyphoto_social_tools','simplecorp');
+  
+    // Pass the prettyphoto settings to Drupal.settings
+    drupal_add_js(array(
+      'pretty_photo_tools' => array(
+        'prettyphoto_theme' => $prettyphoto_theme,
+        'prettyphoto_social_tools' => $prettyphoto_social_tools,
+      )
+    ), 'setting');
+
+    drupal_add_js(drupal_get_path('module', 'simplecorp') . '/js/pretty_photo_tools.js');
+
+  }
+
+  /**
+   * Add Javascript for responsive mobile menu
+   */
+  if (theme_get_setting('responsive_menu_state','simplecorp')) {
+
+    drupal_add_js(drupal_get_path('theme', 'simplecorp') .'/js/plugins/jquery.mobilemenu.min.js');
+
+    $responsive_menu_switchwidth = theme_get_setting('responsive_menu_switchwidth','simplecorp');
+    $responsive_menu_topoptiontext = theme_get_setting('responsive_menu_topoptiontext','simplecorp');
+    
+    // Pass the prettyphoto settings to Drupal.settings
+    drupal_add_js(array(
+      'responsive_menu_state' => array(
+        'responsive_menu_switchwidth' => $responsive_menu_switchwidth,
+        'responsive_menu_topoptiontext' => $responsive_menu_topoptiontext,
+      )
+    ), 'setting');
+
+    drupal_add_js(drupal_get_path('module', 'simplecorp') . '/js/responsive_menu_state.js');
+  }
+
+  /**
+   * Add javascript for back to top action
+   */
+  drupal_add_js('
+    jQuery(document).ready(function() { jQuery(".backtotop").click(function(){ jQuery("html, body").animate({scrollTop:0}, "slow"); return false; }); });
+  ', array('type' => 'inline', 'scope' => 'footer', 'weight' => 9)
+);
+
+
+  /**
+   * Add Javascript for jTweetsAnywhere plugin
+   */
+  //if (theme_get_setting('jtweetanywhere_js','simplecorp')):
+  //
+  //	drupal_add_js(drupal_get_path('theme', 'simplecorp') .'/js/plugins/jquery.jtweetsanywhere-1.3.1.js');
+  //	drupal_add_css(drupal_get_path('theme', 'simplecorp') . '/css/plugins/jquery.jtweetsanywhere-1.3.1.css');
+  //
+  //	//Initialize slideshow using theme settings
+  //	$jtweetanywhere_id=theme_get_setting('jtweetanywhere_id','simplecorp');
+  //
+  //	drupal_add_js('
+  //		jQuery(document).ready(function($) {
+  //		    $("#jTweets").jTweetsAnywhere({
+  //		        username: "'.$jtweetanywhere_id.'",
+  //		        count: 2,
+  //		        showTweetFeed: {
+  //		            showInReplyTo: false,
+  //		            paging: {
+  //		                mode: "none"
+  //		            }
+  //		        }
+  //		    });
+  //		});',	array('type' => 'inline', 'scope' => 'footer', 'weight' => 16)
+  //	);
+  //endif;	
+
+}

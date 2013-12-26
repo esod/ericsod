@@ -1,21 +1,28 @@
+/*
+ * @file
+ * jQuerycarousel settings.
+ *
+ * See @link http://onehackoranother.com/projects/jquery/tipsy/ for more settings
+ */
+
 (function ($) {
-  Drupal.behaviors.header_social_links_data = {
+  Drupal.behaviors.headerSocialLinks = {
     attach: function() {
   
-      if (jQuery().tipsy) {
-        jQuery("#social-01").tipsy({ gravity: "n" });
-        jQuery("#social-02").tipsy({ gravity: "n" });
-        jQuery("#social-03").tipsy({ gravity: "n" });
-        jQuery("#social-04").tipsy({ gravity: "n" });
-        jQuery("#social-05").tipsy({ gravity: "n" });
-        jQuery("#social-06").tipsy({ gravity: "n" });
-        jQuery("#social-07").tipsy({ gravity: "n" });
-        jQuery("#social-07").tipsy({ gravity: "n" });
-        jQuery("#social-08").tipsy({ gravity: "n" });
-        jQuery("#social-09").tipsy({ gravity: "n" });
-        jQuery("#social-10").tipsy({ gravity: "n" });
-        jQuery("#social-11").tipsy({ gravity: "n" });
-        jQuery("#team-01").tipsy({ gravity: "s" });
+      if ($().tipsy) {
+        $("#social-01").tipsy({ gravity: "n" });
+        $("#social-02").tipsy({ gravity: "n" });
+        $("#social-03").tipsy({ gravity: "n" });
+        $("#social-04").tipsy({ gravity: "n" });
+        $("#social-05").tipsy({ gravity: "n" });
+        $("#social-06").tipsy({ gravity: "n" });
+        $("#social-07").tipsy({ gravity: "n" });
+        $("#social-07").tipsy({ gravity: "n" });
+        $("#social-08").tipsy({ gravity: "n" });
+        $("#social-09").tipsy({ gravity: "n" });
+        $("#social-10").tipsy({ gravity: "n" });
+        $("#social-11").tipsy({ gravity: "n" });
+        $("#team-01").tipsy({ gravity: "s" });
       }
      
     }
