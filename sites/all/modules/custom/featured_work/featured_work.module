@@ -22,7 +22,7 @@ function featured_work_init() {
     $carousel_effect_time=theme_get_setting('carousel_effect_time','simplecorp')*1000;
     $carousel_effect=theme_get_setting('carousel_effect','simplecorp');
     
-    // Pass the slidshow variables to settings
+    // Pass the slideshow variables to settings
     drupal_add_js(array(
       'featured_work_array' => array(
         'carousel_effect_time' => $carousel_effect_time,
