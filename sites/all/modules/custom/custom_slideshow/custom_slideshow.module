@@ -41,7 +41,7 @@ function custom_slideshow_init() {
       )
     ), 'setting');
 
-    drupal_add_js(drupal_get_path('theme', $default_theme) . '/js/custom_slideshow.js');
+    drupal_add_js(drupal_get_path('module', 'custom_slideshow') . '/js/custom_slideshow.js');
  
   }  
 }

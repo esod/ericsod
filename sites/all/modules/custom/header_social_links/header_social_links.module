@@ -13,29 +13,13 @@ function header_social_links_init() {
   /**
    * Add jquery.tipsy.js file for header social icons
    */
-  if (theme_get_setting('header_tooltip_js','simplecorp')):
+  if (theme_get_setting('header_tooltip_js','simplecorp')) {
   
     drupal_add_js(drupal_get_path('theme', 'simplecorp') . '/js/plugins/jquery.tipsy.js');
-    drupal_add_js('
-      jQuery(document).ready(function($) {
-          if (jQuery().tipsy) {
-              jQuery("#social-01").tipsy({ gravity: "n" });
-              jQuery("#social-02").tipsy({ gravity: "n" });
-              jQuery("#social-03").tipsy({ gravity: "n" });
-              jQuery("#social-04").tipsy({ gravity: "n" });
-              jQuery("#social-05").tipsy({ gravity: "n" });
-              jQuery("#social-06").tipsy({ gravity: "n" });
-              jQuery("#social-07").tipsy({ gravity: "n" });
-              jQuery("#social-07").tipsy({ gravity: "n" });
-              jQuery("#social-08").tipsy({ gravity: "n" });
-              jQuery("#social-09").tipsy({ gravity: "n" });
-              jQuery("#social-10").tipsy({ gravity: "n" });
-              jQuery("#social-11").tipsy({ gravity: "n" });
-              jQuery("#team-01").tipsy({ gravity: "s" });
-          }
-      });', array('type' => 'inline', 'scope' => 'footer', 'weight' => 9)
-    );
-  endif;
+
+    drupal_add_js(drupal_get_path('module', 'header_social_links') . '/js/header_social_links.js');
+
+  }
 }		
 
 /**
