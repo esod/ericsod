@@ -1,0 +1,65 @@
+<?php
+
+/**
+ * @file
+ * Custom Contact Map Block
+ */
+
+/**
+ * Implements hook_block_info().
+ */
+function custom_contact_map_block_info() {
+  $blocks = array();
+  
+  $blocks['custom_contact_map'] = array(
+    'info' => t('Custom Modules / Contact Map'),
+  );
+  
+  return $blocks;
+}
+
+/**
+ * Implementation of hook_block_view().
+ */
+function custom_contact_map_block_view($delta = '') {
+  // Create an empty block.
+  $block = array(
+    'subject' => '',
+    'content' => '',
+  );
+
+  switch ($delta) {
+    
+    case 'custom_contact_map':
+      $block['subject'] = t('');
+      $block['content'] = custom_contact_map();
+      break;
+  }
+  
+  return $block;
+}
+
+/**
+ * custom html block
+ * @return string
+ */
+function custom_contact_map() {
+  return theme('custom_contact_map', array()); 
+}
+
+/**
+ * Implements hook_theme().
+ */
+function custom_contact_map_theme() {
+  $module_path = drupal_get_path('module', 'custom_contact_map');
+  $base = array(
+    'path' => "$module_path/theme",
+  );
+  return array(
+    'custom_contact_map' => $base + array(
+      'template' => 'custom_contact_map',
+    ),
+  );
+
+
+}

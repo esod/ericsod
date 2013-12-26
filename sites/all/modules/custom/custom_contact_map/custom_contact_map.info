@@ -1,0 +1,6 @@
+name = Custom Contact Map
+description = Custom Contact Map
+core = 7.x
+package = Custom Modules
+files[] = custom_contact_map.module
+version = 7.x-1.0
