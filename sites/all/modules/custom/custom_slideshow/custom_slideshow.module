@@ -17,7 +17,7 @@ function custom_slideshow_init() {
    */
   if (theme_get_setting('slideshow_js',$default_theme)) {
   
-    drupal_add_js(drupal_get_path('theme', $default_theme) . '/js/plugins/jquery.flexslider-min.js');
+    drupal_add_js(drupal_get_path('module', 'custom_slideshow') . '/js/jquery.flexslider-min.js');
   
     //Initialize slideshow using theme settings
     
@@ -37,7 +37,7 @@ function custom_slideshow_init() {
         'slideshow_controls' => $slideshow_controls,
         'slideshow_random' => $slideshow_random,
         'slideshow_pause' => $slideshow_pause,
-        'slideshow_touch' => $slideshow_touch,
+        'slideshow_touch' => $slideshow_touch
       )
     ), 'setting');
 
