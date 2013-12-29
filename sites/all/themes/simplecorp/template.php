@@ -142,7 +142,6 @@ function simplecorp_preprocess_comment(&$variables) {
  * Override or insert variables into the page template.
  */
 function simplecorp_preprocess_page(&$vars) {
-  //if(module_exists('devel')){dpm($vars);}
   
   if (isset($vars['main_menu'])) {
     $vars['main_menu'] = theme('links__system_main_menu', array(
@@ -155,9 +154,7 @@ function simplecorp_preprocess_page(&$vars) {
         'level' => 'h2',
         'class' => array('element-invisible'),
       ),
-    ));
-      //if(module_exists('devel')){dpm($vars['main_menu']);}
-  
+    ));  
   }
   else {
     $vars['primary_nav'] = FALSE;
@@ -176,14 +173,9 @@ function simplecorp_preprocess_page(&$vars) {
       )
     ));
   }
-        //if(module_exists('devel')){dpm($vars['secondary_nav']);}
-
   else {
     $vars['secondary_nav'] = FALSE;
   }
-
-  
-  //if(module_exists('devel')){dpm($vars['secondary_menu']);}
 
   if (module_exists('i18n_menu')) {
     $vars['main_menu_tree'] = i18n_menu_translated_tree(variable_get('menu_main_links_source', 'main-menu'));

@@ -264,4 +264,25 @@ input#edit-keys, .page-user input.form-text, .no-sidebars #comment-form input.fo
 
 .search-advanced .criterion { float: none; margin-right: 0; }
 
+/*--------------------------------------*/
+/*MAIN NAVIGATION*/
+/*--------------------------------------*/
+
+#main-navigation .nav-toggle { color: #898989; font-family: 'Dosis', 'Verdana', sans-serif; font-size: 16px; font-weight:normal; display: block; text-align: center; text-transform:uppercase; }
+
+#main-navigation ul.menu li a, #main-navigation ul li a {
+  color: #898989;
+  font-family: 'Dosis', 'Verdana', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 47px 6px 50px 6px;
+  margin: 0 0 10px 0;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  float: left;
+  overflow: hidden;
+  line-height: 20px;
+}
+
 }

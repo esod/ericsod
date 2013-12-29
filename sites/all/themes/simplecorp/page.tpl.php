@@ -56,12 +56,10 @@
                         <?php print drupal_render($page['navigation']); ?>
                         <?php else : ?>
                           
-                          <nav id="main-menu"  role="navigation">
                             <a class="nav-toggle" href="#">Navigation</a>
                             <div class="menu-navigation-container">
                               <?php print drupal_render($main_menu_tree); ?>
                             <div class="clear"></div>
-                          </nav><!-- end main-menu -->
                             </div>
 
                         <?php endif; ?>
