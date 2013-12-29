@@ -445,6 +445,8 @@ h2#site-slogan{ color: #dbdbdb; margin:0 0 16px 0; font-size: 16px; line-height:
 
 .rightarrowclass { position: absolute; top: 10px; right: 10px; }
 
+#main-navigation .nav-toggle { display: none; }
+
 #main-navigation li.last { clear:none; }
 
 #main-navigation > ul.menu, #main-navigation .content > ul.menu, #main-navigation ul.sf-menu { margin: -30px 0 0 0px; clear:both; }

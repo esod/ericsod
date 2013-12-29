@@ -138,6 +138,60 @@ function simplecorp_preprocess_comment(&$variables) {
 	$variables['submitted_year_c'] = format_date($comment->created, 'custom', 'Y');
 }
 
+/**
+ * Override or insert variables into the page template.
+ */
+function simplecorp_preprocess_page(&$vars) {
+  //if(module_exists('devel')){dpm($vars);}
+  
+  if (isset($vars['main_menu'])) {
+    $vars['main_menu'] = theme('links__system_main_menu', array(
+      'links' => $vars['main_menu'],
+      'attributes' => array(
+        'class' => array('links', 'main-menu', 'clearfix'),
+      ),
+      'heading' => array(
+        'text' => t('Main menu'),
+        'level' => 'h2',
+        'class' => array('element-invisible'),
+      ),
+    ));
+      //if(module_exists('devel')){dpm($vars['main_menu']);}
+  
+  }
+  else {
+    $vars['primary_nav'] = FALSE;
+  }
+    
+  if (isset($vars['secondary_menu'])) {
+    $vars['secondary_nav'] = theme('links__system_secondary_menu', array(
+      'links' => $vars['secondary_menu'],
+      'attributes' => array(
+        'class' => array('links', 'clearfix', 'secondary-menu'),
+      ),
+      'heading' => array(
+        'text' => t('Secondary menu'),
+        'level' => 'h2',
+        'class' => array('element-invisible'),
+      )
+    ));
+  }
+        //if(module_exists('devel')){dpm($vars['secondary_nav']);}
+
+  else {
+    $vars['secondary_nav'] = FALSE;
+  }
+
+  
+  //if(module_exists('devel')){dpm($vars['secondary_menu']);}
+
+  if (module_exists('i18n_menu')) {
+    $vars['main_menu_tree'] = i18n_menu_translated_tree(variable_get('menu_main_links_source', 'main-menu'));
+  }
+  else {
+    $vars['main_menu_tree'] = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
+  }
+}
 
 /**
  * Implements hook_preprocess_html().
