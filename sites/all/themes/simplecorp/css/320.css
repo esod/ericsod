@@ -183,6 +183,8 @@ ul#portfolio-items-one-third li  img { width: 100%; height: auto; padding: 0; ma
 /*OTHER FEATURES (google maps, intro inner page, contact forms...)*/
 /*--------------------------------------*/
 
+#contact-map { display: none; }
+
 #contact-form .error { margin: 15px 0 0 0; }
 
 #contact-form form { margin-bottom: 0px; }
