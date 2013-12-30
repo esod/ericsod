@@ -199,7 +199,7 @@ ul#portfolio-items-one-third li  img { width: 100%; height: auto;  padding: 0; m
 
 .inner-page-intro h2 { text-align: center; }
 
-#contact-map { margin: 0px 0 30px -20px; position: relative;  width: 440px; }
+#contact-map { display: none; }
 
 #contact-form .error { margin: 15px 0 0 0; }
 
