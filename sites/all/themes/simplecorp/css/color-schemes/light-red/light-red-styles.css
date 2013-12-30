@@ -1,0 +1,279 @@
+/* ---------------------------------------------------------------------- */
+/* LIGHT RED
+/* 
+/* 
+/* Accent color: #E64135 ;
+/* Borders color, Submenu background: #D8D5CD ;
+/* Page background: #FFFFFF;
+/* Content Boxes background: #3F3F3F;
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* COLORS 
+/* ---------------------------------------------------------------------- */
+/* line 15, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+#page {
+  background-color: #FFFFFF;
+}
+
+/* line 19, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+a:hover, #page-wrapper a > *:hover,
+.categories a:hover,
+#footer .footer-area .content li a:hover,
+.sidebar .block a:hover {
+  color: #E64135;
+}
+
+/* line 26, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #E64135;
+}
+
+/* line 30, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #303031;
+  font-size: 100%;
+}
+
+/* line 35, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+#pre-header,
+.flex-direction-nav li a:hover {
+  background-color: #E64135;
+  color: #ffffff;
+}
+
+/* line 41, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+#pre-header ul.menu li a {
+  border-right: 1pt solid #F6574B;
+  text-shadow: none;
+}
+
+/* line 46, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+#footer-bottom ul.menu li a:hover {
+  color: #E64135;
+}
+
+/* line 50, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+#footer-bottom ul.menu li a.active {
+  color: #E64135;
+}
+
+/* line 54, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+.colored,
+.flex-caption h3,
+.intro-page h2 strong,
+#footer h4,
+#footer h2,
+#footer-bottom a {
+  color: #E64135;
+}
+
+/* line 63, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+a.colored:hover {
+  color: #E64135;
+  text-decoration: underline;
+}
+
+/* line 68, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+#pre-header,
+#slider-container,
+#banner-inside {
+  border-bottom: 1pt solid #D8D5CD;
+}
+
+/* line 74, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+.front #header {
+  border-bottom: 1pt solid #D8D5CD;
+}
+
+/* line 78, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+.horizontal-line,
+.divider {
+  border-top: 1pt solid #D8D5CD;
+}
+
+/* line 83, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+ul#social-links li {
+  background: #D9392D;
+  background: -moz-linear-gradient(top, #d9392d 0%, #c82e23 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d9392d), color-stop(100%, #c82e23));
+  background: -webkit-linear-gradient(top, #d9392d 0%, #c82e23 100%);
+  background: -o-linear-gradient(top, #d9392d 0%, #c82e23 100%);
+  background: -ms-linear-gradient(top, #d9392d 0%, #c82e23 100%);
+  background: linear-gradient(top, #d9392d 0%, #c82e23 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D9392D', endColorstr='#C82E23',GradientType=0 );
+  box-shadow: 0px 1px 1px #FF5A4E,inset 0px 2px 5px #C82E23;
+  -moz-box-shadow: 0px 1px 1px #FF5A4E,inset 0px 2px 5px #C82E23;
+  -webkit-box-shadow: 0px 1px 1px #FF5A4E,inset 0px 2px 5px #C82E23;
+}
+
+/* line 97, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+#main-navigation ul.menu li a:hover,
+#main-navigation > ul.menu > li > a.active,
+#main-navigation ul.sf-menu li a:hover,
+#main-navigation ul.sf-menu > li > a.active,
+#main-navigation .content > ul.menu > li > a.active {
+  background: #F8F8F8;
+  border-bottom: 1pt solid #E64135;
+  color: #E64135;
+}
+
+/* line 107, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+#main-navigation ul.menu ul a:hover,
+#main-navigation ul.menu ul .hover > a,
+#main-navigation ul.sf-menu ul a:hover,
+#main-navigation ul.sf-menu ul .hover > a,
+#main-navigation .content > ul.menu li li a.active,
+#main-navigation > ul.menu li li a.active,
+#main-navigation ul.sf-menu li li a.active {
+  background-color: #E64135;
+  color: #fff;
+  border: 0;
+}
+
+/* line 119, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+img.intro-img {
+  border-bottom: 1pt solid #D8D5CD;
+}
+
+/* line 123, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+.jcarousel-next, .jcarousel-prev {
+  background-color: #E64135;
+}
+
+/* line 127, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+.jcarousel-prev {
+  background-color: #E64135;
+}
+
+/* line 131, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+.jcarousel-next:hover, .jcarousel-next:focus, .jcarousel-next:active, .jcarousel-prev:hover, .jcarousel-prev:focus, .jcarousel-prev:active {
+  background-color: #E64135;
+}
+
+/* line 135, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+.jcarousel-next-disabled, .jcarousel-next-disabled:hover, .jcarousel-next-disabled:focus, .jcarousel-next-disabled:active, .jcarousel-prev-disabled, .jcarousel-prev-disabled:hover, .jcarousel-prev-disabled:focus, .jcarousel-prev-disabled:active {
+  background-color: #D8D5CD;
+  box-shadow: none;
+}
+
+/* line 140, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+ul#projects-carousel li .item-content:hover,
+ul#portfolio-items-one-fourth li .item-content:hover {
+  background-color: #E64135;
+}
+
+/* line 145, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+.sidebar .block .content li:first-child {
+  border-top: 1px dotted #D8D5CD;
+}
+
+/* line 149, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+.sidebar .block .content li {
+  border-bottom: 1px dotted #D8D5CD;
+}
+
+/* line 153, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+.archive .hentry, .page-template-template-blog-php .hentry, .search .hentry {
+  border-bottom: 1px solid #D8D5CD;
+}
+
+/* line 157, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+.date {
+  background: #E64135;
+}
+
+/* line 167, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+.filterable li.active a {
+  background-color: #E64135;
+}
+
+/* line 174, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+#commentform input[type="text"],
+#commentform input[type="password"],
+#commentform input[type="email"],
+#commentform input.text,
+#commentform input.title,
+#commentform textarea,
+#commentform select,
+#commentform textarea,
+#contactForm input[type="text"],
+#contactForm input[type="password"],
+#contactForm input[type="email"],
+#contactForm textarea,
+#contactForm select {
+  border: 1px solid #DDDDDD;
+  box-shadow: inset 0px 2px 4px #F3F3F3;
+  -moz-box-shadow: inset 0px 2px 4px #F3F3F3;
+  -webkit-box-shadow: inset 0px 2px 4px #F3F3F3;
+  background: #FFFFFF;
+  color: #777777;
+}
+
+/* line 195, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+#commentform input[type="text"]:focus,
+#commentform input[type="password"]:focus,
+#commentform input[type="email"]:focus,
+#commentform input.text:focus,
+#commentform input.title:focus,
+#commentform textarea:focus,
+#commentform select:focus,
+#contactForm input[type="text"]:focus,
+#contactForm input[type="password"]:focus,
+#contactForm input[type="email"]:focus,
+#contactForm textarea:focus {
+  border: 1px solid #BBBBBB;
+  box-shadow: 0px 0px 5px #CCCCCC,inset 0px 2px 4px #F3F3F3;
+  -moz-box-shadow: 0px 0px 5px #CCCCCC,inset 0px 2px 4px #F3F3F3;
+  -webkit-box-shadow: 0px 0px 5px #CCCCCC,inset 0px 2px 4px #F3F3F3;
+}
+
+/* line 218, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+#tabscontainer {
+  clear: both;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Images
+/* ---------------------------------------------------------------------- */
+/* line 229, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+.custom-logo {
+  background-image: url("../../../images/color-schemes/light-red/logo.png");
+  padding-bottom: 50px;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+/* line 235, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+.flex-control-nav li a {
+  background-image: url("../../../images/color-schemes/light-red/bg_control_nav.png");
+}
+
+/* line 239, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+.portfolio-item-hover-content a.zoom {
+  background-image: url("../../../images/color-schemes/light-red/zoom-plus.png");
+}
+
+/* line 243, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+.year {
+  background-image: url("../../../images/color-schemes/light-red/post-meta-divider.png");
+}
+
+/* line 247, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+.readmore a:hover, .node-readmore a:hover {
+  background-image: url("../../../images/color-schemes/light-red/blog-permalink.png");
+}
+
+/* line 251, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+.contact-info span.address {
+  background-image: url("../../../images/color-schemes/light-red/icons/adress.png");
+}
+
+/* line 255, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+.contact-info span.phone {
+  background-image: url("../../../images/color-schemes/light-red/icons/phone-number.png");
+}
+
+/* line 259, ../../../sass/color-schemes/light-red/light-red-styles.scss */
+.contact-info span.email {
+  background-image: url("../../../images/color-schemes/light-red/icons/mail-adress.png");
+}

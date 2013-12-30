@@ -16,84 +16,374 @@ and several other developers. :)
 
 I ADVISE AGAINST EDITING THIS FILES.
 ******************************************************************/
-
 /******************************************************************
 GENERAL NORMALIZE
 ******************************************************************/
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
-audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
-audio:not([controls]), [hidden] { display: none; }
+/* line 23, ../sass/normalize.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+/* line 24, ../sass/normalize.scss */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 25, ../sass/normalize.scss */
+audio:not([controls]), [hidden] {
+  display: none;
+}
 
 /** Base Styles **/
+/* line 29, ../sass/normalize.scss */
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
 
-html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-body { margin: 0; font-size: 13px; line-height: 1.5; }
-body, button, input, select, textarea { font-family: sans-serif; color: #333; }
-address { color: #aaa; }
+/* line 30, ../sass/normalize.scss */
+body {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* line 31, ../sass/normalize.scss */
+body, button, input, select, textarea {
+  font-family: sans-serif;
+  color: #333;
+}
+
+/* line 32, ../sass/normalize.scss */
+address {
+  color: #aaa;
+}
 
 /** IE Fixes **/
-img { border: 0; -ms-interpolation-mode: bicubic; }
-svg:not(:root) { overflow: hidden; }
-figure { margin: 0; }
+/* line 35, ../sass/normalize.scss */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 36, ../sass/normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 37, ../sass/normalize.scss */
+figure {
+  margin: 0;
+}
 
 /** Links **/
-a:focus { outline: thin dotted; }
-a:hover, a:active { outline: 0; }
+/* line 40, ../sass/normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 41, ../sass/normalize.scss */
+a:hover, a:active {
+  outline: 0;
+}
 
 /** Typography **/
-h1 { font-size: 2em; } /* fixes html5 bug */
-p { -webkit-hyphens: auto; -moz-hyphens: auto; -epub-hyphens: auto; hyphens: auto; }
-abbr[title] { border-bottom: 1px dotted; }
-b, strong, .strong { font-weight: bold; }
-dfn, em, .em { font-style: italic; }
-small, .small, sub, sup { font-size: 75%; }
-ins, .ins { background: #ff9; color: #000; text-decoration: none; }
-mark, .mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
-hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
-pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
-pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
-blockquote { margin: 1.5em 40px; }
-q { quotes: none; }
-q:before, q:after { content: ''; content: none; }
-ul, ol { margin: 1.5em 0; padding: 0; }
-dd { margin: 0; }
-nav ul, nav ol, .widget ol, .widget ul, .commentlist { list-style: none; list-style-image: none; margin: 0; }
+/* line 44, ../sass/normalize.scss */
+h1 {
+  font-size: 2em;
+}
+
+/* fixes html5 bug */
+/* line 45, ../sass/normalize.scss */
+p {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -epub-hyphens: auto;
+  hyphens: auto;
+}
+
+/* line 46, ../sass/normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 47, ../sass/normalize.scss */
+b, strong, .strong {
+  font-weight: bold;
+}
+
+/* line 48, ../sass/normalize.scss */
+dfn, em, .em {
+  font-style: italic;
+}
+
+/* line 49, ../sass/normalize.scss */
+small, .small, sub, sup {
+  font-size: 75%;
+}
+
+/* line 50, ../sass/normalize.scss */
+ins, .ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 51, ../sass/normalize.scss */
+mark, .mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 52, ../sass/normalize.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 53, ../sass/normalize.scss */
+pre, code, kbd, samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/* line 54, ../sass/normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 55, ../sass/normalize.scss */
+blockquote {
+  margin: 1.5em 40px;
+}
+
+/* line 56, ../sass/normalize.scss */
+q {
+  quotes: none;
+}
+
+/* line 57, ../sass/normalize.scss */
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 58, ../sass/normalize.scss */
+ul, ol {
+  margin: 1.5em 0;
+  padding: 0;
+}
+
+/* line 59, ../sass/normalize.scss */
+dd {
+  margin: 0;
+}
+
+/* line 60, ../sass/normalize.scss */
+nav ul, nav ol, .widget ol, .widget ul, .commentlist {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+}
 
 /* Position subscript and superscript content without affecting line-height: gist.github.com/413930 */
-sub, sup { line-height: 0; position: relative; vertical-align: baseline; }
-sup { top: -0.5em; }
-sub { bottom: -0.25em; }
+/* line 63, ../sass/normalize.scss */
+sub, sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 64, ../sass/normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 65, ../sass/normalize.scss */
+sub {
+  bottom: -0.25em;
+}
 
 /** Forms **/
-form, fieldset, form ul, form ol, fieldset ol, fieldset ul { margin: 0; border: 0; }
-legend { border: 0; *margin-left: -7px; }
-button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
-button, input { line-height: normal; }
-button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
-input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; }
-input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
-input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
-button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
-textarea { overflow: auto; vertical-align: top; }
+/* line 68, ../sass/normalize.scss */
+form, fieldset, form ul, form ol, fieldset ol, fieldset ul {
+  margin: 0;
+  border: 0;
+}
+
+/* line 69, ../sass/normalize.scss */
+legend {
+  border: 0;
+  *margin-left: -7px;
+}
+
+/* line 70, ../sass/normalize.scss */
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/* line 71, ../sass/normalize.scss */
+button, input {
+  line-height: normal;
+}
+
+/* line 72, ../sass/normalize.scss */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible;
+}
+
+/* line 73, ../sass/normalize.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 74, ../sass/normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 75, ../sass/normalize.scss */
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 76, ../sass/normalize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 77, ../sass/normalize.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
 
 /* Colors for form validity */
-input:invalid, textarea:invalid { background-color: #f0dddd; }
+/* line 80, ../sass/normalize.scss */
+input:invalid, textarea:invalid {
+  background-color: #f0dddd;
+}
 
 /** Tables **/
-table { border-collapse: collapse; border-spacing: 0; }
+/* line 83, ../sass/normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
-/* Contain floats: nicolasgallagher.com/micro-clearfix-hack/ */ 
-.clearfix:before, .clearfix:after, nav[role=navigation] .menu ul:before, nav[role=navigation] .menu ul:after { content: ""; display: table; }
-.clearfix:after, nav[role=navigation] .menu ul:after { clear: both; }
-.clearfix, nav[role=navigation] .menu ul { zoom: 1; }
+/* Contain floats: nicolasgallagher.com/micro-clearfix-hack/ */
+/* line 86, ../sass/normalize.scss */
+.clearfix:before, .clearfix:after, nav[role=navigation] .menu ul:before, nav[role=navigation] .menu ul:after {
+  content: "";
+  display: table;
+}
+
+/* line 87, ../sass/normalize.scss */
+.clearfix:after, nav[role=navigation] .menu ul:after {
+  clear: both;
+}
+
+/* line 88, ../sass/normalize.scss */
+.clearfix, nav[role=navigation] .menu ul {
+  zoom: 1;
+}
 
 /* wordpress junk */
-.wp-smiley { margin: 0 !important; max-height: 1em; }
+/* line 91, ../sass/normalize.scss */
+.wp-smiley {
+  margin: 0 !important;
+  max-height: 1em;
+}
 
-				
 /******************************************************************
 PRINT STYLESHEET
 ******************************************************************/
-@media print { * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } a, a:visited { color: #444 !important; text-decoration: underline; } a[href]:after { content: " (" attr(href) ")"; } abbr[title]:after { content: " (" attr(title) ")"; } .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } pre, blockquote { border: 1px solid #999; page-break-inside: avoid; } thead { display: table-header-group; } tr, img { page-break-inside: avoid; } img { max-width: 100% !important; }
-    @page { margin: 0.5cm; } p, h2, h3 { orphans: 3; widows: 3; } h2, h3{ page-break-after: avoid; }
+@media print {
+  /* line 97, ../sass/normalize.scss */
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  /* line 97, ../sass/normalize.scss */
+  a, a:visited {
+    color: #444 !important;
+    text-decoration: underline;
+  }
+
+  /* line 97, ../sass/normalize.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 97, ../sass/normalize.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 97, ../sass/normalize.scss */
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 97, ../sass/normalize.scss */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 97, ../sass/normalize.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 97, ../sass/normalize.scss */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  /* line 97, ../sass/normalize.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+  /* line 98, ../sass/normalize.scss */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 98, ../sass/normalize.scss */
+  h2, h3 {
+    page-break-after: avoid;
+  }
 }

@@ -1,110 +1,109 @@
-
-.one_half
-{
-	width:48%;
+/* line 2, ../../sass/shortcodes/columns.scss */
+.one_half {
+  width: 48%;
 }
 
-.one_third
-{
-	width:30.66%;
+/* line 7, ../../sass/shortcodes/columns.scss */
+.one_third {
+  width: 30.66%;
 }
 
-.two_third
-{
-	width:65.33%;
+/* line 12, ../../sass/shortcodes/columns.scss */
+.two_third {
+  width: 65.33%;
 }
 
-.one_fourth
-{
-	width:22%;
+/* line 17, ../../sass/shortcodes/columns.scss */
+.one_fourth {
+  width: 22%;
 }
 
-.three_fourth
-{
-	width:74%;
+/* line 22, ../../sass/shortcodes/columns.scss */
+.three_fourth {
+  width: 74%;
 }
 
-.one_fifth
-{
-	width:16.8%;
+/* line 27, ../../sass/shortcodes/columns.scss */
+.one_fifth {
+  width: 16.8%;
 }
 
-.two_fifth
-{
-	width:37.6%;
+/* line 32, ../../sass/shortcodes/columns.scss */
+.two_fifth {
+  width: 37.6%;
 }
 
-.three_fifth
-{
-	width:58.4%;
+/* line 37, ../../sass/shortcodes/columns.scss */
+.three_fifth {
+  width: 58.4%;
 }
 
-.four_fifth
-{
-	width:67.2%;
+/* line 42, ../../sass/shortcodes/columns.scss */
+.four_fifth {
+  width: 67.2%;
 }
 
-.one_sixth
-{
-	width:13.33%;
+/* line 47, ../../sass/shortcodes/columns.scss */
+.one_sixth {
+  width: 13.33%;
 }
 
-.five_sixth
-{
-	width:82.67%;
+/* line 52, ../../sass/shortcodes/columns.scss */
+.five_sixth {
+  width: 82.67%;
 }
 
-.one_half,.one_third,.two_third,.three_fourth,.one_fourth,.one_fifth,.two_fifth,.three_fifth,.four_fifth,.one_sixth,.five_sixth
-{
-	float:left;
-	margin-right:4%;
-	position:relative;
+/* line 57, ../../sass/shortcodes/columns.scss */
+.one_half, .one_third, .two_third, .three_fourth, .one_fourth, .one_fifth, .two_fifth, .three_fifth, .four_fifth, .one_sixth, .five_sixth {
+  float: left;
+  margin-right: 4%;
+  position: relative;
 }
 
-.last
-{
-	clear:right;
-	margin-right:0!important;
+/* line 64, ../../sass/shortcodes/columns.scss */
+.last {
+  clear: right;
+  margin-right: 0 !important;
 }
 
-.clearboth
-{
-	clear:both;
-	display:block;
-	font-size:0;
-	height:0;
-	line-height:0;
-	width:100%;
+/* line 70, ../../sass/shortcodes/columns.scss */
+.clearboth {
+  clear: both;
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  width: 100%;
 }
 
-.divider
-{
-	border-top:1px solid #e8e8e8;
-	margin:bottom:30px;
-	min-height:25px;
-	padding:bottom:30px;
-	text-align:center;
-	width:100%;
+/* line 80, ../../sass/shortcodes/columns.scss */
+.divider {
+  border-top: 1px solid #e8e8e8;
+  margin-bottom: 30px;
+  min-height: 25px;
+  padding-bottom: 30px;
+  text-align: center;
+  width: 100%;
 }
 
-.dividermain h4
-{
-	background:#fff;
-	display:block;
-	font-family:Arial;
-	font-size:10px;
-	font-weight:400;
-	left:45%;
-	margin-top:-12px;
-	min-width:150px;
-	position:absolute;
-	text-align:center;
+/* line 90, ../../sass/shortcodes/columns.scss */
+.dividermain h4 {
+  background: #fff;
+  display: block;
+  font-family: Arial;
+  font-size: 10px;
+  font-weight: 400;
+  left: 45%;
+  margin-top: -12px;
+  min-width: 150px;
+  position: absolute;
+  text-align: center;
 }
-@media only screen  and (max-width: 959px) {
 
-.one_half img {
+@media only screen and (max-width: 959px) {
+  /* line 105, ../../sass/shortcodes/columns.scss */
+  .one_half img {
     max-height: 100%;
     max-width: 100%;
-}
-
+  }
 }
