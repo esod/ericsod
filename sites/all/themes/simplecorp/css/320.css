@@ -79,7 +79,7 @@
     text-shadow: none;
     border-radius: 0 !important;
     -moz-border-radius: 0 !important;
-    -webkit-border-radius: !important;
+    -webkit-border-radius: 0 !important;
     padding: 5px 0px !important;
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
