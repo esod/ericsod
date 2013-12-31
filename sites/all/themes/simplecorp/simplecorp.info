@@ -14,6 +14,11 @@ stylesheets[all][] = css/normalize.css
 stylesheets[all][] = css/plugins/flexslider.css
 stylesheets[all][] = css/local.css
 
+; SCRIPTS
+;----------------------------------------------------
+scripts[] = js/menu.js
+
+
 ; REGIONS
 ;----------------------------------------------------
 regions[header] = Header
