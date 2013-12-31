@@ -15,7 +15,7 @@
   background-color: #FFFFFF;
 }
 
-/* line 19, ../../../sass/color-schemes/light-green/light-green-styles.scss */
+/* line 22, ../../../sass/color-schemes/light-green/light-green-styles.scss */
 a:hover, #page-wrapper a > *:hover,
 .categories a:hover,
 #footer .footer-area .content li a:hover,
@@ -34,7 +34,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-size: 100%;
 }
 
-/* line 35, ../../../sass/color-schemes/light-green/light-green-styles.scss */
+/* line 36, ../../../sass/color-schemes/light-green/light-green-styles.scss */
 #pre-header,
 .flex-direction-nav li a:hover {
   background-color: #34B489;
@@ -57,7 +57,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: #34B489;
 }
 
-/* line 54, ../../../sass/color-schemes/light-green/light-green-styles.scss */
+/* line 59, ../../../sass/color-schemes/light-green/light-green-styles.scss */
 .colored,
 .flex-caption h3,
 .intro-page h2 strong,
@@ -73,7 +73,7 @@ a.colored:hover {
   text-decoration: underline;
 }
 
-/* line 68, ../../../sass/color-schemes/light-green/light-green-styles.scss */
+/* line 70, ../../../sass/color-schemes/light-green/light-green-styles.scss */
 #pre-header,
 #slider-container,
 #banner-inside {
@@ -85,7 +85,7 @@ a.colored:hover {
   border-bottom: 1pt solid #D8D5CD;
 }
 
-/* line 78, ../../../sass/color-schemes/light-green/light-green-styles.scss */
+/* line 79, ../../../sass/color-schemes/light-green/light-green-styles.scss */
 .horizontal-line,
 .divider {
   border-top: 1pt solid #D8D5CD;
@@ -106,25 +106,25 @@ ul#social-links li {
   -webkit-box-shadow: 0px 1px 1px #4acea1,inset 0px 2px 5px #1c8864;
 }
 
-/* line 97, ../../../sass/color-schemes/light-green/light-green-styles.scss */
+/* line 101, ../../../sass/color-schemes/light-green/light-green-styles.scss */
 #main-navigation ul.menu li a:hover,
 #main-navigation > ul.menu > li > a.active,
-#main-navigation ul.sf-menu li a:hover,
-#main-navigation ul.sf-menu > li > a.active,
+#main-navigation ul li a:hover,
+#main-navigation ul > li > a.active,
 #main-navigation .content > ul.menu > li > a.active {
   background: #F8F8F8;
   border-bottom: 1pt solid #34b489;
   color: #34b489;
 }
 
-/* line 107, ../../../sass/color-schemes/light-green/light-green-styles.scss */
+/* line 113, ../../../sass/color-schemes/light-green/light-green-styles.scss */
 #main-navigation ul.menu ul a:hover,
 #main-navigation ul.menu ul .hover > a,
-#main-navigation ul.sf-menu ul a:hover,
-#main-navigation ul.sf-menu ul .hover > a,
+#main-navigation ul ul a:hover,
+#main-navigation ul ul .hover > a,
 #main-navigation .content > ul.menu li li a.active,
 #main-navigation > ul.menu li li a.active,
-#main-navigation ul.sf-menu li li a.active {
+#main-navigation ul li li a.active {
   background-color: #34b489;
   color: #fff;
   border: 0;
@@ -156,7 +156,7 @@ img.intro-img {
   box-shadow: none;
 }
 
-/* line 140, ../../../sass/color-schemes/light-green/light-green-styles.scss */
+/* line 141, ../../../sass/color-schemes/light-green/light-green-styles.scss */
 ul#projects-carousel li .item-content:hover,
 ul#portfolio-items-one-fourth li .item-content:hover {
   background-color: #34b489;
@@ -187,7 +187,7 @@ ul#portfolio-items-one-fourth li .item-content:hover {
   background-color: #34B489;
 }
 
-/* line 174, ../../../sass/color-schemes/light-green/light-green-styles.scss */
+/* line 186, ../../../sass/color-schemes/light-green/light-green-styles.scss */
 #commentform input[type="text"],
 #commentform input[type="password"],
 #commentform input[type="email"],
@@ -209,7 +209,7 @@ ul#portfolio-items-one-fourth li .item-content:hover {
   color: #777777;
 }
 
-/* line 195, ../../../sass/color-schemes/light-green/light-green-styles.scss */
+/* line 205, ../../../sass/color-schemes/light-green/light-green-styles.scss */
 #commentform input[type="text"]:focus,
 #commentform input[type="password"]:focus,
 #commentform input[type="email"]:focus,

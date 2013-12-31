@@ -96,8 +96,8 @@ ul#social-links li {
 
 #main-navigation ul.menu li a:hover,
 #main-navigation > ul.menu > li > a.active,
-#main-navigation ul.sf-menu li a:hover,
-#main-navigation ul.sf-menu > li > a.active,
+#main-navigation ul li a:hover,
+#main-navigation ul > li > a.active,
 #main-navigation .content > ul.menu > li > a.active {
     background: #F8F8F8;
     border-bottom: 1pt solid #65778C;
@@ -106,11 +106,11 @@ ul#social-links li {
 
 #main-navigation ul.menu ul a:hover,
 #main-navigation ul.menu ul .hover > a,
-#main-navigation ul.sf-menu ul a:hover,
-#main-navigation ul.sf-menu ul .hover > a,
+#main-navigation ul ul a:hover,
+#main-navigation ul ul .hover > a,
 #main-navigation .content > ul.menu li li a.active,
 #main-navigation > ul.menu li li a.active,
-#main-navigation ul.sf-menu li li a.active {
+#main-navigation ul li li a.active {
     background-color: #65778C;
     color: #fff;
     border: 0;
