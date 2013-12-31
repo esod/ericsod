@@ -447,6 +447,8 @@ h2#site-slogan{ color: #dbdbdb; margin:0 0 16px 0; font-size: 16px; line-height:
 
 #main-navigation li.last { clear:none; }
 
+#main-navigation .nav-toggle { display: none; }
+
 #main-navigation > ul.menu, #main-navigation .content > ul.menu, #main-navigation ul.sf-menu { margin: -30px 0 0 0px; clear:both; }
 
 #main-navigation > ul.menu:after, #main-navigation .content > ul.menu:after, #main-navigation ul.sf-menu:after, #main-navigation .content:after { content: "."; display: block; clear: both; 
