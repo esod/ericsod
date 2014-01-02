@@ -177,6 +177,7 @@ function simplecorp_preprocess_html(&$vars) {
   if (!(theme_get_setting('theme_color','simplecorp') == 'default')) {
     $theme_color = theme_get_setting('theme_color','simplecorp');
     drupal_add_css(drupal_get_path('theme', 'simplecorp') . '/css/color-schemes/' . $theme_color . '/' . $theme_color . '-styles.css', array('group' => CSS_THEME, 'weight' => 120));
+    drupal_add_css(drupal_get_path('theme', 'simplecorp') . '/css/color-schemes/' . $theme_color . '/' . $theme_color . '-media.css', array('group' => CSS_THEME, 'weight' => 121));
   }
   
   

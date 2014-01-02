@@ -94,28 +94,6 @@ ul#social-links li {
     -webkit-box-shadow: 0px 1px 1px #CB85C2,inset 0px 2px 5px #9E5C96;
 }
 
-#main-navigation ul.menu li a:hover,
-#main-navigation > ul.menu > li > a.active,
-#main-navigation ul li a:hover,
-#main-navigation ul > li > a.active,
-#main-navigation .content > ul.menu > li > a.active {
-    background: #F8F8F8;
-    border-bottom: 1pt solid #B576AD;
-    color: #B576AD;
-}
-
-#main-navigation ul.menu ul a:hover,
-#main-navigation ul.menu ul .hover > a,
-#main-navigation ul ul a:hover,
-#main-navigation ul ul .hover > a,
-#main-navigation .content > ul.menu li li a.active,
-#main-navigation > ul.menu li li a.active,
-#main-navigation ul li li a.active {
-    background-color: #B576AD;
-    color: #fff;
-    border: 0;
-}
-
 img.intro-img {
     border-bottom: 1pt solid #D8D5CD;
 }

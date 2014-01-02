@@ -1,0 +1,227 @@
+#main-menu .nav-toggle {
+  display: none;
+}
+
+#main-menu {
+  max-width: 1000px;
+  margin: 0 auto;
+
+}
+
+#main-menu ul {
+  float: left;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 13px;
+}
+
+#main-menu li {
+  position: relative;
+  float: left;
+  padding: 0;
+  margin: 0;
+  font-family: 'Vollkorn',arial,serif;
+  font-size: 18px;
+}
+
+#main-menu ul li:first-child {
+  padding-left: 0;
+}
+
+#main-menu a {
+  border-radius: 5px 5px 5px 5px;
+  color: #343434;
+  display: block;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+#main-menu a:hover,
+#main-menu li > a.active,
+#main-menu li > a.active-trail {
+  background: none repeat scroll 0 0 #B576AD;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.drop-down-toggle {
+  display: none;
+}
+
+.drop-down-arrow {
+  display: block;
+  width: 0;
+  height: 0;
+  margin: 8px 0 0 5px;
+  border-top: 5px solid #ffffff;
+  border-left: transparent 5px solid;
+  border-right: transparent 5px solid;
+}
+
+#main-menu li li {
+  float: none;
+  min-width: 190px;
+  padding: 0;
+  margin: 0;
+}
+
+#main-menu li li a  {
+  background: none repeat scroll 0 0 #B576AD;
+  border: 1px solid #343434;
+  color: #ffffff;
+  font-size: 14px;
+  margin: 0;
+  min-width: 150px;
+  overflow: hidden;
+  padding: 4% 5%;
+  text-align: left;
+}
+
+#main-menu li li a:hover {
+  background: #343434;
+  color: #fff;
+}
+
+#main-menu li ul {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  min-width: 190px;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+#main-menu li ul ul {
+  margin: -33px 0 0 190px !important;
+}
+
+#main-menu li:hover > ul,
+#main-menu li li:hover > ul,
+#main-menu li li li:hover > ul {
+  display: block;
+}
+
+#main-menu ul li.leaf, #main-menu ul li.expanded, #main-menu ul li.collapsed {
+  list-style: none;
+}
+#main-menu ul.menu li {
+  margin: 0 3px 0 0;
+}
+
+#main-menu li.expanded, #main-menu li.collapsed, #main-menu li.leaf {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 640px) {
+
+  #sticky_header {
+    display: none !important;
+  }
+  .menu_wrapper {
+    background: none;
+  }
+
+  #socialbar {
+    float: none;
+  }
+
+  #main-menu ul {
+    display: none;
+  }
+
+  #main-menu li ul {
+    position: static;
+  }
+
+  #main-menu li ul ul {
+    margin: 0 !important;
+  }
+
+  #main-menu ul,
+  #main-menu li {
+    float: none;
+    max-width: 100%;
+  }
+  #main-menu ul.menu li {
+  margin: 0 3px;
+}
+  
+  #main-menu li:hover > ul,
+  #main-menu li li:hover > ul,
+  #main-menu li li li:hover > ul {
+    display: none;
+  }
+
+
+  #main-menu a {
+    padding: 10px 0;
+    color: #343434;
+    background: rgb(181, 118, 173);
+    background: -moz-linear-gradient(rgb(181, 128, 174),rgb(181, 118, 173));
+    background: -webkit-linear-gradient(rgb(181, 128, 174),rgb(181, 118, 173));
+    background: -o-linear-gradient(rgb(181, 128, 174),rgb(181, 118, 173));
+    background: -ms-linear-gradient(rgb(181, 128, 174),rgb(181, 118, 173));
+    background: linear-gradient(rgb(181, 128, 174),rgb(181, 118, 173));
+    border-bottom: 1px solid rgb(181, 128, 174);
+  }
+
+  #main-menu li li li a {
+    background: rgb(181, 118, 173);
+  }
+
+  #main-menu a:hover,
+  #main-menu li > a.active {
+    background: rgb(181, 128, 174);
+    background: -moz-linear-gradient(rgb(181, 128, 174),rgb(181, 118, 173));
+    background: -webkit-linear-gradient(rgb(181, 128, 174),rgb(181, 118, 173));
+    background: -o-linear-gradient(rgb(181, 128, 174),rgb(181, 118, 173));
+    background: -ms-linear-gradient(rgb(181, 128, 174),rgb(181, 118, 173));
+    background: linear-gradient(rgb(181, 128, 174),rgb(181, 118, 173));
+    color: #FFFFFF;
+  }
+  
+  .drop-down-toggle {
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: 16px;
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    border: #ffffff 3px solid;
+  }
+
+  #main-menu li li .drop-down-toggle {
+    top: 5px;
+  }
+
+  #main-menu .nav-toggle {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 3px;
+  }
+
+  #main-menu li li a  {
+    background: none repeat scroll 0 0 #B576AD;
+    border: 1px solid #343434;
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0;
+    min-width: 150px;
+    overflow: hidden;
+    padding: 4% 5%;
+    text-align: left;
+  }
+    #main-menu li li a:hover {
+    background: #343434;
+    color: #ffffff;
+  }
+}  
+
+

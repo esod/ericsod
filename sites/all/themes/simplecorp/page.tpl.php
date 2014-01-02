@@ -50,8 +50,8 @@
 
                     <!-- #navigation-wrapper -->
                     <div id="navigation-wrapper" class="clearfix">
-                        <!-- #main-navigation -->                        
-                        <nav id="main-navigation" class="main-menu clearfix" role="navigation">
+                        <!-- #main-menu -->                        
+                        <nav id="main-menu" class="main-menu clearfix" role="navigation">
                         <?php if ($page['navigation']) :?>
                         <?php print drupal_render($page['navigation']); ?>
                         <?php else : ?>
@@ -64,7 +64,7 @@
 
                         <?php endif; ?>
                         </nav>
-                        <!-- EOF: #main-navigation -->
+                        <!-- EOF: #main-menu -->
                     </div>
                     <!-- EOF: #navigation-wrapper -->
                     

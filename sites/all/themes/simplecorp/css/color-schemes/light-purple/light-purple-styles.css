@@ -106,88 +106,64 @@ ul#social-links li {
   -webkit-box-shadow: 0px 1px 1px #CB85C2,inset 0px 2px 5px #9E5C96;
 }
 
-/* line 101, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
-#main-navigation ul.menu li a:hover,
-#main-navigation > ul.menu > li > a.active,
-#main-navigation ul li a:hover,
-#main-navigation ul > li > a.active,
-#main-navigation .content > ul.menu > li > a.active {
-  background: #F8F8F8;
-  border-bottom: 1pt solid #B576AD;
-  color: #B576AD;
-}
-
-/* line 113, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
-#main-navigation ul.menu ul a:hover,
-#main-navigation ul.menu ul .hover > a,
-#main-navigation ul ul a:hover,
-#main-navigation ul ul .hover > a,
-#main-navigation .content > ul.menu li li a.active,
-#main-navigation > ul.menu li li a.active,
-#main-navigation ul li li a.active {
-  background-color: #B576AD;
-  color: #fff;
-  border: 0;
-}
-
-/* line 119, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+/* line 97, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
 img.intro-img {
   border-bottom: 1pt solid #D8D5CD;
 }
 
-/* line 123, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+/* line 101, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
 .jcarousel-next, .jcarousel-prev {
   background-color: #B576AD;
 }
 
-/* line 127, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+/* line 105, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
 .jcarousel-prev {
   background-color: #B576AD;
 }
 
-/* line 131, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+/* line 109, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
 .jcarousel-next:hover, .jcarousel-next:focus, .jcarousel-next:active, .jcarousel-prev:hover, .jcarousel-prev:focus, .jcarousel-prev:active {
   background-color: #B576AD;
 }
 
-/* line 135, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+/* line 113, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
 .jcarousel-next-disabled, .jcarousel-next-disabled:hover, .jcarousel-next-disabled:focus, .jcarousel-next-disabled:active, .jcarousel-prev-disabled, .jcarousel-prev-disabled:hover, .jcarousel-prev-disabled:focus, .jcarousel-prev-disabled:active {
   background-color: #D8D5CD;
   box-shadow: none;
 }
 
-/* line 141, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+/* line 119, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
 ul#projects-carousel li .item-content:hover,
 ul#portfolio-items-one-fourth li .item-content:hover {
   background-color: #B576AD;
 }
 
-/* line 145, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+/* line 123, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
 .sidebar .block .content li:first-child {
   border-top: 1px dotted #D8D5CD;
 }
 
-/* line 149, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+/* line 127, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
 .sidebar .block .content li {
   border-bottom: 1px dotted #D8D5CD;
 }
 
-/* line 153, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+/* line 131, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
 .archive .hentry, .page-template-template-blog-php .hentry, .search .hentry {
   border-bottom: 1px solid #D8D5CD;
 }
 
-/* line 157, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+/* line 135, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
 .date {
   background: #B576AD;
 }
 
-/* line 167, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+/* line 145, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
 .filterable li.active a {
   background-color: #B576AD;
 }
 
-/* line 186, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+/* line 164, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
 #commentform input[type="text"],
 #commentform input[type="password"],
 #commentform input[type="email"],
@@ -209,7 +185,7 @@ ul#portfolio-items-one-fourth li .item-content:hover {
   color: #777777;
 }
 
-/* line 205, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+/* line 183, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
 #commentform input[type="text"]:focus,
 #commentform input[type="password"]:focus,
 #commentform input[type="email"]:focus,
@@ -227,7 +203,7 @@ ul#portfolio-items-one-fourth li .item-content:hover {
   -webkit-box-shadow: 0px 0px 5px #CCCCCC,inset 0px 2px 4px #F3F3F3;
 }
 
-/* line 218, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+/* line 196, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
 #tabscontainer {
   clear: both;
 }
@@ -235,7 +211,7 @@ ul#portfolio-items-one-fourth li .item-content:hover {
 /* ---------------------------------------------------------------------- */
 /* Images
 /* ---------------------------------------------------------------------- */
-/* line 229, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+/* line 207, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
 .custom-logo {
   background-image: url("../../../images/color-schemes/light-purple/logo.png");
   padding-bottom: 50px;
@@ -243,37 +219,37 @@ ul#portfolio-items-one-fourth li .item-content:hover {
   background-repeat: no-repeat;
 }
 
-/* line 235, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+/* line 213, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
 .flex-control-nav li a {
   background-image: url("../../../images/color-schemes/light-purple/bg_control_nav.png");
 }
 
-/* line 239, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+/* line 217, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
 .portfolio-item-hover-content a.zoom {
   background-image: url("../../../images/color-schemes/light-purple/zoom-plus.png");
 }
 
-/* line 243, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+/* line 221, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
 .year {
   background-image: url("../../../images/color-schemes/light-purple/post-meta-divider.png");
 }
 
-/* line 247, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+/* line 225, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
 .readmore a:hover, .node-readmore a:hover {
   background-image: url("../../../images/color-schemes/light-purple/blog-permalink.png");
 }
 
-/* line 251, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+/* line 229, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
 .contact-info span.address {
   background-image: url("../../../images/color-schemes/light-purple/icons/adress.png");
 }
 
-/* line 255, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+/* line 233, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
 .contact-info span.phone {
   background-image: url("../../../images/color-schemes/light-purple/icons/phone-number.png");
 }
 
-/* line 259, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+/* line 237, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
 .contact-info span.email {
   background-image: url("../../../images/color-schemes/light-purple/icons/mail-adress.png");
 }

@@ -13,7 +13,7 @@
       var responsive_menu_switchwidth = Drupal.settings.responsive_menu_state.responsive_menu_switchwidth;
       var responsive_menu_topoptiontext = Drupal.settings.responsive_menu_state.responsive_menu_topoptiontext;
 
-    	$("#main-navigation > ul, #main-navigation .content > ul").mobileMenu({
+    	$("#main-menu > ul, #main-menu .content > ul").mobileMenu({
       	prependTo: "#navigation-wrapper",
       	combine: false,
       	switchWidth: responsive_menu_switchwidth,

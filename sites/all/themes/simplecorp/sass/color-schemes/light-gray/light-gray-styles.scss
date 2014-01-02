@@ -94,23 +94,23 @@ ul#social-links li {
     -webkit-box-shadow: 0px 1px 1px #7489A2,inset 0px 2px 5px #49586A;
 }
 
-#main-navigation ul.menu li a:hover,
-#main-navigation > ul.menu > li > a.active,
-#main-navigation ul li a:hover,
-#main-navigation ul > li > a.active,
-#main-navigation .content > ul.menu > li > a.active {
+#main-menu ul.menu li a:hover,
+#main-menu > ul.menu > li > a.active,
+#main-menu ul li a:hover,
+#main-menu ul > li > a.active,
+#main-menu .content > ul.menu > li > a.active {
     background: #F8F8F8;
     border-bottom: 1pt solid #65778C;
     color: #65778C;
 }
 
-#main-navigation ul.menu ul a:hover,
-#main-navigation ul.menu ul .hover > a,
-#main-navigation ul ul a:hover,
-#main-navigation ul ul .hover > a,
-#main-navigation .content > ul.menu li li a.active,
-#main-navigation > ul.menu li li a.active,
-#main-navigation ul li li a.active {
+#main-menu ul.menu ul a:hover,
+#main-menu ul.menu ul .hover > a,
+#main-menu ul ul a:hover,
+#main-menu ul ul .hover > a,
+#main-menu .content > ul.menu li li a.active,
+#main-menu > ul.menu li li a.active,
+#main-menu ul li li a.active {
     background-color: #65778C;
     color: #fff;
     border: 0;

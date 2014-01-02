@@ -107,24 +107,24 @@ ul#social-links li {
 }
 
 /* line 101, ../../../sass/color-schemes/light-red/light-red-styles.scss */
-#main-navigation ul.menu li a:hover,
-#main-navigation > ul.menu > li > a.active,
-#main-navigation ul li a:hover,
-#main-navigation ul > li > a.active,
-#main-navigation .content > ul.menu > li > a.active {
+#main-menu ul.menu li a:hover,
+#main-menu > ul.menu > li > a.active,
+#main-menu ul li a:hover,
+#main-menu ul > li > a.active,
+#main-menu .content > ul.menu > li > a.active {
   background: #F8F8F8;
   border-bottom: 1pt solid #E64135;
   color: #E64135;
 }
 
 /* line 113, ../../../sass/color-schemes/light-red/light-red-styles.scss */
-#main-navigation ul.menu ul a:hover,
-#main-navigation ul.menu ul .hover > a,
-#main-navigation ul ul a:hover,
-#main-navigation ul ul .hover > a,
-#main-navigation .content > ul.menu li li a.active,
-#main-navigation > ul.menu li li a.active,
-#main-navigation ul li li a.active {
+#main-menu ul.menu ul a:hover,
+#main-menu ul.menu ul .hover > a,
+#main-menu ul ul a:hover,
+#main-menu ul ul .hover > a,
+#main-menu .content > ul.menu li li a.active,
+#main-menu > ul.menu li li a.active,
+#main-menu ul li li a.active {
   background-color: #E64135;
   color: #fff;
   border: 0;
