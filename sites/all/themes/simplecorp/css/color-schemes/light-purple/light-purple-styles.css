@@ -1,0 +1,255 @@
+/* ---------------------------------------------------------------------- */
+/* LIGHT PURPLE
+/* 
+/* 
+/* Accent color: #B576AD ;
+/* Borders color, Submenu background: #D8D5CD ;
+/* Page background: #FFFFFF;
+/* Content Boxes background: #3F3F3F;
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* COLORS 
+/* ---------------------------------------------------------------------- */
+/* line 15, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+#page {
+  background-color: #FFFFFF;
+}
+
+/* line 22, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+a:hover, #page-wrapper a > *:hover,
+.categories a:hover,
+#footer .footer-area .content li a:hover,
+.sidebar .block a:hover {
+  color: #B576AD;
+}
+
+/* line 26, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #B576AD;
+}
+
+/* line 30, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #303031;
+  font-size: 100%;
+}
+
+/* line 36, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+#pre-header,
+.flex-direction-nav li a:hover {
+  background-color: #B576AD;
+  color: #ffffff;
+}
+
+/* line 41, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+#pre-header ul.menu li a {
+  border-right: 1pt solid #CA8BC2;
+  text-shadow: none;
+}
+
+/* line 46, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+#footer-bottom ul.menu li a:hover {
+  color: #B576AD;
+}
+
+/* line 50, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+#footer-bottom ul.menu li a.active {
+  color: #B576AD;
+}
+
+/* line 59, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+.colored,
+.flex-caption h3,
+.intro-page h2 strong,
+#footer h4,
+#footer h2,
+#footer-bottom a {
+  color: #B576AD;
+}
+
+/* line 63, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+a.colored:hover {
+  color: #B576AD;
+  text-decoration: underline;
+}
+
+/* line 70, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+#pre-header,
+#slider-container,
+#banner-inside {
+  border-bottom: 1pt solid #D8D5CD;
+}
+
+/* line 74, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+.front #header {
+  border-bottom: 1pt solid #D8D5CD;
+}
+
+/* line 79, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+.horizontal-line,
+.divider {
+  border-top: 1pt solid #D8D5CD;
+}
+
+/* line 83, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+ul#social-links li {
+  background: #AA6CA2;
+  background: -moz-linear-gradient(top, #aa6ca2 0%, #9e5c96 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #aa6ca2), color-stop(100%, #9e5c96));
+  background: -webkit-linear-gradient(top, #aa6ca2 0%, #9e5c96 100%);
+  background: -o-linear-gradient(top, #aa6ca2 0%, #9e5c96 100%);
+  background: -ms-linear-gradient(top, #aa6ca2 0%, #9e5c96 100%);
+  background: linear-gradient(top, #aa6ca2 0%, #9e5c96 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#AA6CA2', endColorstr='#9E5C96',GradientType=0 );
+  box-shadow: 0px 1px 1px #CB85C2,inset 0px 2px 5px #9E5C96;
+  -moz-box-shadow: 0px 1px 1px #CB85C2,inset 0px 2px 5px #9E5C96;
+  -webkit-box-shadow: 0px 1px 1px #CB85C2,inset 0px 2px 5px #9E5C96;
+}
+
+/* line 97, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+img.intro-img {
+  border-bottom: 1pt solid #D8D5CD;
+}
+
+/* line 101, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+.jcarousel-next, .jcarousel-prev {
+  background-color: #B576AD;
+}
+
+/* line 105, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+.jcarousel-prev {
+  background-color: #B576AD;
+}
+
+/* line 109, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+.jcarousel-next:hover, .jcarousel-next:focus, .jcarousel-next:active, .jcarousel-prev:hover, .jcarousel-prev:focus, .jcarousel-prev:active {
+  background-color: #B576AD;
+}
+
+/* line 113, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+.jcarousel-next-disabled, .jcarousel-next-disabled:hover, .jcarousel-next-disabled:focus, .jcarousel-next-disabled:active, .jcarousel-prev-disabled, .jcarousel-prev-disabled:hover, .jcarousel-prev-disabled:focus, .jcarousel-prev-disabled:active {
+  background-color: #D8D5CD;
+  box-shadow: none;
+}
+
+/* line 119, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+ul#projects-carousel li .item-content:hover,
+ul#portfolio-items-one-fourth li .item-content:hover {
+  background-color: #B576AD;
+}
+
+/* line 123, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+.sidebar .block .content li:first-child {
+  border-top: 1px dotted #D8D5CD;
+}
+
+/* line 127, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+.sidebar .block .content li {
+  border-bottom: 1px dotted #D8D5CD;
+}
+
+/* line 131, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+.archive .hentry, .page-template-template-blog-php .hentry, .search .hentry {
+  border-bottom: 1px solid #D8D5CD;
+}
+
+/* line 135, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+.date {
+  background: #B576AD;
+}
+
+/* line 145, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+.filterable li.active a {
+  background-color: #B576AD;
+}
+
+/* line 164, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+#commentform input[type="text"],
+#commentform input[type="password"],
+#commentform input[type="email"],
+#commentform input.text,
+#commentform input.title,
+#commentform textarea,
+#commentform select,
+#commentform textarea,
+#contactForm input[type="text"],
+#contactForm input[type="password"],
+#contactForm input[type="email"],
+#contactForm textarea,
+#contactForm select {
+  border: 1px solid #DDDDDD;
+  box-shadow: inset 0px 2px 4px #F3F3F3;
+  -moz-box-shadow: inset 0px 2px 4px #F3F3F3;
+  -webkit-box-shadow: inset 0px 2px 4px #F3F3F3;
+  background: #FFFFFF;
+  color: #777777;
+}
+
+/* line 183, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+#commentform input[type="text"]:focus,
+#commentform input[type="password"]:focus,
+#commentform input[type="email"]:focus,
+#commentform input.text:focus,
+#commentform input.title:focus,
+#commentform textarea:focus,
+#commentform select:focus,
+#contactForm input[type="text"]:focus,
+#contactForm input[type="password"]:focus,
+#contactForm input[type="email"]:focus,
+#contactForm textarea:focus {
+  border: 1px solid #BBBBBB;
+  box-shadow: 0px 0px 5px #CCCCCC,inset 0px 2px 4px #F3F3F3;
+  -moz-box-shadow: 0px 0px 5px #CCCCCC,inset 0px 2px 4px #F3F3F3;
+  -webkit-box-shadow: 0px 0px 5px #CCCCCC,inset 0px 2px 4px #F3F3F3;
+}
+
+/* line 196, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+#tabscontainer {
+  clear: both;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Images
+/* ---------------------------------------------------------------------- */
+/* line 207, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+.custom-logo {
+  background-image: url("../../../images/color-schemes/light-purple/logo.png");
+  padding-bottom: 50px;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+/* line 213, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+.flex-control-nav li a {
+  background-image: url("../../../images/color-schemes/light-purple/bg_control_nav.png");
+}
+
+/* line 217, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+.portfolio-item-hover-content a.zoom {
+  background-image: url("../../../images/color-schemes/light-purple/zoom-plus.png");
+}
+
+/* line 221, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+.year {
+  background-image: url("../../../images/color-schemes/light-purple/post-meta-divider.png");
+}
+
+/* line 225, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+.readmore a:hover, .node-readmore a:hover {
+  background-image: url("../../../images/color-schemes/light-purple/blog-permalink.png");
+}
+
+/* line 229, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+.contact-info span.address {
+  background-image: url("../../../images/color-schemes/light-purple/icons/adress.png");
+}
+
+/* line 233, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+.contact-info span.phone {
+  background-image: url("../../../images/color-schemes/light-purple/icons/phone-number.png");
+}
+
+/* line 237, ../../../sass/color-schemes/light-purple/light-purple-styles.scss */
+.contact-info span.email {
+  background-image: url("../../../images/color-schemes/light-purple/icons/mail-adress.png");
+}

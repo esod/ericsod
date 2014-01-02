@@ -1,5 +1,5 @@
 /*  CSS Overrides */
-
+/* line 3, ../sass/local.scss */
 .firm {
   font-size: 18px;
   line-height: 24px;
@@ -10,12 +10,16 @@
   margin: 2em 0 0 0;
   font-family: 'Dosis',Arial,Verdana,serif;
 }
+
+/* line 13, ../sass/local.scss */
 .custom-logo {
   background-image: url("../images/logo.png");
   padding-bottom: 50px;
   display: block;
   background-repeat: no-repeat;
 }
+
+/* line 19, ../sass/local.scss */
 .large-raquo {
   font-size: 24px;
 }

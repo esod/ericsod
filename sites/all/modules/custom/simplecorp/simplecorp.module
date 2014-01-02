@@ -8,9 +8,9 @@ function simplecorp_init() {
   /**
    * Add custom javascript for main menu.
    */
-  if (theme_get_setting('main_menu_custom_js','simplecorp')) {
-    drupal_add_js(drupal_get_path('module', 'simplecorp') . '/js/main_menu_custom.js');
-  }
+  //if (theme_get_setting('main_menu_custom_js','simplecorp')) {
+  //  drupal_add_js(drupal_get_path('module', 'simplecorp') . '/js/main_menu_custom.js');
+  //}
 
   /**
    * Add jquery.prettyPhoto.js and prettyPhoto.css files for portfolio items
@@ -54,7 +54,7 @@ function simplecorp_init() {
       )
     ), 'setting');
 
-    drupal_add_js(drupal_get_path('module', 'simplecorp') . '/js/responsive_menu_state.js');
+    //drupal_add_js(drupal_get_path('module', 'simplecorp') . '/js/responsive_menu_state.js');
   }
 
   /**

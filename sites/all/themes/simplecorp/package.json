@@ -1,0 +1,9 @@
+{
+  "name": "simplecorp",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt-contrib-compass": "~0.7.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.2"
+  }
+}

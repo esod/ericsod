@@ -50,23 +50,24 @@
 
                     <!-- #navigation-wrapper -->
                     <div id="navigation-wrapper" class="clearfix">
-                        <!-- #main-navigation -->                        
-                        <nav id="main-navigation" class="main-menu clearfix" role="navigation">
+                        <!-- #main-menu -->                        
+                        <nav id="main-menu" class="main-menu clearfix" role="navigation">
                         <?php if ($page['navigation']) :?>
                         <?php print drupal_render($page['navigation']); ?>
                         <?php else : ?>
-
-                        <?php if (module_exists('i18n_menu')) {
-                        $main_menu_tree = i18n_menu_translated_tree(variable_get('menu_main_links_source', 'main-menu'));
-                        } else { $main_menu_tree = menu_tree(variable_get('menu_main_links_source', 'main-menu')); }
-                        print drupal_render($main_menu_tree); ?>
+                          
+                            <a class="nav-toggle" href="#">Navigation</a>
+                            <div class="menu-navigation-container">
+                              <?php print drupal_render($main_menu_tree); ?>
+                            <div class="clear"></div>
+                            </div>
 
                         <?php endif; ?>
                         </nav>
-                        <!-- EOF: #main-navigation -->
+                        <!-- EOF: #main-menu -->
                     </div>
                     <!-- EOF: #navigation-wrapper -->
-
+                    
                 </div>
                 <!--EOF: #header-right -->
 

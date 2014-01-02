@@ -46,39 +46,6 @@ function simplecorp_button($variables) {
 }
 
 /**
- * Add styles for theme color schemes.
- */
-if (!(theme_get_setting('theme_color','simplecorp') == 'default')):
-	$theme_color = theme_get_setting('theme_color','simplecorp');
-	drupal_add_css(drupal_get_path('theme', 'simplecorp') . '/css/color-schemes/' . $theme_color . '/styles.css', array('group' => CSS_THEME, 'weight' => 120));
-endif;
-
-
-/**
- * Add columns.css
- */
-if (theme_get_setting('columns_enable','simplecorp')):
-	drupal_add_css(drupal_get_path('theme', 'simplecorp') . '/css/shortcodes/columns.css', array('group' => CSS_THEME, 'weight' => 116));
-endif;
-
-
-/**
- * Add lists.css
- */
-if (theme_get_setting('lists_enable','simplecorp')):
-	drupal_add_css(drupal_get_path('theme', 'simplecorp') . '/css/shortcodes/lists.css', array('group' => CSS_THEME, 'weight' => 117));
-endif;
-
-
-/**
- * Add boxes.css
- */
-if (theme_get_setting('boxes_enable','simplecorp')):
-	drupal_add_css(drupal_get_path('theme', 'simplecorp') . '/css/shortcodes/boxes.css', array('group' => CSS_THEME, 'weight' => 118));
-endif;
-
-
-/**
  * Page alter.
  */
 function simplecorp_page_alter($page) {
@@ -138,6 +105,52 @@ function simplecorp_preprocess_comment(&$variables) {
 	$variables['submitted_year_c'] = format_date($comment->created, 'custom', 'Y');
 }
 
+/**
+ * Override or insert variables into the page template.
+ */
+function simplecorp_preprocess_page(&$vars) {
+  
+  if (isset($vars['main_menu'])) {
+    $vars['main_menu'] = theme('links__system_main_menu', array(
+      'links' => $vars['main_menu'],
+      'attributes' => array(
+        'class' => array('links', 'main-menu', 'clearfix'),
+      ),
+      'heading' => array(
+        'text' => t('Main menu'),
+        'level' => 'h2',
+        'class' => array('element-invisible'),
+      ),
+    ));  
+  }
+  else {
+    $vars['primary_nav'] = FALSE;
+  }
+    
+  if (isset($vars['secondary_menu'])) {
+    $vars['secondary_nav'] = theme('links__system_secondary_menu', array(
+      'links' => $vars['secondary_menu'],
+      'attributes' => array(
+        'class' => array('links', 'clearfix', 'secondary-menu'),
+      ),
+      'heading' => array(
+        'text' => t('Secondary menu'),
+        'level' => 'h2',
+        'class' => array('element-invisible'),
+      )
+    ));
+  }
+  else {
+    $vars['secondary_nav'] = FALSE;
+  }
+
+  if (module_exists('i18n_menu')) {
+    $vars['main_menu_tree'] = i18n_menu_translated_tree(variable_get('menu_main_links_source', 'main-menu'));
+  }
+  else {
+    $vars['main_menu_tree'] = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
+  }
+}
 
 /**
  * Implements hook_preprocess_html().
@@ -157,6 +170,39 @@ function simplecorp_preprocess_html(&$vars) {
 	$vars['rdf']->namespaces = '';
 	$vars['rdf']->profile = '';
 	}
+
+  /**
+   * Add styles for theme color schemes.
+   */
+  if (!(theme_get_setting('theme_color','simplecorp') == 'default')) {
+    $theme_color = theme_get_setting('theme_color','simplecorp');
+    drupal_add_css(drupal_get_path('theme', 'simplecorp') . '/css/color-schemes/' . $theme_color . '/' . $theme_color . '-styles.css', array('group' => CSS_THEME, 'weight' => 120));
+    drupal_add_css(drupal_get_path('theme', 'simplecorp') . '/css/color-schemes/' . $theme_color . '/' . $theme_color . '-media.css', array('group' => CSS_THEME, 'weight' => 121));
+  }
+  
+  
+  /**
+   * Add columns.css
+   */
+  if (theme_get_setting('columns_enable','simplecorp')) {
+    drupal_add_css(drupal_get_path('theme', 'simplecorp') . '/css/shortcodes/columns.css', array('group' => CSS_THEME, 'weight' => 116));
+  }
+  
+  
+  /**
+   * Add lists.css
+   */
+  if (theme_get_setting('lists_enable','simplecorp')):
+    drupal_add_css(drupal_get_path('theme', 'simplecorp') . '/css/shortcodes/lists.css', array('group' => CSS_THEME, 'weight' => 117));
+  endif;
+  
+  
+  /**
+   * Add boxes.css
+   */
+  if (theme_get_setting('boxes_enable','simplecorp')) {
+    drupal_add_css(drupal_get_path('theme', 'simplecorp') . '/css/shortcodes/boxes.css', array('group' => CSS_THEME, 'weight' => 118));
+  }
 }
 
 ?>
