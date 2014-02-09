@@ -25,6 +25,13 @@
   font-size: 18px;
 }
 
+#main-menu ul.menu li a:hover,
+#main-menu > ul.menu > li > a.active,
+#main-menu ul li a:hover,
+#main-menu ul > li > a.active,
+#main-menu .content > ul.menu > li > a.active { color: #9dcedf; background: #f8f8f8; border-bottom: 1pt solid #9dcedf; }
+
+
 #main-menu ul li:first-child {
   padding-left: 0;
 }
