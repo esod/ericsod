@@ -1190,7 +1190,9 @@ padding: 2px 2px 2px 13px; font-weight: bold; display: block; margin-top: 20px; 
 /* 15- DRUPAL STYLES OVERRIDE
 /* ---------------------------------------------------------------------- */
 
-ul.inline li.first { padding-left: 0; }  
+ul.inline li.first { padding-left: 0; }
+
+.print_html.first.last { margin: 0; }
 
 .hentry ul.inline  { margin-left: 0; }
 
