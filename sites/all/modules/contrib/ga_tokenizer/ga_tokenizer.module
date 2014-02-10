@@ -3,8 +3,7 @@
  * @file
  * Define tokens based on the parsing of Google Analytics cookie.
  */
-require_once drupal_get_path('module', 'ga_tokenizer') .'/class.gaparse.php';
-
+module_load_include('php', 'ga_tokenizer', 'class.gaparse');
 /**
  * Implements hook_tokens().
  */

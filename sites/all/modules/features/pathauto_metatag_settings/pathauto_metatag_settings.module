@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Pathauto Metatag settings feature.
+ */
+
+include_once 'pathauto_metatag_settings.features.inc';

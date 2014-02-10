@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the WYSIWYG settings feature.
+ */
+
+include_once 'wysiwyg_settings.features.inc';

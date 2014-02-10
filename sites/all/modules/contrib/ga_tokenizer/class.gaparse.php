@@ -32,12 +32,12 @@ class GA_Parse
   var $times_visited;		// Times visited
   
   
-  function __construct($_COOKIE) {
-     if (isset($_COOKIE["__utmz"])) {
-       $this->utmz = $_COOKIE["__utmz"];
+  function __construct($cookie) {
+     if (isset($cookie["__utmz"])) {
+       $this->utmz = $cookie["__utmz"];
      }
-     if (isset($_COOKIE["__utma"])) {
-       $this->utma = $_COOKIE["__utma"];
+     if (isset($cookie["__utma"])) {
+       $this->utma = $cookie["__utma"];
      }
        $this->ParseCookies();
   }
@@ -45,7 +45,6 @@ class GA_Parse
   function ParseCookies(){
  // Parse __utmz cookie
  if (isset($this->utmz)) {
-   // list($domain_hash,$timestamp, $session_number, $campaign_numer, $campaign_data) = sscanf($this->utmz, '%d.%d.%d.%d.%[^.]');
    preg_match("((\d+)\.(\d+)\.(\d+)\.(\d+)\.(.*))", $this->utmz, $matches);
    $domain_hash = $matches[1];
    $timestamp = $matches[2];
@@ -77,7 +76,7 @@ class GA_Parse
 
   // Parse the __utma Cookie
   if (isset($this->utma)) {
-     list($domain_hash,$random_id,$time_initial_visit,$time_beginning_previous_visit,$time_beginning_current_visit,$session_counter) = split('[\.]', $this->utma);
+     list($domain_hash,$random_id,$time_initial_visit,$time_beginning_previous_visit,$time_beginning_current_visit,$session_counter) = preg_split('[\.]', $this->utma);
   }
 
   $this->first_visit = isset($time_initial_visit) ? date("m/d/Y g:i:s A",$time_initial_visit) : '';
