@@ -67,6 +67,7 @@ function wysiwyg_settings_wysiwyg_default_profiles() {
           'unlink' => 1,
           'image' => 1,
           'cleanup' => 1,
+          'code' => 1,
         ),
         'advimage' => array(
           'advimage' => 1,

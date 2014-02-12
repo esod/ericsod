@@ -243,8 +243,12 @@ function blog_post_field_default_field_instances() {
         'label' => 'above',
         'module' => 'youtube',
         'settings' => array(
+          'youtube_autohide' => FALSE,
           'youtube_autoplay' => FALSE,
+          'youtube_controls' => FALSE,
           'youtube_height' => NULL,
+          'youtube_iv_load_policy' => FALSE,
+          'youtube_showinfo' => FALSE,
           'youtube_size' => '420x315',
           'youtube_width' => NULL,
         ),
