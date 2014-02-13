@@ -18,6 +18,19 @@ function simplecorp_breadcrumb($variables){
 	}
 
 }
+/**
+ * Removes input formatting options and description from the comment form
+ */
+function simplecorp_form_comment_form_alter(&$form, &$form_state) {
+
+  $form['comment_body']['#after_build'][] = 'simplecorp_customize_comment_form';
+
+}
+
+function simplecorp_customize_comment_form(&$form) {
+  $form[LANGUAGE_NONE][0]['format']['#access'] = FALSE;
+  return $form;
+}
 
 /**
  * Add files for custom buttons.
