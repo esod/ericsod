@@ -29,6 +29,11 @@ function simplecorp_form_comment_form_alter(&$form, &$form_state) {
 
 function simplecorp_customize_comment_form(&$form) {
   $form[LANGUAGE_NONE][0]['format']['#access'] = FALSE;
+  // Hide guideliness
+	//$form[LANGUAGE_NONE][0]['format']['guidelines']['#access'] = FALSE;
+  // Hide Filter Tips
+  //$form[LANGUAGE_NONE][0]['format']['help']['#access'] = FALSE;
+
   return $form;
 }
 
