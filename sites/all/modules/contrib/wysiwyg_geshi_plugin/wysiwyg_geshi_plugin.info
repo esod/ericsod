@@ -1,0 +1,7 @@
+name = "Wysiwyg Geshi Plugin"
+description = "Implement geshi-plugin for module wysiwyg."
+core = 7.x
+files[] = wysiwyg_geshi_plugin.module
+dependencies[] = wysiwyg
+dependencies[] = geshifilter
+package = Filters

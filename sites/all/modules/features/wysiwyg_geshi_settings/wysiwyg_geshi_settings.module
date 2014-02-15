@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the WYSIWYG  geshi settings feature.
+ */
+
+include_once 'wysiwyg_geshi_settings.features.inc';
