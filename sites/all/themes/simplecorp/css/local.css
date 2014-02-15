@@ -23,3 +23,8 @@
 .large-raquo {
   font-size: 24px;
 }
+
+/* line 22, ../sass/local.scss */
+.es-move-block-left {
+  margin-left: 145px;
+}

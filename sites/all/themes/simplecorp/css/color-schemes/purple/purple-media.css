@@ -200,29 +200,29 @@
   #main-menu a {
     padding: 10px 0;
     color: #343434;
-    background: #65778c;
-    background: -moz-linear-gradient(#6f7c8b, #65778c);
-    background: -webkit-linear-gradient(#6f7c8b, #65778c);
-    background: -o-linear-gradient(#6f7c8b, #65778c);
-    background: -ms-linear-gradient(#6f7c8b, #65778c);
-    background: linear-gradient(#6f7c8b, #65778c);
-    border-bottom: 1px solid #6f7c8b;
+    background: #aa6ca2;
+    background: -moz-linear-gradient(#9e5c96, #aa6ca2);
+    background: -webkit-linear-gradient(#9e5c96, #aa6ca2);
+    background: -o-linear-gradient(#9e5c96, #aa6ca2);
+    background: -ms-linear-gradient(#9e5c96, #aa6ca2);
+    background: linear-gradient(#9e5c96, #aa6ca2);
+    border-bottom: 1px solid #9e5c96;
   }
 
   /* line 185, ../../../sass/color-schemes/purple/purple-media.scss */
   #main-menu li li li a {
-    background: #65778c;
+    background: #aa6ca2;
   }
 
   /* line 190, ../../../sass/color-schemes/purple/purple-media.scss */
   #main-menu a:hover,
   #main-menu li > a.active {
-    background: #6f7c8b;
-    background: -moz-linear-gradient(#6f7c8b, #65778c);
-    background: -webkit-linear-gradient(#6f7c8b, #65778c);
-    background: -o-linear-gradient(#6f7c8b, #65778c);
-    background: -ms-linear-gradient(#6f7c8b, #65778c);
-    background: linear-gradient(#6f7c8b, #65778c);
+    background: #9e5c96;
+    background: -moz-linear-gradient(#9e5c96, #aa6ca2);
+    background: -webkit-linear-gradient(#9e5c96, #aa6ca2);
+    background: -o-linear-gradient(#9e5c96, #aa6ca2);
+    background: -ms-linear-gradient(#9e5c96, #aa6ca2);
+    background: linear-gradient(#9e5c96, #aa6ca2);
     color: #FFFFFF;
   }
 
