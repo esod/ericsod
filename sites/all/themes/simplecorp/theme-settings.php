@@ -42,13 +42,13 @@ function simplecorp_form_system_theme_settings_alter(&$form, &$form_state) {
         '#default_value' => theme_get_setting('theme_color','simplecorp'),
         '#options' => array(
             'default' => t('Default'),
-            'light-blue-dark' => t('Light Blue Dark'),
-            'light-gray' => t('Light Gray'),
-            'light-green' => t('Light Green'),
-            'light-orange' => t('Light Orange'),
-            'light-purple' => t('Light Purple'),
-            'light-red' => t('Light Red'),
-            'light-yellow' => t('Light Yellow'),
+            'blue' => t('Blue'),
+            'gray' => t('Gray'),
+            'green' => t('Green'),
+            'orange' => t('Orange'),
+            'purple' => t('Purple'),
+            'red' => t('Red'),
+            'yellow' => t('Yellow'),
             ),
     );
 

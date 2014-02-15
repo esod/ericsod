@@ -1,0 +1,250 @@
+/* ---------------------------------------------------------------------- */
+/* LIGHT PURPLE
+/* 
+/* 
+/* Accent color: #65778C ;
+/* Borders color, Submenu background: #D8D5CD ;
+/* Page background: #FFFFFF;
+/* Content Boxes background: #3F3F3F;
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* COLORS 
+/* ---------------------------------------------------------------------- */
+/* line 15, ../../../sass/color-schemes/gray/gray-styles.scss */
+#page {
+  background-color: #FFFFFF;
+}
+
+/* line 22, ../../../sass/color-schemes/gray/gray-styles.scss */
+a:hover, #page-wrapper a > *:hover,
+.categories a:hover,
+#footer .footer-area .content li a:hover,
+.sidebar .block a:hover {
+  color: #65778C;
+}
+
+/* line 26, ../../../sass/color-schemes/gray/gray-styles.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #65778C;
+}
+
+/* line 30, ../../../sass/color-schemes/gray/gray-styles.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #303031;
+  font-size: 100%;
+}
+
+/* line 36, ../../../sass/color-schemes/gray/gray-styles.scss */
+#pre-header,
+.flex-direction-nav li a:hover {
+  background-color: #65778C;
+  color: #ffffff;
+}
+
+/* line 41, ../../../sass/color-schemes/gray/gray-styles.scss */
+#pre-header ul.menu li a {
+  border-right: 1pt solid #CA8BC2;
+  text-shadow: none;
+}
+
+/* line 46, ../../../sass/color-schemes/gray/gray-styles.scss */
+#footer-bottom ul.menu li a:hover {
+  color: #65778C;
+}
+
+/* line 50, ../../../sass/color-schemes/gray/gray-styles.scss */
+#footer-bottom ul.menu li a.active {
+  color: #65778C;
+}
+
+/* line 59, ../../../sass/color-schemes/gray/gray-styles.scss */
+.colored,
+.flex-caption h3,
+.intro-page h2 strong,
+#footer h4,
+#footer h2,
+#footer-bottom a {
+  color: #65778C;
+}
+
+/* line 63, ../../../sass/color-schemes/gray/gray-styles.scss */
+a.colored:hover {
+  color: #65778C;
+  text-decoration: underline;
+}
+
+/* line 70, ../../../sass/color-schemes/gray/gray-styles.scss */
+#pre-header,
+#slider-container,
+#banner-inside {
+  border-bottom: 1pt solid #D8D5CD;
+}
+
+/* line 75, ../../../sass/color-schemes/gray/gray-styles.scss */
+.horizontal-line,
+.divider {
+  border-top: 1pt solid #D8D5CD;
+}
+
+/* line 79, ../../../sass/color-schemes/gray/gray-styles.scss */
+ul#social-links li {
+  background: #59697B;
+  background: -moz-linear-gradient(top, #59697b 0%, #49586a 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #59697b), color-stop(100%, #49586a));
+  background: -webkit-linear-gradient(top, #59697b 0%, #49586a 100%);
+  background: -o-linear-gradient(top, #59697b 0%, #49586a 100%);
+  background: -ms-linear-gradient(top, #59697b 0%, #49586a 100%);
+  background: linear-gradient(top, #59697b 0%, #49586a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#59697B', endColorstr='#49586A',GradientType=0 );
+  box-shadow: 0px 1px 1px #7489A2,inset 0px 2px 5px #49586A;
+  -moz-box-shadow: 0px 1px 1px #7489A2,inset 0px 2px 5px #49586A;
+  -webkit-box-shadow: 0px 1px 1px #7489A2,inset 0px 2px 5px #49586A;
+}
+
+/* line 94, ../../../sass/color-schemes/gray/gray-styles.scss */
+img.intro-img {
+  border-bottom: 1pt solid #D8D5CD;
+}
+
+/* line 98, ../../../sass/color-schemes/gray/gray-styles.scss */
+.jcarousel-next, .jcarousel-prev {
+  background-color: #65778C;
+}
+
+/* line 102, ../../../sass/color-schemes/gray/gray-styles.scss */
+.jcarousel-prev {
+  background-color: #65778C;
+}
+
+/* line 106, ../../../sass/color-schemes/gray/gray-styles.scss */
+.jcarousel-next:hover, .jcarousel-next:focus, .jcarousel-next:active, .jcarousel-prev:hover, .jcarousel-prev:focus, .jcarousel-prev:active {
+  background-color: #65778C;
+}
+
+/* line 110, ../../../sass/color-schemes/gray/gray-styles.scss */
+.jcarousel-next-disabled, .jcarousel-next-disabled:hover, .jcarousel-next-disabled:focus, .jcarousel-next-disabled:active, .jcarousel-prev-disabled, .jcarousel-prev-disabled:hover, .jcarousel-prev-disabled:focus, .jcarousel-prev-disabled:active {
+  background-color: #D8D5CD;
+  box-shadow: none;
+}
+
+/* line 116, ../../../sass/color-schemes/gray/gray-styles.scss */
+ul#projects-carousel li .item-content:hover,
+ul#portfolio-items-one-fourth li .item-content:hover {
+  background-color: #65778C;
+}
+
+/* line 120, ../../../sass/color-schemes/gray/gray-styles.scss */
+.sidebar .block .content li:first-child {
+  border-top: 1px dotted #D8D5CD;
+}
+
+/* line 124, ../../../sass/color-schemes/gray/gray-styles.scss */
+.sidebar .block .content li {
+  border-bottom: 1px dotted #D8D5CD;
+}
+
+/* line 128, ../../../sass/color-schemes/gray/gray-styles.scss */
+.archive .hentry, .page-template-template-blog-php .hentry, .search .hentry {
+  border-bottom: 1px solid #D8D5CD;
+}
+
+/* line 132, ../../../sass/color-schemes/gray/gray-styles.scss */
+.date {
+  background: #65778C;
+}
+
+/* line 142, ../../../sass/color-schemes/gray/gray-styles.scss */
+.filterable li.active a {
+  background-color: #65778C;
+}
+
+/* line 161, ../../../sass/color-schemes/gray/gray-styles.scss */
+#commentform input[type="text"],
+#commentform input[type="password"],
+#commentform input[type="email"],
+#commentform input.text,
+#commentform input.title,
+#commentform textarea,
+#commentform select,
+#commentform textarea,
+#contactForm input[type="text"],
+#contactForm input[type="password"],
+#contactForm input[type="email"],
+#contactForm textarea,
+#contactForm select {
+  border: 1px solid #DDDDDD;
+  box-shadow: inset 0px 2px 4px #F3F3F3;
+  -moz-box-shadow: inset 0px 2px 4px #F3F3F3;
+  -webkit-box-shadow: inset 0px 2px 4px #F3F3F3;
+  background: #FFFFFF;
+  color: #777777;
+}
+
+/* line 180, ../../../sass/color-schemes/gray/gray-styles.scss */
+#commentform input[type="text"]:focus,
+#commentform input[type="password"]:focus,
+#commentform input[type="email"]:focus,
+#commentform input.text:focus,
+#commentform input.title:focus,
+#commentform textarea:focus,
+#commentform select:focus,
+#contactForm input[type="text"]:focus,
+#contactForm input[type="password"]:focus,
+#contactForm input[type="email"]:focus,
+#contactForm textarea:focus {
+  border: 1px solid #BBBBBB;
+  box-shadow: 0px 0px 5px #CCCCCC,inset 0px 2px 4px #F3F3F3;
+  -moz-box-shadow: 0px 0px 5px #CCCCCC,inset 0px 2px 4px #F3F3F3;
+  -webkit-box-shadow: 0px 0px 5px #CCCCCC,inset 0px 2px 4px #F3F3F3;
+}
+
+/* line 193, ../../../sass/color-schemes/gray/gray-styles.scss */
+#tabscontainer {
+  clear: both;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Images
+/* ---------------------------------------------------------------------- */
+/* line 204, ../../../sass/color-schemes/gray/gray-styles.scss */
+.custom-logo {
+  background-image: url("../../../images/color-schemes/gray/logo.png");
+  padding-bottom: 50px;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+/* line 210, ../../../sass/color-schemes/gray/gray-styles.scss */
+.flex-control-nav li a {
+  background-image: url("../../../images/color-schemes/gray/bg_control_nav.png");
+}
+
+/* line 214, ../../../sass/color-schemes/gray/gray-styles.scss */
+.portfolio-item-hover-content a.zoom {
+  background-image: url("../../../images/color-schemes/gray/zoom-plus.png");
+}
+
+/* line 218, ../../../sass/color-schemes/gray/gray-styles.scss */
+.year {
+  background-image: url("../../../images/color-schemes/gray/post-meta-divider.png");
+}
+
+/* line 222, ../../../sass/color-schemes/gray/gray-styles.scss */
+.readmore a:hover, .node-readmore a:hover {
+  background-image: url("../../../images/color-schemes/gray/blog-permalink.png");
+}
+
+/* line 226, ../../../sass/color-schemes/gray/gray-styles.scss */
+.contact-info span.address {
+  background-image: url("../../../images/color-schemes/gray/icons/adress.png");
+}
+
+/* line 230, ../../../sass/color-schemes/gray/gray-styles.scss */
+.contact-info span.phone {
+  background-image: url("../../../images/color-schemes/gray/icons/phone-number.png");
+}
+
+/* line 234, ../../../sass/color-schemes/gray/gray-styles.scss */
+.contact-info span.email {
+  background-image: url("../../../images/color-schemes/gray/icons/mail-adress.png");
+}

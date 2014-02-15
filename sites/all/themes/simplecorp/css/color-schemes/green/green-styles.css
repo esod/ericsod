@@ -1,0 +1,279 @@
+/* ---------------------------------------------------------------------- */
+/* LIGHT GREEN
+/* 
+/* 
+/* Accent color: #34B489 ;
+/* Borders color, Submenu background: #D8D5CD ;
+/* Page background: #FFFFFF;
+/* Content Boxes background: #3F3F3F;
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* COLORS 
+/* ---------------------------------------------------------------------- */
+/* line 15, ../../../sass/color-schemes/green/green-styles.scss */
+#page {
+  background-color: #FFFFFF;
+}
+
+/* line 22, ../../../sass/color-schemes/green/green-styles.scss */
+a:hover, #page-wrapper a > *:hover,
+.categories a:hover,
+#footer .footer-area .content li a:hover,
+.sidebar .block a:hover {
+  color: #34B489;
+}
+
+/* line 26, ../../../sass/color-schemes/green/green-styles.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #34B489;
+}
+
+/* line 30, ../../../sass/color-schemes/green/green-styles.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #303031;
+  font-size: 100%;
+}
+
+/* line 36, ../../../sass/color-schemes/green/green-styles.scss */
+#pre-header,
+.flex-direction-nav li a:hover {
+  background-color: #34B489;
+  color: #ffffff;
+}
+
+/* line 41, ../../../sass/color-schemes/green/green-styles.scss */
+#pre-header ul.menu li a {
+  border-right: 1pt solid #4DCCA1;
+  text-shadow: none;
+}
+
+/* line 46, ../../../sass/color-schemes/green/green-styles.scss */
+#footer-bottom ul.menu li a:hover {
+  color: #34B489;
+}
+
+/* line 50, ../../../sass/color-schemes/green/green-styles.scss */
+#footer-bottom ul.menu li a.active {
+  color: #34B489;
+}
+
+/* line 59, ../../../sass/color-schemes/green/green-styles.scss */
+.colored,
+.flex-caption h3,
+.intro-page h2 strong,
+#footer h4,
+#footer h2,
+#footer-bottom a {
+  color: #34B489;
+}
+
+/* line 63, ../../../sass/color-schemes/green/green-styles.scss */
+a.colored:hover {
+  color: #34B489;
+  text-decoration: underline;
+}
+
+/* line 70, ../../../sass/color-schemes/green/green-styles.scss */
+#pre-header,
+#slider-container,
+#banner-inside {
+  border-bottom: 1pt solid #D8D5CD;
+}
+
+/* line 74, ../../../sass/color-schemes/green/green-styles.scss */
+.front #header {
+  border-bottom: 1pt solid #D8D5CD;
+}
+
+/* line 79, ../../../sass/color-schemes/green/green-styles.scss */
+.horizontal-line,
+.divider {
+  border-top: 1pt solid #D8D5CD;
+}
+
+/* line 83, ../../../sass/color-schemes/green/green-styles.scss */
+ul#social-links li {
+  background: #2ca67d;
+  background: -moz-linear-gradient(top, #2ca67d 0%, #1c8864 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2ca67d), color-stop(100%, #1c8864));
+  background: -webkit-linear-gradient(top, #2ca67d 0%, #1c8864 100%);
+  background: -o-linear-gradient(top, #2ca67d 0%, #1c8864 100%);
+  background: -ms-linear-gradient(top, #2ca67d 0%, #1c8864 100%);
+  background: linear-gradient(top, #2ca67d 0%, #1c8864 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2ca67d', endColorstr='#1c8864',GradientType=0 );
+  box-shadow: 0px 1px 1px #4acea1,inset 0px 2px 5px #1c8864;
+  -moz-box-shadow: 0px 1px 1px #4acea1,inset 0px 2px 5px #1c8864;
+  -webkit-box-shadow: 0px 1px 1px #4acea1,inset 0px 2px 5px #1c8864;
+}
+
+/* line 101, ../../../sass/color-schemes/green/green-styles.scss */
+#main-menu ul.menu li a:hover,
+#main-menu > ul.menu > li > a.active,
+#main-menu ul li a:hover,
+#main-menu ul > li > a.active,
+#main-menu .content > ul.menu > li > a.active {
+  background: #F8F8F8;
+  border-bottom: 1pt solid #34b489;
+  color: #34b489;
+}
+
+/* line 113, ../../../sass/color-schemes/green/green-styles.scss */
+#main-menu ul.menu ul a:hover,
+#main-menu ul.menu ul .hover > a,
+#main-menu ul ul a:hover,
+#main-menu ul ul .hover > a,
+#main-menu .content > ul.menu li li a.active,
+#main-menu > ul.menu li li a.active,
+#main-menu ul li li a.active {
+  background-color: #34b489;
+  color: #fff;
+  border: 0;
+}
+
+/* line 119, ../../../sass/color-schemes/green/green-styles.scss */
+img.intro-img {
+  border-bottom: 1pt solid #D8D5CD;
+}
+
+/* line 123, ../../../sass/color-schemes/green/green-styles.scss */
+.jcarousel-next, .jcarousel-prev {
+  background-color: #34B489;
+}
+
+/* line 127, ../../../sass/color-schemes/green/green-styles.scss */
+.jcarousel-prev {
+  background-color: #34B489;
+}
+
+/* line 131, ../../../sass/color-schemes/green/green-styles.scss */
+.jcarousel-next:hover, .jcarousel-next:focus, .jcarousel-next:active, .jcarousel-prev:hover, .jcarousel-prev:focus, .jcarousel-prev:active {
+  background-color: #34B489;
+}
+
+/* line 135, ../../../sass/color-schemes/green/green-styles.scss */
+.jcarousel-next-disabled, .jcarousel-next-disabled:hover, .jcarousel-next-disabled:focus, .jcarousel-next-disabled:active, .jcarousel-prev-disabled, .jcarousel-prev-disabled:hover, .jcarousel-prev-disabled:focus, .jcarousel-prev-disabled:active {
+  background-color: #D8D5CD;
+  box-shadow: none;
+}
+
+/* line 141, ../../../sass/color-schemes/green/green-styles.scss */
+ul#projects-carousel li .item-content:hover,
+ul#portfolio-items-one-fourth li .item-content:hover {
+  background-color: #34b489;
+}
+
+/* line 145, ../../../sass/color-schemes/green/green-styles.scss */
+.sidebar .block .content li:first-child {
+  border-top: 1px dotted #D8D5CD;
+}
+
+/* line 149, ../../../sass/color-schemes/green/green-styles.scss */
+.sidebar .block .content li {
+  border-bottom: 1px dotted #D8D5CD;
+}
+
+/* line 153, ../../../sass/color-schemes/green/green-styles.scss */
+.archive .hentry, .page-template-template-blog-php .hentry, .search .hentry {
+  border-bottom: 1px solid #D8D5CD;
+}
+
+/* line 157, ../../../sass/color-schemes/green/green-styles.scss */
+.date {
+  background: #34B489;
+}
+
+/* line 167, ../../../sass/color-schemes/green/green-styles.scss */
+.filterable li.active a {
+  background-color: #34B489;
+}
+
+/* line 186, ../../../sass/color-schemes/green/green-styles.scss */
+#commentform input[type="text"],
+#commentform input[type="password"],
+#commentform input[type="email"],
+#commentform input.text,
+#commentform input.title,
+#commentform textarea,
+#commentform select,
+#commentform textarea,
+#contactForm input[type="text"],
+#contactForm input[type="password"],
+#contactForm input[type="email"],
+#contactForm textarea,
+#contactForm select {
+  border: 1px solid #DDDDDD;
+  box-shadow: inset 0px 2px 4px #F3F3F3;
+  -moz-box-shadow: inset 0px 2px 4px #F3F3F3;
+  -webkit-box-shadow: inset 0px 2px 4px #F3F3F3;
+  background: #FFFFFF;
+  color: #777777;
+}
+
+/* line 205, ../../../sass/color-schemes/green/green-styles.scss */
+#commentform input[type="text"]:focus,
+#commentform input[type="password"]:focus,
+#commentform input[type="email"]:focus,
+#commentform input.text:focus,
+#commentform input.title:focus,
+#commentform textarea:focus,
+#commentform select:focus,
+#contactForm input[type="text"]:focus,
+#contactForm input[type="password"]:focus,
+#contactForm input[type="email"]:focus,
+#contactForm textarea:focus {
+  border: 1px solid #BBBBBB;
+  box-shadow: 0px 0px 5px #CCCCCC,inset 0px 2px 4px #F3F3F3;
+  -moz-box-shadow: 0px 0px 5px #CCCCCC,inset 0px 2px 4px #F3F3F3;
+  -webkit-box-shadow: 0px 0px 5px #CCCCCC,inset 0px 2px 4px #F3F3F3;
+}
+
+/* line 218, ../../../sass/color-schemes/green/green-styles.scss */
+#tabscontainer {
+  clear: both;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Images
+/* ---------------------------------------------------------------------- */
+/* line 229, ../../../sass/color-schemes/green/green-styles.scss */
+.custom-logo {
+  background-image: url("../../../images/color-schemes/green/logo.png");
+  padding-bottom: 50px;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+/* line 235, ../../../sass/color-schemes/green/green-styles.scss */
+.flex-control-nav li a {
+  background-image: url("../../../images/color-schemes/green/bg_control_nav.png");
+}
+
+/* line 239, ../../../sass/color-schemes/green/green-styles.scss */
+.portfolio-item-hover-content a.zoom {
+  background-image: url("../../../images/color-schemes/green/zoom-plus.png");
+}
+
+/* line 243, ../../../sass/color-schemes/green/green-styles.scss */
+.year {
+  background-image: url("../../../images/color-schemes/green/post-meta-divider.png");
+}
+
+/* line 247, ../../../sass/color-schemes/green/green-styles.scss */
+.readmore a:hover, .node-readmore a:hover {
+  background-image: url("../../../images/color-schemes/green/blog-permalink.png");
+}
+
+/* line 251, ../../../sass/color-schemes/green/green-styles.scss */
+.contact-info span.address {
+  background-image: url("../../../images/color-schemes/green/icons/adress.png");
+}
+
+/* line 255, ../../../sass/color-schemes/green/green-styles.scss */
+.contact-info span.phone {
+  background-image: url("../../../images/color-schemes/green/icons/phone-number.png");
+}
+
+/* line 259, ../../../sass/color-schemes/green/green-styles.scss */
+.contact-info span.email {
+  background-image: url("../../../images/color-schemes/green/icons/mail-adress.png");
+}

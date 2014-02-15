@@ -1,0 +1,272 @@
+/* line 5, ../../../sass/color-schemes/orange/orange-media.scss */
+#main-menu .nav-toggle {
+  display: none;
+}
+
+/* line 9, ../../../sass/color-schemes/orange/orange-media.scss */
+#main-menu {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* line 16, ../../../sass/color-schemes/orange/orange-media.scss */
+#main-menu ul {
+  float: left;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 13px;
+}
+
+/* line 24, ../../../sass/color-schemes/orange/orange-media.scss */
+#main-menu li {
+  position: relative;
+  float: left;
+  padding: 0;
+  margin: 0;
+  font-family: 'Vollkorn',arial,serif;
+  font-size: 18px;
+}
+
+/* line 37, ../../../sass/color-schemes/orange/orange-media.scss */
+#main-menu ul.menu li a:hover,
+#main-menu > ul.menu > li > a.active,
+#main-menu ul li a:hover,
+#main-menu ul > li > a.active,
+#main-menu .content > ul.menu > li > a.active {
+  color: #cb5234;
+  background: #f8f8f8;
+  border-bottom: 1pt solid #cb5234;
+}
+
+/* line 40, ../../../sass/color-schemes/orange/orange-media.scss */
+#main-menu ul li:first-child {
+  padding-left: 0;
+}
+
+/* line 44, ../../../sass/color-schemes/orange/orange-media.scss */
+#main-menu a {
+  border-radius: 5px 5px 5px 5px;
+  color: #343434;
+  display: block;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+/* line 56, ../../../sass/color-schemes/orange/orange-media.scss */
+#main-menu a:hover,
+#main-menu li > a.active,
+#main-menu li > a.active-trail {
+  background: none repeat scroll 0 0 #cb5234;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* line 62, ../../../sass/color-schemes/orange/orange-media.scss */
+.drop-down-toggle {
+  display: none;
+}
+
+/* line 66, ../../../sass/color-schemes/orange/orange-media.scss */
+.drop-down-arrow {
+  display: block;
+  width: 0;
+  height: 0;
+  margin: 8px 0 0 5px;
+  border-top: 5px solid #ffffff;
+  border-left: transparent 5px solid;
+  border-right: transparent 5px solid;
+}
+
+/* line 76, ../../../sass/color-schemes/orange/orange-media.scss */
+#main-menu li li {
+  float: none;
+  min-width: 190px;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 83, ../../../sass/color-schemes/orange/orange-media.scss */
+#main-menu li li a {
+  background: none repeat scroll 0 0 #cb5234;
+  border: 1px solid #343434;
+  color: #ffffff;
+  font-size: 14px;
+  margin: 0;
+  min-width: 150px;
+  overflow: hidden;
+  padding: 4% 5%;
+  text-align: left;
+}
+
+/* line 95, ../../../sass/color-schemes/orange/orange-media.scss */
+#main-menu li li a:hover {
+  background: #343434;
+  color: #fff;
+}
+
+/* line 100, ../../../sass/color-schemes/orange/orange-media.scss */
+#main-menu li ul {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  min-width: 190px;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 110, ../../../sass/color-schemes/orange/orange-media.scss */
+#main-menu li ul ul {
+  margin: -33px 0 0 190px !important;
+}
+
+/* line 116, ../../../sass/color-schemes/orange/orange-media.scss */
+#main-menu li:hover > ul,
+#main-menu li li:hover > ul,
+#main-menu li li li:hover > ul {
+  display: block;
+}
+
+/* line 120, ../../../sass/color-schemes/orange/orange-media.scss */
+#main-menu ul li.leaf, #main-menu ul li.expanded, #main-menu ul li.collapsed {
+  list-style: none;
+}
+
+/* line 123, ../../../sass/color-schemes/orange/orange-media.scss */
+#main-menu ul.menu li {
+  margin: 0 3px 0 0;
+}
+
+/* line 127, ../../../sass/color-schemes/orange/orange-media.scss */
+#main-menu li.expanded, #main-menu li.collapsed, #main-menu li.leaf {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 640px) {
+  /* line 134, ../../../sass/color-schemes/orange/orange-media.scss */
+  #sticky_header {
+    display: none !important;
+  }
+
+  /* line 137, ../../../sass/color-schemes/orange/orange-media.scss */
+  .menu_wrapper {
+    background: none;
+  }
+
+  /* line 141, ../../../sass/color-schemes/orange/orange-media.scss */
+  #socialbar {
+    float: none;
+  }
+
+  /* line 145, ../../../sass/color-schemes/orange/orange-media.scss */
+  #main-menu ul {
+    display: none;
+  }
+
+  /* line 149, ../../../sass/color-schemes/orange/orange-media.scss */
+  #main-menu li ul {
+    position: static;
+  }
+
+  /* line 153, ../../../sass/color-schemes/orange/orange-media.scss */
+  #main-menu li ul ul {
+    margin: 0 !important;
+  }
+
+  /* line 158, ../../../sass/color-schemes/orange/orange-media.scss */
+  #main-menu ul,
+  #main-menu li {
+    float: none;
+    max-width: 100%;
+  }
+
+  /* line 162, ../../../sass/color-schemes/orange/orange-media.scss */
+  #main-menu ul.menu li {
+    margin: 0 3px;
+  }
+
+  /* line 168, ../../../sass/color-schemes/orange/orange-media.scss */
+  #main-menu li:hover > ul,
+  #main-menu li li:hover > ul,
+  #main-menu li li li:hover > ul {
+    display: none;
+  }
+
+  /* line 173, ../../../sass/color-schemes/orange/orange-media.scss */
+  #main-menu a {
+    padding: 10px 0;
+    color: #343434;
+    background: #c04129;
+    background: -moz-linear-gradient(#b23a24, #c04129);
+    background: -webkit-linear-gradient(#b23a24, #c04129);
+    background: -o-linear-gradient(#b23a24, #c04129);
+    background: -ms-linear-gradient(#b23a24, #c04129);
+    background: linear-gradient(#b23a24, #c04129);
+    border-bottom: 1px solid #b23a24;
+  }
+
+  /* line 185, ../../../sass/color-schemes/orange/orange-media.scss */
+  #main-menu li li li a {
+    background: #c04129;
+  }
+
+  /* line 190, ../../../sass/color-schemes/orange/orange-media.scss */
+  #main-menu a:hover,
+  #main-menu li > a.active {
+    background: #b23a24;
+    background: -moz-linear-gradient(#b23a24, #c04129);
+    background: -webkit-linear-gradient(#b23a24, #c04129);
+    background: -o-linear-gradient(#b23a24, #c04129);
+    background: -ms-linear-gradient(#b23a24, #c04129);
+    background: linear-gradient(#b23a24, #c04129);
+    color: #FFFFFF;
+  }
+
+  /* line 200, ../../../sass/color-schemes/orange/orange-media.scss */
+  .drop-down-toggle {
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: 16px;
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    border: #ffffff 3px solid;
+  }
+
+  /* line 211, ../../../sass/color-schemes/orange/orange-media.scss */
+  #main-menu li li .drop-down-toggle {
+    top: 5px;
+  }
+
+  /* line 215, ../../../sass/color-schemes/orange/orange-media.scss */
+  #main-menu .nav-toggle {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 3px;
+  }
+
+  /* line 222, ../../../sass/color-schemes/orange/orange-media.scss */
+  #main-menu li li a {
+    background: none repeat scroll 0 0 #cb5234;
+    border: 1px solid #343434;
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0;
+    min-width: 150px;
+    overflow: hidden;
+    padding: 4% 5%;
+    text-align: left;
+  }
+
+  /* line 233, ../../../sass/color-schemes/orange/orange-media.scss */
+  #main-menu li li a:hover {
+    background: #343434;
+    color: #ffffff;
+  }
+}
