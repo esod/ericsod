@@ -34,20 +34,6 @@ function media_social_media_mollom_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'mollom_private_key';
-  $strongarm->value = '6572c167910ef558f59be17dd0b7c21b';
-  $export['mollom_private_key'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'mollom_public_key';
-  $strongarm->value = '3e0dedc8cbd29fca532694b5c65d413c';
-  $export['mollom_public_key'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'mollom_testing_mode';
   $strongarm->value = 0;
   $export['mollom_testing_mode'] = $strongarm;
