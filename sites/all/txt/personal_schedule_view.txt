@@ -98,7 +98,6 @@ return TRUE;
 drupal_set_message(t(\'You may view your schedule only. Schedules are not publicly shared.\'), \'warning\');
 }
 ';
-$handler->display->display_options['arguments']['uid']['validate']['fail'] = 'access denied';
 /* Filter criterion: Content: Published */
 $handler->display->display_options['filters']['status']['id'] = 'status';
 $handler->display->display_options['filters']['status']['table'] = 'node';
