@@ -1,0 +1,158 @@
+<p>Drupal&#39;s&nbsp;<a href="https://drupal.org/project/cod">COD</a>&nbsp;distribution is a terrific way to get an event website up and running. However I noticed there is no way for a registered user to see his schedule after he clicks the &quot;add to my schedule&quot; button on the session page.</p>
+
+<p>
+  <a href="/sites/all/themes/simplecorp/blog_images/personal_schedule/add_the_session_to_my_schedule.png" rel="prettyPhoto[pp_gal]" title="Add to my schedule"><img alt="Add to my schedule" src="/sites/all/themes/simplecorp/blog_images/personal_schedule/add_the_session_to_my_schedule.png" width="400" /></a>
+</p>
+
+<p style="display:none;">
+  <a href="/sites/all/themes/simplecorp/blog_images/personal_schedule/the_session_is_in_my_schedule_now_what.png" rel="prettyPhoto[pp_gal]" title="The session is in my schedule. Now what?"><img alt="The session is in my schedule. Now what?" src="/sites/all/themes/simplecorp/blog_images/personal_schedule/the_session_is_in_my_schedule_now_what.png" width="400" /></a>
+</p>
+
+<p>To fix this, I added a tab to the user profile page called &quot;My Schedule&quot; which displays to the user her schedule. I&#39;m adding this user feature to the <a href="http://nyccamp.org/" target="_blank">NYCCamp</a> website. <a href="http://nyccamp.org/" target="_blank">NYCCamp</a> takes place this year from April 10th through April 13th. Registration opens in March. You should be sure to stop by.</p>
+
+<p>
+  The only change I made to COD was to add the Room assignment field to the Session content type because I want the Room assignment included in the My Schedule tab. Remember also that if there is no data Views will likely not show anything. Before building this view it's a good idea to have Session nodes, Room nodes, and Time slot nodes already entered into your system. 
+</p>
+<p>
+  <a href="/sites/all/themes/simplecorp/blog_images/personal_schedule/add-field_room_assignment_to_session.png" rel="prettyPhoto" title="Add the Room assignment field to the Session content type"><img alt="Add the Room assignment field to the Session content type" src="/sites/all/themes/simplecorp/blog_images/personal_schedule/add-field_room_assignment_to_session.png" alt="Add the Room assignment field to the Session content type" class="es-move-block-left" style="width: 400px;" /></a>
+</p>
+<p>
+  Create a new view called Personal schedule. The view will show Content of type Session sorted by Newest first. Set the path to user/%/schedule, Display format to Unformatted list of titles (linked). Click Continue & edit.
+</p>
+<p>
+  <a href="/sites/all/themes/simplecorp/blog_images/personal_schedule/continue_and_edit.png" rel="prettyPhoto" title="Add new view"><img alt="Add new view" src="/sites/all/themes/simplecorp/blog_images/personal_schedule/continue_and_edit.png" alt="Add the view" class="es-move-block-left" style="width: 400px;" /></a>
+</p>
+<p>
+  <strong>Relationships</strong>
+</p>
+<p>
+  Before we can add our fields we need to add Relationships and Contextual Filters. Our goal of adding a My Schedule tab to the user profile page is based on the <a href="https://drupal.org/project/flag" target="_blank">flag</a> module and we&#39;ll add the flag relationships first. Click the word Advanced (in the right column) and click Add which is to the right of the word Relationships. Filter on Flags and tick Flags: Node flag. Click Apply (all displays).
+</p>
+<p>
+  <a href="/sites/all/themes/simplecorp/blog_images/personal_schedule/flag_node_flag.png" rel="prettyPhoto" title="Limit the results to entities flagged by a certain flag."><img alt="Add new view" src="/sites/all/themes/simplecorp/blog_images/personal_schedule/flag_node_flag.png" alt="Limit the results to entities flagged by a certain flag." class="es-move-block-left" style="width: 400px;" /></a>
+</p>
+<p>
+  Change the Identifier to schedule, check the Session Attending Flag, and change By to Any user. Click Apply (all displays).
+</p>
+<p>
+  <a href="/sites/all/themes/simplecorp/blog_images/personal_schedule/flags_session_schedule.png" rel="prettyPhoto" title="Configure Relationship Flags session_schedule"><img alt="Add new view" src="/sites/all/themes/simplecorp/blog_images/personal_schedule/flags_session_schedule.png" alt="Configure Relationship Flags session_schedule" class="es-move-block-left" style="width: 400px;" /></a>
+</p>
+<p>
+  Let's add the Flags: User relationship next. Click Add next to Relationships in the Advanced column. Filter on Flags, which is the same as before. Tick the checkbox for Flags: User and Click Apply (all displays). There is only one previous relationship, schedule, and that is what we see in the Relationship option list. Change the Identifier to Schedule user and click Apply (all displays).
+</p>
+<p>
+  <a href="/sites/all/themes/simplecorp/blog_images/personal_schedule/user_relationship.png" rel="prettyPhoto" title="Configure Relationship Flags User"><img alt="Add new view" src="/sites/all/themes/simplecorp/blog_images/personal_schedule/user_relationship.png" alt="Configure Relationship Flags User" class="es-move-block-left" style="width: 400px;" /></a>
+</p>
+<p>
+  The next relationship we'll add will be for Time Slot(s). Click Add next to Relationships in the Advanced column and filter on Entity Reference. Add the word time to the Search field, if you like, and tick the checkbox for Entity Reference: Referenced Entity. Click Apply (all displays).
+</p>
+<p>
+  <a href="/sites/all/themes/simplecorp/blog_images/personal_schedule/time_entity_reference.png" rel="prettyPhoto" title="Configure Relationship Entity Reference Referenced Entity"><img alt="Add new view" src="/sites/all/themes/simplecorp/blog_images/personal_schedule/time_entity_reference.png" alt="Configure Relationship Entity Reference Referenced Entity" class="es-move-block-left" style="width: 400px;" /></a>
+</p>
+<p>
+  On Configure Relationship: Entity Reference: Referenced Entity click Apply (all displays).
+</p>
+<p>
+  The last relationship is to the content author. The content author is the Session presenters. Click Add next to Relationships in the Advanced column and filter on Content. Add the word Author to the Search field, if you like, and tick the checkbox for Content: Author. Click Apply (all displays). 
+</p>
+<p>
+  <a href="/sites/all/themes/simplecorp/blog_images/personal_schedule/content_author.png" rel="prettyPhoto" title="Configure Relationship Content Author"><img alt="Add new view" src="/sites/all/themes/simplecorp/blog_images/personal_schedule/content_author.png" alt="Configure Relationship Content Author" class="es-move-block-left" style="width: 400px;" /></a>
+</p>
+<p>
+  The Identifier is author in the Configure Relationship: Content: Author modal dialog box. Click Apply (all displays).
+</p>
+<p>
+  <strong>Contextual Filters</strong>
+</p>
+<p>
+  Now that our relationships are are set up, we'll add a Contextual Filter. This time click Add next to Contextual Filters in the Advanced column and filter on Flags. Tick the checkbox for Flags: User uid. Click Apply (all displays). The schedule is the option in the Relationship option list. Tick the Provide default value radio button and choose Type User ID from logged in user.
+</p>
+<p>
+  <a href="/sites/all/themes/simplecorp/blog_images/personal_schedule/contextual_filter_flags_user_uid_not.png" rel="prettyPhoto" title="Configure contextual filter Flags User uid"><img alt="Add new view" src="/sites/all/themes/simplecorp/blog_images/personal_schedule/contextual_filter_flags_user_uid_not.png" alt="Configure contextual filter Flags User uid" class="es-move-block-left" style="width: 400px;" /></a>
+</p>
+<p>
+  Remain in the Configure contextual filter: Flags: User uid modal window. Scroll down to the When the Filter Value is in the URL or a Default is Provided fieldset and tick the checkbox for Specify validation criteria. For a Validator select PHP Code. For those who are wondering about using PHP Code for a Validator, you're not alone. I'm wondering too. The PHP filter module is not enabled and we add the following code to the PHP validate code text area:
+</p>
+<pre linenumbers="off" title="flags_user_uid_validator" type="php">
+if($GLOBALS[&#39;user&#39;]-&gt;uid == $argument) {
+return TRUE;
+} elseif((arg(0) == &#39;user&#39; &amp;&amp; is_numeric(arg(1)) &amp;&amp; arg(2) == &#39;schedule&#39;)) {
+drupal_set_message(t(&#39;You may view your schedule only. Schedules are not publicly shared.&#39;), &#39;warning&#39;);
+}
+</pre>
+<p>
+  Select Show "Page not found" in the Action to take if filter value does not validate options list. Click Apply (all displays). 
+</p>
+<p>
+  <a href="/sites/all/themes/simplecorp/blog_images/personal_schedule/page_not_found.png" rel="prettyPhoto" title="Configure contextual filter Flags User uid"><img alt="Add new view" src="/sites/all/themes/simplecorp/blog_images/personal_schedule/page_not_found.png" alt="Configure contextual filter Flags User uid" class="es-move-block-left" style="width: 400px;" /></a>
+</p>
+<p>
+  The validator displays the My Schedule tab for the logged in user only. On another user's profile page, a Page not found is displayed along with the warning message. <em>A better solution may be a redirect back to the user's own /schedule tab</em>.
+</p>
+<p>
+  <strong>The Fields</strong>
+</p>
+<p>
+  Okay, the hard part is over. Let's add the Time Slot field, the Room assignment field, and the User:Name field. I don't think there is a need for screen shots for the fields since I'm including the view file at the end of this post. Remember that Time Slot is a Field collection item, Room assignment is Content, and User: Name is a User field whose Relationship is author.
+</p>
+<p>
+  Now preview the view with a valid user id and you will see the results.
+</p>
+<p>
+  <a href="/sites/all/themes/simplecorp/blog_images/personal_schedule/preview_fields.png" rel="prettyPhoto" title="Preview the fields"><img alt="Add new view" src="/sites/all/themes/simplecorp/blog_images/personal_schedule/preview_fields.png" alt="Preview the fields" class="es-move-block-left" style="width: 400px;" /></a>
+</p>
+<p>
+  <strong>Page Settings</strong>
+</p>
+<p>
+  The middle column of the Views administrative interface is the Page Settings. Let's add to our Page Settings a Menu Tab called My Schedule.
+</p>
+<p>
+  <a href="/sites/all/themes/simplecorp/blog_images/personal_schedule/my_schedule_menu_tab.png" rel="prettyPhoto" title="Page Menu item entry"><img alt="Add new view" src="/sites/all/themes/simplecorp/blog_images/personal_schedule/my_schedule_menu_tab.png" alt="Page Menu item entry" class="es-move-block-left" style="width: 400px;" /></a>
+</p>
+<p>
+  The menu tab, along with the Path /user/%/schedule is how the tab is added to the user profile page. 
+</p>
+<p>
+  Continuing on with the Page Settings, let's set access to Role | authenticated user. Setting access may not be necessary after what we set up in the Contextual Filter, but let's set it anyway. And let's not use a pager. Lastly, let's change the Machine Name of our Page to my_schedule. I think changing machine names help when we name Views templates.
+</p>
+<p>  
+  Our Views administrative page is now complete and will now look like this:
+</p>
+<p>
+  <a href="/sites/all/themes/simplecorp/blog_images/personal_schedule/views_admin.png" rel="prettyPhoto" title="The finished View"><img alt="The finished View" src="/sites/all/themes/simplecorp/blog_images/personal_schedule/views_admin.png" alt="Page Menu item entry" class="es-move-block-left" style="width: 400px;" /></a>
+</p>
+<p>
+  <strong>Theming</strong>
+</p>
+<p>We will need one theme template and we're done. Add a template called <em>views-view-fields--personal-schedule--my-schedule.tpl.php</em> whose code looks like this:</p>
+<pre linenumbers="off" title="view_with_flag_create_link" type="php">
+&lt;div class=&quot;personal-schedule-outer&quot;&gt;
+  &lt;?php foreach ($fields as $id =&gt; $field): ?&gt;
+    &lt;?php if (!empty($field-&gt;separator)): ?&gt;
+      &lt;?php print $field-&gt;separator; ?&gt;
+    &lt;?php endif; ?&gt;
+  
+    &lt;?php print $field-&gt;wrapper_prefix; ?&gt;
+      &lt;?php print $field-&gt;label_html; ?&gt;
+      &lt;?php print $field-&gt;content; ?&gt;
+     
+    &lt;?php print $field-&gt;wrapper_suffix; ?&gt;
+  &lt;?php endforeach; ?&gt;
+    
+  &lt;?php print flag_create_link(&quot;session_schedule&quot;, $row-&gt;nid); ?&gt;
+&lt;/div&gt;
+</pre>
+<p>
+  Note that we are printing flag_create_link() outside of the foreach loop. Clear the cache for the Menu Tab and the new template. When you go to your user profile page there is now a My Schedule tab that contains your personal schedule for the event. Likewise when you go to another user's My Schedule tab, you are presented with Access Denied. 
+</p>
+<p>
+  <a href="/sites/all/themes/simplecorp/blog_images/personal_schedule/my_schedule.png" rel="prettyPhoto[pp_gal]" title="My Schedule"><img alt="My Schedule" src="/sites/all/themes/simplecorp/blog_images/personal_schedule/my_schedule.png" class="es-move-block-left" width="400" /></a>
+</p>
+
+<p style="display:none;">
+  <a href="/sites/all/themes/simplecorp/blog_images/personal_schedule/page_not_found_to_anothers_schedule.png" rel="prettyPhoto[pp_gal]" title="Schedules are not publicly shared."><img alt="Schedules are not publicly shared." src="/sites/all/themes/simplecorp/blog_images/personal_schedule/page_not_found_to_anothers_schedule.png" class="es-move-block-left" width="400" /></a>
+</p>
+<p style="display:none;">
+  <a href="/sites/all/themes/simplecorp/blog_images/personal_schedule/users_can_still_interact.png" rel="prettyPhoto[pp_gal]" title="Users can still interact on other tabs."><img alt="Users can still interact on other tabs." src="/sites/all/themes/simplecorp/blog_images/personal_schedule/users_can_still_interact.png" class="es-move-block-left" width="400" /></a>
+</p>
