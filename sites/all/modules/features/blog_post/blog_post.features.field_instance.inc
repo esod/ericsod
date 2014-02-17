@@ -193,6 +193,48 @@ function blog_post_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-blog_post-field_download'
+  $field_instances['node-blog_post-field_download'] = array(
+    'bundle' => 'blog_post',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_default',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_download',
+    'label' => 'Download',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'txt',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'file',
+      'settings' => array(
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'file_generic',
+      'weight' => 3,
+    ),
+  );
+
   // Exported field_instance: 'node-blog_post-field_tags'
   $field_instances['node-blog_post-field_tags'] = array(
     'bundle' => 'blog_post',
@@ -205,7 +247,7 @@ function blog_post_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -254,7 +296,7 @@ function blog_post_field_default_field_instances() {
           'youtube_width' => NULL,
         ),
         'type' => 'youtube_video',
-        'weight' => 1,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -275,7 +317,7 @@ function blog_post_field_default_field_instances() {
       'module' => 'youtube',
       'settings' => array(),
       'type' => 'youtube',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -377,6 +419,7 @@ function blog_post_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
+  t('Download');
   t('Enter a comma-separated list of words to describe your content.');
   t('Image');
   t('Page Image');

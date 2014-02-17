@@ -1,5 +1,5 @@
-name = WYSIWYG settings
-description = WYSIWYG configuration settings for TinyMce
+name = WYSIWYG TinyMce settings
+description = WYSIWYG configuration with TinyMce
 core = 7.x
 package = Features
 version = 7.x-1.0

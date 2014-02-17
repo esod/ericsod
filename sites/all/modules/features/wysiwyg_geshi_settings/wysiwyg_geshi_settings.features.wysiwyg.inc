@@ -82,6 +82,7 @@ function wysiwyg_geshi_settings_wysiwyg_default_profiles() {
           'SpecialChar' => 1,
           'Smiley' => 1,
           'Iframe' => 1,
+          'Maximize' => 1,
         ),
         'drupal' => array(
           'media' => 1,

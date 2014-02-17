@@ -1,5 +1,5 @@
-name = WYSIWYG  geshi settings
-description = WYSIWYG configuration settings with the GeSHi filter
+name = WYSIWYG Geshi settings
+description = WYSIWYG configuration for CKEditor and the Geshi filter
 core = 7.x
 package = Features
 version = 7.x-1.0

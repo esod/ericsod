@@ -24,7 +24,8 @@
           overlay_gallery: false,
           //deeplinking: true,
           theme: prettyphoto_theme,
-          social_tools: false
+          social_tools: false,
+          autoplay_slideshow: false          
         });
       }  
   

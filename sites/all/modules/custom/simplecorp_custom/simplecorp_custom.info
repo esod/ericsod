@@ -1,6 +1,6 @@
-name = Simple Corp
+name = Simple Corp Custom Settings
 description = A module to hold odds and ends for simplecorp.
 core = 7.x
 package = Custom Modules
-files[] = simplecorp.module
+files[] = simplecorp_custom.module
 version = 7.x-1.0

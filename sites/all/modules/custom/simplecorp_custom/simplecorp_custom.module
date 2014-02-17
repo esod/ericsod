@@ -3,13 +3,13 @@
 /**
 * Implements hook_init().
 */
-function simplecorp_init() {
+function simplecorp_custom_init() {
   
   /**
    * Add custom javascript for main menu.
    */
-  //if (theme_get_setting('main_menu_custom_js','simplecorp')) {
-  //  drupal_add_js(drupal_get_path('module', 'simplecorp') . '/js/main_menu_custom.js');
+  //if (theme_get_setting('main_menu_custom_js','simplecorp_custom')) {
+  //  drupal_add_js(drupal_get_path('module', 'simplecorp_custom') . '/js/main_menu_custom.js');
   //}
 
   /**
@@ -32,7 +32,7 @@ function simplecorp_init() {
       )
     ), 'setting');
 
-    drupal_add_js(drupal_get_path('module', 'simplecorp') . '/js/pretty_photo_tools.js');
+    drupal_add_js(drupal_get_path('module', 'simplecorp_custom') . '/js/pretty_photo_tools.js');
 
   }
 
@@ -54,7 +54,7 @@ function simplecorp_init() {
       )
     ), 'setting');
 
-    //drupal_add_js(drupal_get_path('module', 'simplecorp') . '/js/responsive_menu_state.js');
+    //drupal_add_js(drupal_get_path('module', 'simplecorp_custom') . '/js/responsive_menu_state.js');
   }
 
   /**
