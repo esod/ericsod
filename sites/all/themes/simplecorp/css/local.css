@@ -28,3 +28,13 @@
 .es-move-block-left {
   margin-left: 145px;
 }
+
+/* line 24, ../sass/local.scss */
+#es-cv {
+  margin-bototm: 0;
+}
+
+/* line 25, ../sass/local.scss */
+#es-hard-copy-available-upon-request {
+  margin-top: 0;
+}
