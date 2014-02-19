@@ -56,7 +56,7 @@ function wysiwyg_geshi_settings_filter_default_formats() {
     'weight' => -10,
     'filters' => array(
       'wysiwyg' => array(
-        'weight' => -48,
+        'weight' => -50,
         'status' => 1,
         'settings' => array(
           'valid_elements' => 'table[width|cellpadding|cellspacing|border|summary],
@@ -200,20 +200,8 @@ pre[start|fancy|type|linenumbers<off?fancy?normal|title],',
           ),
         ),
       ),
-      'filter_url' => array(
-        'weight' => -46,
-        'status' => 1,
-        'settings' => array(
-          'filter_url_length' => 72,
-        ),
-      ),
-      'media_filter' => array(
-        'weight' => -45,
-        'status' => 1,
-        'settings' => array(),
-      ),
       'invisimail_encode_html_entities' => array(
-        'weight' => -44,
+        'weight' => -49,
         'status' => 1,
         'settings' => array(
           'encoder' => 'html_entities',
@@ -221,19 +209,31 @@ pre[start|fancy|type|linenumbers<off?fancy?normal|title],',
           'link' => 0,
         ),
       ),
-      'filter_htmlcorrector' => array(
-        'weight' => -43,
+      'filter_url' => array(
+        'weight' => -48,
+        'status' => 1,
+        'settings' => array(
+          'filter_url_length' => 72,
+        ),
+      ),
+      'media_filter' => array(
+        'weight' => -47,
         'status' => 1,
         'settings' => array(),
       ),
       'geshifilter' => array(
-        'weight' => 0,
+        'weight' => -46,
         'status' => 1,
         'settings' => array(
           'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd>',
           'filter_html_help' => 1,
           'filter_html_nofollow' => 0,
         ),
+      ),
+      'filter_htmlcorrector' => array(
+        'weight' => -45,
+        'status' => 1,
+        'settings' => array(),
       ),
     ),
   );
