@@ -1,0 +1,6 @@
+name = CodeMirror WYSIWYG
+description = A glue module for CodeMirror in WYSIWYG profiles.
+core = 7.x
+package = Custom Modules
+files[] = codemirror_wysiwyg.module
+version = 7.x-1.0

@@ -1,0 +1,4 @@
+name = CKEditor Custom
+description = Custom configuration for CKEditor
+core = 7.x
+package = Custom Modules
