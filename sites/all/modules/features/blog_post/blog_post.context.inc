@@ -31,9 +31,9 @@ function blog_post_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-blog_posts-block' => array(
+        'views-blog_posts-blog_block' => array(
           'module' => 'views',
-          'delta' => 'blog_posts-block',
+          'delta' => 'blog_posts-blog_block',
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),

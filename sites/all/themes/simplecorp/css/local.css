@@ -38,3 +38,9 @@
 #es-hard-copy-available-upon-request {
   margin-top: 0;
 }
+
+/* line 28, ../sass/local.scss */
+body.node-type-blog-post p,
+body.page-taxonomy-term-5 p {
+  margin: 0;
+}
