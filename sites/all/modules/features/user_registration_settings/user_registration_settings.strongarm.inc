@@ -13,6 +13,55 @@ function user_registration_settings_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'fboauth_id';
+  $strongarm->value = '465286363600178';
+  $export['fboauth_id'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fboauth_secret';
+  $strongarm->value = '7b73fa79209635c9a0f2c534265a2999';
+  $export['fboauth_secret'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fboauth_user_connections';
+  $strongarm->value = array();
+  $export['fboauth_user_connections'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fboauth_user_email';
+  $strongarm->value = 1;
+  $export['fboauth_user_email'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fboauth_user_picture';
+  $strongarm->value = 'picture';
+  $export['fboauth_user_picture'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fboauth_user_properties';
+  $strongarm->value = array();
+  $export['fboauth_user_properties'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fboauth_user_username';
+  $strongarm->value = 'username';
+  $export['fboauth_user_username'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'honeypot_element_name';
   $strongarm->value = 'url';
   $export['honeypot_element_name'] = $strongarm;
@@ -105,7 +154,7 @@ function user_registration_settings_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'honeypot_protect_all_forms';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['honeypot_protect_all_forms'] = $strongarm;
 
   $strongarm = new stdClass();
