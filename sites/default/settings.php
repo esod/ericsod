@@ -52,6 +52,11 @@
  * @see conf_path()
  */
 
+// @see example.settings.local.php in sites/default for example.
+if (file_exists('sites/default/settings.local.php')) {
+  require 'sites/default/settings.local.php';
+}
+
 /**
  * Database settings:
  *
@@ -210,21 +215,6 @@
  *   );
  * @endcode
  */
-$databases = array (
-  'default' => 
-  array (
-    'default' => 
-    array (
-      'database' => 'simplecorp_eric',
-      'username' => 'esod',
-      'password' => 'Er89xT6nsa',
-      'host' => 'localhost',
-      'port' => '',
-      'driver' => 'mysql',
-      'prefix' => '',
-    ),
-  ),
-);
 
 /**
  * Access control for update.php script.
