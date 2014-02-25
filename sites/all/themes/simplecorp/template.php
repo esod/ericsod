@@ -1,6 +1,6 @@
 <?php 
 
-/**
+/*
  * Return a themed breadcrumb trail.
  *
  * @param $breadcrumb
@@ -18,7 +18,7 @@ function simplecorp_breadcrumb($variables){
 	}
 
 }
-/**
+/*
  * Removes input formatting options and description from the comment form
  */
 function simplecorp_form_comment_form_alter(&$form, &$form_state) {
@@ -37,7 +37,7 @@ function simplecorp_customize_comment_form(&$form) {
   return $form;
 }
 
-/**
+/*
  * Add files for custom buttons.
  */
 if (!(theme_get_setting('button_color','simplecorp') == '')):
@@ -63,7 +63,7 @@ function simplecorp_button($variables) {
 	return '<input' . drupal_attributes($element['#attributes']) . ' />';
 }
 
-/**
+/*
  * Page alter.
  */
 function simplecorp_page_alter($page) {
@@ -102,7 +102,7 @@ function simplecorp_page_alter($page) {
 }
 
 
-/**
+/*
  * Preprocess function for node.tpl.php.
  */
 function simplecorp_preprocess_node(&$variables) {
@@ -113,7 +113,7 @@ function simplecorp_preprocess_node(&$variables) {
 }
 
 
-/**
+/*
  * Preprocess function for comment.tpl.php.
  */
 function simplecorp_preprocess_comment(&$variables) {
@@ -123,7 +123,7 @@ function simplecorp_preprocess_comment(&$variables) {
 	$variables['submitted_year_c'] = format_date($comment->created, 'custom', 'Y');
 }
 
-/**
+/*
  * Override or insert variables into the page template.
  */
 function simplecorp_preprocess_page(&$vars) {
@@ -170,7 +170,7 @@ function simplecorp_preprocess_page(&$vars) {
   }
 }
 
-/**
+/*
  * Implements hook_preprocess_html().
  */
 function simplecorp_preprocess_html(&$vars) {
@@ -189,7 +189,7 @@ function simplecorp_preprocess_html(&$vars) {
 	$vars['rdf']->profile = '';
 	}
 
-  /**
+  /*
    * Add styles for theme color schemes.
    */
   if (!(theme_get_setting('theme_color','simplecorp') == 'default')) {
@@ -199,7 +199,7 @@ function simplecorp_preprocess_html(&$vars) {
   }
   
   
-  /**
+  /*
    * Add columns.css
    */
   if (theme_get_setting('columns_enable','simplecorp')) {
@@ -207,7 +207,7 @@ function simplecorp_preprocess_html(&$vars) {
   }
   
   
-  /**
+  /*
    * Add lists.css
    */
   if (theme_get_setting('lists_enable','simplecorp')):
@@ -215,7 +215,7 @@ function simplecorp_preprocess_html(&$vars) {
   endif;
   
   
-  /**
+  /*
    * Add boxes.css
    */
   if (theme_get_setting('boxes_enable','simplecorp')) {
@@ -223,4 +223,23 @@ function simplecorp_preprocess_html(&$vars) {
   }
 }
 
-?>
+/**
+ * Custom template files for user login and registration pages
+ */
+
+function simplecorp_theme() {
+  $items = array();
+
+  $items['user_login'] = array(
+    'render element' => 'form',
+    'path' => drupal_get_path('theme', 'simplecorp') . '/templates',
+    'template' => 'user-login',
+  );
+  $items['user_register_form'] = array(
+    'render element' => 'form',
+    'path' => drupal_get_path('theme', 'simplecorp') . '/templates',
+    'template' => 'user-register-form',
+  );
+
+  return $items;
+}
