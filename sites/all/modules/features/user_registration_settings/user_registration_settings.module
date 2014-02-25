@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the User registration settings feature.
+ */
+
+include_once 'user_registration_settings.features.inc';
