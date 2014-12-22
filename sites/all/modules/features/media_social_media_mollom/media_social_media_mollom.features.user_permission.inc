@@ -46,15 +46,6 @@ function media_social_media_mollom_user_default_permissions() {
     'module' => 'mollom',
   );
 
-  // Exported permission: 'administer sharethis'.
-  $permissions['administer sharethis'] = array(
-    'name' => 'administer sharethis',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'sharethis',
-  );
-
   // Exported permission: 'bypass mollom protection'.
   $permissions['bypass mollom protection'] = array(
     'name' => 'bypass mollom protection',

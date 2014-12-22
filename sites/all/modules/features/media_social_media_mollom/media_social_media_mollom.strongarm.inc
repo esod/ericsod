@@ -38,12 +38,5 @@ function media_social_media_mollom_strongarm() {
   $strongarm->value = 0;
   $export['mollom_testing_mode'] = $strongarm;
 
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'sharethis_publisherID';
-  $strongarm->value = 'dr-bfd49b8a-45c2-e64e-7938-1e0eafcfabbe';
-  $export['sharethis_publisherID'] = $strongarm;
-
   return $export;
 }
