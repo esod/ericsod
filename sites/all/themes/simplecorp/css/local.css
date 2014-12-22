@@ -39,8 +39,8 @@
   margin-top: 0;
 }
 
-/* line 28, ../sass/local.scss */
+/* line 27, ../sass/local.scss */
 body.node-type-blog-post p,
 body.page-taxonomy-term-5 p {
-  margin: 0;
+  margin: 1em;
 }
