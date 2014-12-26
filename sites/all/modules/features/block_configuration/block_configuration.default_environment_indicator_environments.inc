@@ -17,8 +17,8 @@ function block_configuration_default_environment_indicator_environment() {
   $environment->name = 'dev';
   $environment->regexurl = 'dev-ericsod.gotpantheon.com';
   $environment->settings = array(
-    'color' => '#f8f645',
-    'text_color' => '#000000',
+    'color' => '#f4993f',
+    'text_color' => '#ffffff',
     'weight' => '99',
     'position' => 'top',
     'fixed' => 0,
@@ -77,8 +77,8 @@ function block_configuration_default_environment_indicator_environment() {
   $environment->name = 'test';
   $environment->regexurl = 'test-ericsod.gotpantheon.com';
   $environment->settings = array(
-    'color' => '#f8f645',
-    'text_color' => '#000000',
+    'color' => '#f4993f',
+    'text_color' => '#ffffff',
     'weight' => '99',
     'position' => 'top',
     'fixed' => 0,
