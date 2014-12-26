@@ -24,6 +24,6 @@ function esod_bootstrap_theme_preprocess_page(&$vars) {
 function esod_bootstrap_theme_preprocess_node(&$vars) {
   if (variable_get('node_submitted_' . $vars['node']->type, TRUE)) {
     $date = format_date($vars['node']->created, 'date_type');
-    $vars['submitted'] = t('Submitted on !datetime', array('!datetime' => $date));
+    $vars['submitted'] = t('!datetime', array('!datetime' => $date));
   }
 }
