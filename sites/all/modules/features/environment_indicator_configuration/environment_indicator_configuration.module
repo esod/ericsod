@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Environment indicator configuration feature.
+ */
+
+include_once 'environment_indicator_configuration.features.inc';
