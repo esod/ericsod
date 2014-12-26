@@ -43,6 +43,21 @@ function block_configuration_default_environment_indicator_environment() {
   $environment = new stdClass();
   $environment->disabled = FALSE; /* Edit this to true to make a default environment disabled initially */
   $environment->api_version = 1;
+  $environment->machine = 'live_www';
+  $environment->name = 'live_www';
+  $environment->regexurl = 'www.ericsod.com';
+  $environment->settings = array(
+    'color' => '#2231a1',
+    'text_color' => '#ffffff',
+    'weight' => '99',
+    'position' => 'top',
+    'fixed' => 0,
+  );
+  $export['live_www'] = $environment;
+
+  $environment = new stdClass();
+  $environment->disabled = FALSE; /* Edit this to true to make a default environment disabled initially */
+  $environment->api_version = 1;
   $environment->machine = 'local';
   $environment->name = 'local';
   $environment->regexurl = 'ericsod.local';
@@ -69,6 +84,21 @@ function block_configuration_default_environment_indicator_environment() {
     'fixed' => 0,
   );
   $export['test'] = $environment;
+
+  $environment = new stdClass();
+  $environment->disabled = FALSE; /* Edit this to true to make a default environment disabled initially */
+  $environment->api_version = 1;
+  $environment->machine = 'www';
+  $environment->name = 'www';
+  $environment->regexurl = 'ericsod.com';
+  $environment->settings = array(
+    'color' => '#2231a1',
+    'text_color' => '#ffffff',
+    'weight' => '99',
+    'position' => 'top',
+    'fixed' => 0,
+  );
+  $export['www'] = $environment;
 
   return $export;
 }
