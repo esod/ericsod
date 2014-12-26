@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the Block configuration feature.
  */
+
+include_once 'block_configuration.features.inc';
