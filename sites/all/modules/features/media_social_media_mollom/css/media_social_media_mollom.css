@@ -1,0 +1,102 @@
+.quiz-config-answers {
+  width: 100%;
+  background-color: #fff2cc;
+  border: 1px solid;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  font-weight: normal;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.quiz-config-answers p {
+  margin-bottom: 0;
+}
+
+li.quiz-config-answer {
+  list-style: none;
+}
+.attempted-quiz-config-answer-outer {
+  background-color: rgb(249, 169, 162);
+}
+.solution-quiz-config-answer-outer {
+  background-color: rgb(181, 225, 154);;
+}
+.attempted-quiz-config-answer {
+  background-color: rgb(249, 169, 162);
+}
+.solution-quiz-config-answer {
+  background-color: rgb(181, 225, 154);;
+}
+.attempted-quiz-config-answer:before {
+  color: red;
+  content: "\2717";
+}
+.solution-quiz-config-answer:before {
+  color: green;
+  content: "\2713";
+}
+
+.review-answers {
+  cursor: pointer;
+  padding-bottom: 1.5em;
+}
+.review-answers:hover {
+  text-decoration: underline;
+}
+.curiously-flags {
+  padding-bottom: 1em;
+}
+.field-answer-fact {
+  padding-bottom: 1em;
+}
+
+.q-correct {
+  background-color: transparent;
+  color: darkgreen;
+}
+.q-wrong {
+  background-color: transparent;
+  color: darkred;
+}
+div.quiz-report .dt {
+  background: transparent;
+  border-top: solid 1px gray;
+  padding: 3px 0 0 5px;
+}
+
+.curiously-rating {
+  height: 3em;
+}
+.curiously-mail {
+  height: 2em;
+}
+
+.curiously-social-links-form-title {
+  cursor: pointer;
+  margin-bottom: 1em;
+}
+.curiously-social-links-form-title:hover {
+  text-decoration: underline;
+}
+
+.curiously-social-links-title {
+  cursor: pointer;
+  margin-bottom: 1em;
+}
+.curiously-social-links-title:hover {
+  text-decoration: underline;
+}
+
+.quiz-icon-small {
+  margin-top: 1em;
+}
+
+#edit-field-flag-message .form-textarea-wrapper textarea {
+  height: 12em;
+}
+
+.quiz-answer-fact {
+  display: none;
+}
