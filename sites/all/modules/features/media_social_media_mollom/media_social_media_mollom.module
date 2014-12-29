@@ -5,3 +5,68 @@
  */
 
 include_once 'media_social_media_mollom.features.inc';
+
+/**
+ *  Implements hook_init().
+ */
+function media_social_media_mollom_init() {
+  $path = current_path();
+  $module_path = drupal_get_path('module', 'media_social_media_mollom');
+
+  if (!preg_match("/(add|admin|edit|user)/i", $path)) {
+    drupal_add_css($module_path . '/css/media_social_media_mollom.css');
+    drupal_add_js('//wurfl.io/wurfl.js', 'external');
+    drupal_add_js($module_path . '/js/media_social_media_mollom.js');
+  }
+}
+
+
+/**
+ * Override or insert variables into the node templates.
+ *
+ * @param $vars
+ *   An array of variables to pass to the theme template.
+ * @param $hook
+ *   The name of the template being rendered ("node" in this case.)
+ */
+function media_social_media_mollom_preprocess_node(&$vars, $hook) {
+  global $base_root;
+  $vars['share_url'] = $base_root . $vars['node_url'];
+  $vars['share_url_shortened'] = shorten_url($base_root . $vars['node_url']);
+  $node_obj = node_load($vars['nid']);
+  $forward_link = forward_link_create($node_obj);
+  $vars['forward_link'] = $forward_link['content'];
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter()
+ *
+ * @param $form array of form values
+ * @param $form_state
+ * @param $form_id
+ *
+ * Alterations to the forward form
+ */
+function media_social_media_mollom_form_forward_form_alter(&$form, &$form_state, $form_id) {
+
+  $form['actions']['cancel'] = array(
+    '#type'   => 'submit',
+    '#value'  => t('Cancel'),
+    '#access' => TRUE,
+    '#submit' => array('media_social_media_mollom_forward_form_cancel_button'),
+    '#limit_validation_errors' => array(),
+  );
+}
+
+/**
+ * Callback function for the Cancel button on forward_form
+ *
+ * @param $form
+ * @param $form_state
+ * @see media_social_media_mollom_form_forward_form_alter()
+ */
+function media_social_media_mollom_forward_form_cancel_button($form, &$form_state) {
+  $url = drupal_parse_url($form['#action']);
+  $string = $url['query']['path'];
+  $form_state['redirect'] = drupal_get_path_alias($string);
+}

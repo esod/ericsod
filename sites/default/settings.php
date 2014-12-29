@@ -566,3 +566,11 @@ if (isset($_SERVER['PANTHEON_ENVIRONMENT']) &&
     exit();
   }
 }
+/**
+ * Include a local settings file if it exists. Adding to the end so that main
+ * settings get set up first
+ */
+$local_settings = dirname(__FILE__) . '/settings.local.php';
+if (file_exists($local_settings)) {
+  include $local_settings;
+}

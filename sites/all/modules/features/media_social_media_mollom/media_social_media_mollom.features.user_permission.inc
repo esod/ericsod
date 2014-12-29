@@ -10,6 +10,28 @@
 function media_social_media_mollom_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'access epostcard'.
+  $permissions['access epostcard'] = array(
+    'name' => 'access epostcard',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'forward',
+  );
+
+  // Exported permission: 'access forward'.
+  $permissions['access forward'] = array(
+    'name' => 'access forward',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'forward',
+  );
+
   // Exported permission: 'access mollom statistics'.
   $permissions['access mollom statistics'] = array(
     'name' => 'access mollom statistics',
@@ -26,6 +48,15 @@ function media_social_media_mollom_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'media_internet',
+  );
+
+  // Exported permission: 'administer forward'.
+  $permissions['administer forward'] = array(
+    'name' => 'administer forward',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'forward',
   );
 
   // Exported permission: 'administer media'.
@@ -71,6 +102,24 @@ function media_social_media_mollom_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'media',
+  );
+
+  // Exported permission: 'override email address'.
+  $permissions['override email address'] = array(
+    'name' => 'override email address',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'forward',
+  );
+
+  // Exported permission: 'override flood control'.
+  $permissions['override flood control'] = array(
+    'name' => 'override flood control',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'forward',
   );
 
   // Exported permission: 'view media'.

@@ -7,6 +7,7 @@
 (function ($) {
   Drupal.behaviors.quizReportForm = {
     attach: function (context, settings) {
+
       var WURFL = WURFL || {'is_mobile': false};
 
       // Hides/shows the answers
@@ -45,9 +46,9 @@
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=797289117001329&version=v2.0";
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
         fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
+      }(document, 'script', 'facebook-jssdk'));
 
 
     }
