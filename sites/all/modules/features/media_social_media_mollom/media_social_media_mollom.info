@@ -1,4 +1,4 @@
-name = Media Social Media Mollom
+name = Media, Social Media, Mollom
 description = Media, Social Media, and Mollom settings
 core = 7.x
 package = Features
@@ -26,4 +26,4 @@ features[variable][] = mollom_fallback
 features[variable][] = mollom_log_minimum_severity
 features[variable][] = mollom_privacy_link
 features[variable][] = mollom_testing_mode
-mtime = 1419263091
+mtime = 1419364842
