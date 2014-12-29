@@ -1040,5 +1040,42 @@ function wysiwyg_geshi_settings_strongarm() {
   $strongarm->value = '<ruby>';
   $export['geshifilter_language_tags_ruby'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'simplify_blocks_global';
+  $strongarm->value = array();
+  $export['simplify_blocks_global'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'simplify_comments_global';
+  $strongarm->value = array(
+    0 => 'format',
+  );
+  $export['simplify_comments_global'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'simplify_nodes_global';
+  $strongarm->value = array();
+  $export['simplify_nodes_global'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'simplify_taxonomy_global';
+  $strongarm->value = array();
+  $export['simplify_taxonomy_global'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'simplify_users_global';
+  $strongarm->value = array();
+  $export['simplify_users_global'] = $strongarm;
+
   return $export;
 }

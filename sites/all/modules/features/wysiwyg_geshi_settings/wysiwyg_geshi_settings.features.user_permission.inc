@@ -19,6 +19,15 @@ function wysiwyg_geshi_settings_user_default_permissions() {
     'module' => 'filter',
   );
 
+  // Exported permission: 'administer simplify'.
+  $permissions['administer simplify'] = array(
+    'name' => 'administer simplify',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'simplify',
+  );
+
   // Exported permission: 'use text format filtered_html'.
   $permissions['use text format filtered_html'] = array(
     'name' => 'use text format filtered_html',
@@ -37,6 +46,24 @@ function wysiwyg_geshi_settings_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'filter',
+  );
+
+  // Exported permission: 'view checklistapi checklists report'.
+  $permissions['view checklistapi checklists report'] = array(
+    'name' => 'view checklistapi checklists report',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'checklistapi',
+  );
+
+  // Exported permission: 'view hidden fields'.
+  $permissions['view hidden fields'] = array(
+    'name' => 'view hidden fields',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'simplify',
   );
 
   return $permissions;
