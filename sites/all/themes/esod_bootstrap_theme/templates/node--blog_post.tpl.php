@@ -104,26 +104,29 @@
       print render($content);
     ?>
   </div>
-
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
   <!-- Facebook -->
-  <div class="curiously-facebook">
-    <div id="fb-root"></div>
-    <div class="fb-like" data-href="<?php print $share_url; ?>" data-layout="standard" data-action="recommend" data-show-faces="true" data-share="true"></div>
-  </div>
-  <br>
-  <!-- Twitter -->
-  <div class="curiously-twitter">
-    <a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php print $share_url; ?>" data-text="<?php print $title; ?>">Tweet</a>
-  </div>
-  <br>
-  <div class="curiously-social-links-title">Other Social Links</div>
-  <div class="curiously-social-links-other">
+  <div id="esod-social-links">
+    <div class="curiously-facebook">
+      <div
+        class="fb-like"
+        data-href="<?php print $share_url; ?>"
+        data-layout="button_count"
+        data-action="like"
+        data-share="true"
+        data-width="450"
+        data-show-faces="true">
+      </div>
+    </div>
+    <!-- Twitter -->
+    <div class="curiously-twitter">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php print $share_url; ?>" data-text="<?php print $title; ?>">Tweet</a>
+    </div>
+    <div class="curiously-social-links-title">Other Social Links</div>
     <!-- Google Plus One -->
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <div class="curiously-google-plus-one">
       <div class="g-plusone" data-size="standard" data-href="<?php print $share_url; ?>"></div>
     </div>
-    <br>
     <!-- Mail link -->
     <?php if ($forward_link): ?>
       <div class="curiously-social-links">
@@ -131,7 +134,6 @@
       </div>
     <?php endif; ?>
   </div>
-
   <?php print render($content['links']); ?>
 
   <?php print render($content['comments']); ?>
