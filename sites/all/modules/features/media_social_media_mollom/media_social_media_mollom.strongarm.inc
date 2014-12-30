@@ -238,7 +238,7 @@ function media_social_media_mollom_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'forward_link_icon';
-  $strongarm->value = '';
+  $strongarm->value = 'sites/all/themes/esod_bootstrap_theme/email.png';
   $export['forward_link_icon'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -259,7 +259,7 @@ function media_social_media_mollom_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'forward_link_style';
-  $strongarm->value = '2';
+  $strongarm->value = '1';
   $export['forward_link_style'] = $strongarm;
 
   $strongarm = new stdClass();
