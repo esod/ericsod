@@ -32,7 +32,7 @@ function media_social_media_mollom_init() {
 function media_social_media_mollom_preprocess_node(&$vars, $hook) {
   global $base_root;
   $vars['share_url'] = $base_root . $vars['node_url'];
-//  $vars['share_url_shortened'] = shorten_url($base_root . $vars['node_url']);
+  $vars['share_url_shortened'] = shorten_url($base_root . $vars['node_url']);
   $node_obj = node_load($vars['nid']);
   $forward_link = forward_link_create($node_obj);
   $vars['forward_link'] = $forward_link['content'];

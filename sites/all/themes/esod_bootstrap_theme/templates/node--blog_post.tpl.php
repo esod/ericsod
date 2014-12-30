@@ -120,7 +120,7 @@
     </div>
     <!-- Twitter -->
     <div class="curiously-twitter">
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php print $share_url; ?>" data-text="<?php print $title; ?>">Tweet</a>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php print $share_url_shortened; ?>" data-text="<?php print $title; ?>">Tweet</a>
     </div>
     <div class="curiously-social-links-title">Other Social Links</div>
     <!-- Google Plus One -->

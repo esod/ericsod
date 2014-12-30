@@ -104,6 +104,15 @@ function media_social_media_mollom_user_default_permissions() {
     'module' => 'media',
   );
 
+  // Exported permission: 'manage Shorten URLs API keys'.
+  $permissions['manage Shorten URLs API keys'] = array(
+    'name' => 'manage Shorten URLs API keys',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'shorten',
+  );
+
   // Exported permission: 'override email address'.
   $permissions['override email address'] = array(
     'name' => 'override email address',
@@ -120,6 +129,15 @@ function media_social_media_mollom_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'forward',
+  );
+
+  // Exported permission: 'use Shorten URLs page'.
+  $permissions['use Shorten URLs page'] = array(
+    'name' => 'use Shorten URLs page',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'shorten',
   );
 
   // Exported permission: 'view media'.
