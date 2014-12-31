@@ -32,6 +32,9 @@ div#esod-social-links {
 .curiously-mail {
   height: 2em;
 }
+a.esod-email {
+  display: block;
+}
 
 .esod-social-links-form-title {
   cursor: pointer;
