@@ -127,12 +127,15 @@
     <div class="curiously-google-plus-one">
       <div class="g-plusone" data-size="standard" data-href="<?php print $share_url; ?>"></div>
     </div>
+    <?php $img_email = '<img src="'.file_create_url('sites/all/themes/esod_bootstrap_theme/email.png').'" alt="Email this page" title="Email this page">'; ?>
     <!-- Mail link -->
-    <?php if ($forward_link): ?>
-      <div class="curiously-social-links">
-        <?php print $forward_link; ?>
-      </div>
-    <?php endif; ?>
+    <a href="mailto:?subject=ericsod.com: <?php print $title; ?>&body=<?php print $title; ?> <?php print $share_url; ?>" class="email-button"><?php print $img_email; ?></a>
+
+<!--    --><?php //if ($forward_link): ?>
+<!--      <div class="curiously-social-links">-->
+<!--        --><?php //print $forward_link; ?>
+<!--      </div>-->
+<!--    --><?php //endif; ?>
   </div>
   <?php print render($content['links']); ?>
 
