@@ -5,7 +5,7 @@
  */
 
 (function ($) {
-  Drupal.behaviors.quizReportForm = {
+  Drupal.behaviors.socialMediaMollom = {
     attach: function (context, settings) {
 
       var WURFL = WURFL || {'is_mobile': false};
