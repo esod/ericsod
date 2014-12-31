@@ -1,58 +1,50 @@
 div#esod-social-links {
   width: 100%;
 }
-.curiously-facebook {
+.esod-facebook {
   display: inline-block;
-  width: 25%;
+  /*width: 25%;*/
   vertical-align: top;
-  padding: 10px 0 9px;
+  padding: 10px 12px 9px 0;
 }
-.curiously-twitter {
+.esod-twitter {
   display: inline-block;
-  width: 20%;
-  padding: 10px 0 10px 13px;
+  /*width: 20%;*/
+  padding: 11px 12px 10px 26px;
   font-size: 13px;
   line-height: 20px;
   vertical-align: top;
   margin-left: -4px;
   overflow: hidden;
 }
-.curiously-google-plus-one {
+.esod-google-plus-one {
   display: inline-block;
-  width: 20%;
+  /*width: 20%;*/
   vertical-align: top;
-  padding: 10px 0 9px;
+  padding: 10px 12px 9px 0;
 }
-.curiously-social-links {
+.esod-social-links {
   display: inline-block;
-  width: 25%;
+  /*width: 25%;*/
   vertical-align: top;
-  padding: 4px 0 9px;
+  padding: 4px 12px 9px 0;
 }
 .curiously-mail {
   height: 2em;
 }
 
-.curiously-social-links-form-title {
+.esod-social-links-form-title {
   cursor: pointer;
   margin-bottom: 1em;
 }
-.curiously-social-links-form-title:hover {
+.esod-social-links-form-title:hover {
   text-decoration: underline;
 }
 
-.curiously-social-links-title {
+.esod-social-links-title {
   cursor: pointer;
   margin-bottom: 1em;
 }
-.curiously-social-links-title:hover {
+.esod-social-links-title:hover {
   text-decoration: underline;
-}
-
-.quiz-icon-small {
-  margin-top: 1em;
-}
-
-#edit-field-flag-message .form-textarea-wrapper textarea {
-  height: 12em;
 }

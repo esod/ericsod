@@ -107,7 +107,7 @@
   <script src="https://apis.google.com/js/platform.js" async defer></script>
   <!-- Facebook -->
   <div id="esod-social-links">
-    <div class="curiously-facebook">
+    <div class="esod-facebook">
       <div
         class="fb-like"
         data-href="<?php print $share_url; ?>"
@@ -119,12 +119,12 @@
       </div>
     </div>
     <!-- Twitter -->
-    <div class="curiously-twitter">
+    <div class="esod-twitter">
       <a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php print $share_url_shortened; ?>" data-text="<?php print $title; ?>">Tweet</a>
     </div>
-    <div class="curiously-social-links-title">Other Social Links</div>
+    <div class="esod-social-links-title">Other Social Links</div>
     <!-- Google Plus One -->
-    <div class="curiously-google-plus-one">
+    <div class="esod-google-plus-one">
       <div class="g-plusone" data-size="standard" data-href="<?php print $share_url; ?>"></div>
     </div>
     <?php $img_email = '<img src="'.file_create_url('sites/all/themes/esod_bootstrap_theme/email.png').'" alt="Email this page" title="Email this page">'; ?>
@@ -132,7 +132,7 @@
     <a href="mailto:?subject=ericsod.com: <?php print $title; ?>&body=<?php print $title; ?> <?php print $share_url; ?>" class="email-button"><?php print $img_email; ?></a>
 
 <!--    --><?php //if ($forward_link): ?>
-<!--      <div class="curiously-social-links">-->
+<!--      <div class="esod-social-links">-->
 <!--        --><?php //print $forward_link; ?>
 <!--      </div>-->
 <!--    --><?php //endif; ?>

@@ -13,15 +13,15 @@
       // See //wurfl.io/wurfl.js
       if(WURFL.is_mobile) {
         // Hides/shows the other social links in the individual results pages
-        $(".curiously-social-links-other").hide();
+        $(".esod-social-links-other").hide();
 
-        $(".curiously-social-links-title").click(function () {
-          $(".curiously-social-links-other").slideToggle();
+        $(".esod-social-links-title").click(function () {
+          $(".esod-social-links-other").slideToggle();
         });
 
       }
       if(!WURFL.is_mobile) {
-        $(".curiously-social-links-title").hide();
+        $(".esod-social-links-title").hide();
       }
 
        // Twitter
