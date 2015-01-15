@@ -340,6 +340,62 @@ function blog_post_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'views_cache_bully_exemptions';
+  $strongarm->value = array(
+    'archive' => 0,
+    'backlinks' => 0,
+    'blog_posts' => 0,
+    'comments_recent' => 0,
+    'forward_clickthroughs' => 0,
+    'forward_forwards' => 0,
+    'forward_recent' => 0,
+    'frontpage' => 0,
+    'glossary' => 0,
+    'taxonomy_term' => 0,
+    'tracker' => 0,
+  );
+  $export['views_cache_bully_exemptions'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'views_cache_bully_exempt_exposed';
+  $strongarm->value = 1;
+  $export['views_cache_bully_exempt_exposed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'views_cache_bully_exempt_vbo';
+  $strongarm->value = 1;
+  $export['views_cache_bully_exempt_vbo'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'views_cache_bully_output_lifespan';
+  $strongarm->value = '3600';
+  $export['views_cache_bully_output_lifespan'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'views_cache_bully_results_lifespan';
+  $strongarm->value = '3600';
+  $export['views_cache_bully_results_lifespan'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'views_cache_bully_tag_exemptions';
+  $strongarm->value = array(
+    'default' => 0,
+  );
+  $export['views_cache_bully_tag_exemptions'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'xmlsitemap_settings_node_blog_post';
   $strongarm->value = array(
     'status' => '0',

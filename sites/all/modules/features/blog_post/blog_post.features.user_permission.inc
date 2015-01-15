@@ -39,6 +39,15 @@ function blog_post_user_default_permissions() {
     'module' => 'context_ui',
   );
 
+  // Exported permission: 'administer views cache bully'.
+  $permissions['administer views cache bully'] = array(
+    'name' => 'administer views cache bully',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'views_cache_bully',
+  );
+
   // Exported permission: 'administer youtube'.
   $permissions['administer youtube'] = array(
     'name' => 'administer youtube',
