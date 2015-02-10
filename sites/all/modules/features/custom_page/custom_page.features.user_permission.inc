@@ -10,6 +10,15 @@
 function custom_page_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'administer menu attributes'.
+  $permissions['administer menu attributes'] = array(
+    'name' => 'administer menu attributes',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'menu_attributes',
+  );
+
   // Exported permission: 'create page content'.
   $permissions['create page content'] = array(
     'name' => 'create page content',
