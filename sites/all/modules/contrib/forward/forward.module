@@ -334,14 +334,14 @@ function forward_page() {
     $node = node_load($nid);
     if (!node_access('view', $node)) {
       // Access is denied
-      return drupal_access_denied();
+      return MENU_ACCESS_DENIED;
     }
     $form_state['values']['path'] = 'node/' . $node->nid;
   }
   else {
     $args = explode('/', $form_state['values']['path']);
     if ($args[0] == 'admin') {
-      return drupal_access_denied();
+      return MENU_ACCESS_DENIED;
     }
     $node = new stdClass();
     $node->title = $form_state['values']['path'];
@@ -371,7 +371,6 @@ function forward_form($form, &$form_state, $path = NULL, $node = NULL, $nodeapi 
 
   $emailtype = ($path == 'epostcard') ? 'epostcard' : 'email';
 
-  $form = array();
   $cid = array();
 
   if (preg_match("/\?cid=/i", $path) == 1) {
@@ -732,7 +731,7 @@ function forward_form_submit($form, &$form_state) {
       $content = node_load($nid);
       if (!node_access('view', $content)) {
         // Access is denied if user does not have access to view this node
-        return drupal_access_denied();
+        return MENU_ACCESS_DENIED;
       }
       $node = $content;
       $node->content = array();
@@ -776,10 +775,10 @@ function forward_form_submit($form, &$form_state) {
 
       switch ($content->body) {
         case MENU_NOT_FOUND:
-          return drupal_not_found();
+          return MENU_NOT_FOUND;
           break;
         case MENU_ACCESS_DENIED:
-          return drupal_access_denied();
+          return MENU_ACCESS_DENIED;
           break;
       }
       $content->teaser = '';
@@ -1187,7 +1186,15 @@ function forward_tracking() {
     array('data' => t('Forwards')),
     array('data' => t('Clickthroughs')),
   );
-  $result = db_query_range('SELECT n.title, f.* FROM {forward_statistics} f LEFT JOIN {node} n ON f.nid = n.nid ORDER BY f.forward_count DESC', 0, 10);
+  $query = db_select('forward_statistics', 'f', array('target' => 'slave'))->extend('PagerDefault')->element(0);
+  $query->innerJoin('node', 'n', 'f.nid = n.nid');
+
+   $query
+    ->fields('f', array('nid','last_forward_timestamp', 'forward_count', 'clickthrough_count'))
+    ->fields('n', array('title'))
+    ->limit(10)
+    ->orderBy('f.forward_count', 'DESC');
+  $result = $query->execute();
   $num_rows = FALSE;
 
   foreach ($result as $log) {
@@ -1208,7 +1215,7 @@ function forward_tracking() {
     '#rows' => $rows,
     '#empty' => t('No statistics available.'),
   );
-  $output['forward_most_pager'] = array('#theme' => 'pager');
+  $output['forward_most_pager'] = array('#theme' => 'pager','#element' =>0);
 
   /**
    * Most Clickthroughs
@@ -1221,7 +1228,16 @@ function forward_tracking() {
     array('data' => t('Forwards')),
     array('data' => t('Clickthroughs')),
   );
-  $result = db_query_range('SELECT n.title, f.* FROM {forward_statistics} f LEFT JOIN {node} n ON f.nid = n.nid ORDER BY f.clickthrough_count DESC', 0, 10);
+  $query = db_select('forward_statistics', 'f', array('target' => 'slave'))->extend('PagerDefault')->element(1);
+  $query->innerJoin('node', 'n', 'f.nid = n.nid');
+
+   $query
+    ->fields('f', array('nid','last_forward_timestamp', 'forward_count', 'clickthrough_count'))
+    ->fields('n', array('title'))
+    ->limit(10)
+    ->orderBy('f.clickthrough_count', 'DESC');
+  $result = $query->execute();
+
   $num_rows = FALSE;
 
   foreach ($result as $log) {
@@ -1242,9 +1258,7 @@ function forward_tracking() {
     '#rows' => $rows,
     '#empty' => t('No statistics available.'),
   );
-  $output['forward_clickthroughs_pager'] = array('#theme' => 'pager');
-
-
+  $output['forward_clickthroughs_pager'] = array('#theme' => 'pager','#element' =>1);
 
   /**
    * Recently Forwarded Pages
@@ -1258,8 +1272,8 @@ function forward_tracking() {
     array('data' => t('User ID'), 'field' => 'uid'),
     array('data' => t('Hostname'), 'field' => 'hostname')
   );
-  
-  $query = db_select('forward_log', 'f', array('target' => 'slave'))->extend('PagerDefault')->extend('TableSort');
+
+  $query = db_select('forward_log', 'f', array('target' => 'slave'))->extend('PagerDefault')->extend('TableSort')->element(2);
   $query->innerJoin('users', 'u', 'f.uid = u.uid');
   $query
     ->fields('f', array('timestamp', 'type', 'path', 'uid', 'hostname'))
@@ -1267,7 +1281,7 @@ function forward_tracking() {
     ->limit(30)
     ->orderByHeader($header);
   $result = $query->execute();
-  
+
   $num_rows = FALSE;
 
   foreach ($result as $log) {
@@ -1289,7 +1303,7 @@ function forward_tracking() {
     '#rows' => $rows,
     '#empty' => t('No statistics available.'),
   );
-  $output['forward_recent_pager'] = array('#theme' => 'pager');
+  $output['forward_recent_pager'] = array('#theme' => 'pager','#element' =>2);
 
   drupal_set_title(t('Forward Tracking'));
   return $output;

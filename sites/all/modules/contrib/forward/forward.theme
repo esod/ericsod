@@ -28,7 +28,6 @@ function theme_forward_page($variables) {
  */
 function theme_forward_email($variables) {
   $vars = $variables['vars'];
-  dd($vars);
   $output = '
 <html>
   <body>

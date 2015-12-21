@@ -5,9 +5,9 @@ dependencies[] = token
 configure = admin/config/user-interface/forward
 files[] = views/forward_handler_field_forward_link.inc
 
-; Information added by Drupal.org packaging script on 2014-02-26
-version = "7.x-2.0+5-dev"
+; Information added by Drupal.org packaging script on 2015-11-22
+version = "7.x-2.1"
 core = "7.x"
 project = "forward"
-datestamp = "1393439911"
+datestamp = "1448223390"
 
