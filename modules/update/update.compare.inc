@@ -104,7 +104,13 @@ function update_get_projects() {
  * @see update_get_projects()
  */
 function _update_process_info_list(&$projects, $list, $project_type, $status) {
+  $admin_theme = variable_get('admin_theme', 'seven');
   foreach ($list as $file) {
+    // The admin theme is a special case. It should always be considered enabled
+    // for the purposes of update checking.
+    if ($file->name === $admin_theme) {
+      $file->status = TRUE;
+    }
     // A disabled base theme of an enabled sub-theme still has all of its code
     // run by the sub-theme, so we include it in our "enabled" projects list.
     if ($status && !$file->status && !empty($file->sub_themes)) {
@@ -170,7 +176,6 @@ function _update_process_info_list(&$projects, $list, $project_type, $status) {
     // section at the top of the report.
     if ($project_name == 'drupal') {
       $project_display_type = 'core';
-      $file->info['version'] = VERSION;
     }
     else {
       $project_display_type = $project_type;

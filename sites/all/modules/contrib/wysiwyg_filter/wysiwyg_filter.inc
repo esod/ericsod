@@ -53,7 +53,7 @@ function wysiwyg_filter_default_valid_elements() {
 a[!href|target<_blank|title],
 div[align<center?justify?left?right],
 p[align<center?justify?left?right],
-span,em,br,strong,cite,code,blockquote,ul,ol,li,dl,dt,dd
+br,span,em,strong,cite,code,blockquote,ul,ol,li,dl,dt,dd
 EOT;
 }
 
@@ -61,20 +61,20 @@ EOT;
  * Get HTML elements blacklist.
  */
 function wysiwyg_filter_get_elements_blacklist() {
-  return array(
+  $blacklist = array(
     'applet',
     'area',
     'base',
     'basefont',
     'body',
     'button',
-//    'embed',
+    'embed',
     'form',
     'frame',
     'frameset',
     'head',
     'html',
-//    'iframe',
+    'iframe',
     'input',
     'isindex',
     'label',
@@ -83,16 +83,19 @@ function wysiwyg_filter_get_elements_blacklist() {
     'meta',
     'noframes',
     'noscript',
-//    'object',
+    'object',
     'optgroup',
     'option',
     'param',
-//    'script',
+    'script',
     'select',
     'style',
     'textarea',
     'title',
   );
+
+  drupal_alter('wysiwyg_filter_elements_blacklist', $blacklist);
+  return $blacklist;
 }
 
 /**
